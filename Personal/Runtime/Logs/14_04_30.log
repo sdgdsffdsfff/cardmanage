@@ -1,0 +1,1070 @@
+[ 2014-04-30T14:24:57+08:00 ] 127.0.0.1 /cardmanage/personal.php/login/index.shtml
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001705s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001888s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002400s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: erro C:\wamp\www\cardmanage\Personal\Runtime\Cache\7bf1eac34fc0a867d9e131dfad2e3da8.php 第 15 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.225803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.226003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001476s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001321s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001071s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005704s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002129s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002340s ]
+
+[ 2014-04-30T14:24:57+08:00 ] 127.0.0.1 /cardmanage/personal.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001978s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002188s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001614s ]
+
+[ 2014-04-30T14:25:25+08:00 ] 127.0.0.1 /cardmanage/personal.php/Login/islogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001362s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001545s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001412s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.063159s ]
+SQL: SELECT * FROM cb_users WHERE ( loginname='111111' and loginpwd='111111' ) LIMIT 1   [ RunTime:0.053440s ]
+
+[ 2014-04-30T14:25:25+08:00 ] 127.0.0.1 /cardmanage/personal.php/Index/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001607s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001817s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001268s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014794s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015026s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001186s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000992s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000769s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001201s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004577s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001281s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001438s ]
+
+[ 2014-04-30T14:25:26+08:00 ] 127.0.0.1 /cardmanage/personal.php/Index/menu
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001934s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002125s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001764s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.058113s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_donate' or c.relname = lower('cb_donate'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.054680s ]
+SQL: SELECT * FROM cb_users WHERE ( id=1 )  [ RunTime:0.052228s ]
+NOTIC: [2] pg_query() [<a href='function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  relation &quot;cb_donate&quot; does not exist C:\wamp\www\cardmanage\ThinkPHP\Extend\Driver\Db\DbPgsql.class.php 第 88 行.
+SQL: SELECT SUM(money) AS tp_sum FROM cb_donate WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.051101s ]
+ERR: 
+ [ SQL语句 ] : SELECT SUM(money) AS tp_sum FROM cb_donate WHERE ( userid=1 ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.052549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052780s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001433s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001348s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001092s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001796s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006113s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001850s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002094s ]
+
+[ 2014-04-30T14:25:26+08:00 ] 127.0.0.1 /cardmanage/personal.php/Index/bottom
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001424s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001603s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001763s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030223s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002902s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001581s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002381s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003488s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011067s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002034s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002216s ]
+
+[ 2014-04-30T14:25:26+08:00 ] 127.0.0.1 /cardmanage/personal.php/Index/main
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002393s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002603s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001935s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019499s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002728s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001930s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001255s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001484s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007900s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001875s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002137s ]
+
+[ 2014-04-30T14:25:26+08:00 ] 127.0.0.1 /cardmanage/personal.php/Index/top
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002923s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003220s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002379s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046274s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046476s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001039s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001334s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001035s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001348s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005233s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001373s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001555s ]
+
+[ 2014-04-30T14:25:28+08:00 ] 127.0.0.1 /cardmanage/personal.php/Recharge/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002298s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002651s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001860s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.057204s ]
+SQL: SELECT phonenum FROM cb_users WHERE ( id=1 ) LIMIT 1   [ RunTime:0.051360s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer C:\wamp\www\cardmanage\Personal\Runtime\Cache\c1ab6d084854d17a3f588da6b7465201.php 第 145 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.044387s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044586s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001446s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001307s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001178s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001592s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006013s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001732s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001899s ]
+
+[ 2014-04-30T14:25:54+08:00 ] 127.0.0.1 /cardmanage/personal.php/Recharge/recharge
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001445s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001634s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001306s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.061159s ]
+SQL: SELECT phonenum FROM cb_users WHERE ( id=1 ) LIMIT 1   [ RunTime:0.051683s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_cards' or c.relname = lower('cb_cards'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.053096s ]
+SQL: SELECT * FROM cb_cards WHERE ( cardnum='00000036' )  [ RunTime:0.051745s ]
+NOTIC: [2] pg_query() [<a href='function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  invalid input syntax for type numeric: &quot;$50.00&quot;
+CONTEXT:  PL/pgSQL function &quot;callback_opencard_oper&quot; line 48 at SQL statement C:\wamp\www\cardmanage\ThinkPHP\Extend\Driver\Db\DbPgsql.class.php 第 88 行.
+SQL: SELECT callback_opencard_oper('00000036','709936','18763139626',2) [ RunTime:0.054378s ]
+ERR: 
+ [ SQL语句 ] : SELECT callback_opencard_oper('00000036','709936','18763139626',2)
+
+[ 2014-04-30T14:27:23+08:00 ] 127.0.0.1 /cardmanage/personal.php/Recharge/recharge
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001762s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001946s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001469s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.061871s ]
+SQL: SELECT phonenum FROM cb_users WHERE ( id=1 ) LIMIT 1   [ RunTime:0.053081s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_cards' or c.relname = lower('cb_cards'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.055389s ]
+SQL: SELECT * FROM cb_cards WHERE ( cardnum='00000036' )  [ RunTime:0.053601s ]
+NOTIC: [2] pg_query() [<a href='function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  invalid input syntax for type numeric: &quot;$50.00&quot;
+CONTEXT:  PL/pgSQL function &quot;callback_opencard_oper&quot; line 48 at SQL statement C:\wamp\www\cardmanage\ThinkPHP\Extend\Driver\Db\DbPgsql.class.php 第 88 行.
+SQL: SELECT callback_opencard_oper('00000036','709936','18763139626',2) [ RunTime:0.056966s ]
+ERR: 
+ [ SQL语句 ] : SELECT callback_opencard_oper('00000036','709936','18763139626',2)
+
+[ 2014-04-30T15:20:34+08:00 ] 127.0.0.1 /cardmanage/personal.php/Recharge/recharge
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001833s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002008s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001524s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.070200s ]
+SQL: SELECT phonenum FROM cb_users WHERE ( id=1 ) LIMIT 1   [ RunTime:0.062729s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_cards' or c.relname = lower('cb_cards'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.066265s ]
+SQL: SELECT * FROM cb_cards WHERE ( cardnum='00000036' )  [ RunTime:0.063692s ]
+
+[ 2014-04-30T15:21:04+08:00 ] 127.0.0.1 /cardmanage/personal.php/Recharge/recharge
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001817s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002007s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001799s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.103272s ]
+SQL: SELECT phonenum FROM cb_users WHERE ( id=1 ) LIMIT 1   [ RunTime:0.093710s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_cards' or c.relname = lower('cb_cards'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.095016s ]
+SQL: SELECT * FROM cb_cards WHERE ( cardnum='00000040' )  [ RunTime:0.093113s ]
+
+[ 2014-04-30T15:21:37+08:00 ] 127.0.0.1 /cardmanage/personal.php/Recharge/recharge
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002174s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002369s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001936s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002085s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.057288s ]
+SQL: SELECT phonenum FROM cb_users WHERE ( id=1 ) LIMIT 1   [ RunTime:0.051456s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_cards' or c.relname = lower('cb_cards'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.053215s ]
+SQL: SELECT * FROM cb_cards WHERE ( cardnum='00000040' )  [ RunTime:0.051785s ]
+SQL: SELECT callback_opencard_oper('00000040','226859','18653110966',2) [ RunTime:0.054435s ]
+
+[ 2014-04-30T15:22:20+08:00 ] 127.0.0.1 /cardmanage/personal.php/Recharge/recharge
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001776s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001973s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001647s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.057661s ]
+SQL: SELECT phonenum FROM cb_users WHERE ( id=1 ) LIMIT 1   [ RunTime:0.051661s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_cards' or c.relname = lower('cb_cards'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.053021s ]
+SQL: SELECT * FROM cb_cards WHERE ( cardnum='00000040' )  [ RunTime:0.052254s ]
+SQL: SELECT callback_opencard_oper('00000040','226859','18653110966',2) [ RunTime:0.054836s ]
+
+[ 2014-04-30T15:22:35+08:00 ] 127.0.0.1 /cardmanage/personal.php/Recharge/recharge
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002046s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002260s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001602s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.074319s ]
+SQL: SELECT phonenum FROM cb_users WHERE ( id=1 ) LIMIT 1   [ RunTime:0.067655s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_cards' or c.relname = lower('cb_cards'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.070169s ]
+SQL: SELECT * FROM cb_cards WHERE ( cardnum='00000040' )  [ RunTime:0.069477s ]
+SQL: SELECT callback_opencard_oper('00000040','226859','18653110966',2) [ RunTime:0.070116s ]
+
+[ 2014-04-30T15:24:54+08:00 ] 127.0.0.1 /cardmanage/personal.php/Recharge/recharge
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002061s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002249s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001573s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.060407s ]
+SQL: SELECT phonenum FROM cb_users WHERE ( id=1 ) LIMIT 1   [ RunTime:0.051171s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_cards' or c.relname = lower('cb_cards'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.053350s ]
+SQL: SELECT * FROM cb_cards WHERE ( cardnum='00000036' )  [ RunTime:0.051838s ]
+
+[ 2014-04-30T15:25:08+08:00 ] 127.0.0.1 /cardmanage/personal.php/Recharge/recharge
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001684s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001855s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001699s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.058494s ]
+SQL: SELECT phonenum FROM cb_users WHERE ( id=1 ) LIMIT 1   [ RunTime:0.052386s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_cards' or c.relname = lower('cb_cards'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.053781s ]
+SQL: SELECT * FROM cb_cards WHERE ( cardnum='00000036' )  [ RunTime:0.052663s ]
+
+[ 2014-04-30T15:25:49+08:00 ] 127.0.0.1 /cardmanage/personal.php/Recharge/recharge
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001982s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002177s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001597s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.091106s ]
+SQL: SELECT phonenum FROM cb_users WHERE ( id=1 ) LIMIT 1   [ RunTime:0.083667s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_cards' or c.relname = lower('cb_cards'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.085549s ]
+SQL: SELECT * FROM cb_cards WHERE ( cardnum='00000040' )  [ RunTime:0.085076s ]
+SQL: SELECT callback_opencard_oper('00000040','111111','18653110966',2) [ RunTime:0.086336s ]
+
+[ 2014-04-30T15:26:01+08:00 ] 127.0.0.1 /cardmanage/personal.php/Recharge/recharge
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001644s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001815s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001512s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.058434s ]
+SQL: SELECT phonenum FROM cb_users WHERE ( id=1 ) LIMIT 1   [ RunTime:0.052239s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_cards' or c.relname = lower('cb_cards'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.054670s ]
+SQL: SELECT * FROM cb_cards WHERE ( cardnum='00000040' )  [ RunTime:0.053460s ]
+SQL: SELECT callback_opencard_oper('00000040','709936','18653110966',2) [ RunTime:0.053613s ]
+
+[ 2014-04-30T15:26:10+08:00 ] 127.0.0.1 /cardmanage/personal.php/Recharge/recharge
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001695s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001871s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001527s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.057712s ]
+SQL: SELECT phonenum FROM cb_users WHERE ( id=1 ) LIMIT 1   [ RunTime:0.051668s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_cards' or c.relname = lower('cb_cards'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.053381s ]
+SQL: SELECT * FROM cb_cards WHERE ( cardnum='00000040' )  [ RunTime:0.051939s ]
+SQL: SELECT callback_opencard_oper('00000040','226859','18653110966',2) [ RunTime:0.054446s ]
+
+[ 2014-04-30T15:27:07+08:00 ] 127.0.0.1 /cardmanage/personal.php/Recharge/recharge
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001970s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002145s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001528s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.058470s ]
+SQL: SELECT phonenum FROM cb_users WHERE ( id=1 ) LIMIT 1   [ RunTime:0.052455s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_cards' or c.relname = lower('cb_cards'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.053826s ]
+SQL: SELECT * FROM cb_cards WHERE ( cardnum='00000040' )  [ RunTime:0.052677s ]
+SQL: SELECT callback_opencard_oper('00000040','226859','18653110966',2) [ RunTime:0.055307s ]
+
+[ 2014-04-30T15:27:57+08:00 ] 127.0.0.1 /cardmanage/personal.php/Recharge/recharge
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001640s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001821s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001523s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.064680s ]
+SQL: SELECT phonenum FROM cb_users WHERE ( id=1 ) LIMIT 1   [ RunTime:0.058704s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_cards' or c.relname = lower('cb_cards'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.061742s ]
+SQL: SELECT * FROM cb_cards WHERE ( cardnum='00000400' )  [ RunTime:0.060943s ]
+SQL: SELECT callback_opencard_oper('00000400','275345','18653110966',2) [ RunTime:0.086228s ]
+
+[ 2014-04-30T15:27:59+08:00 ] 127.0.0.1 /cardmanage/personal.php/Index/menu
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001642s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001825s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002226s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.065511s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_donate' or c.relname = lower('cb_donate'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.060733s ]
+SQL: SELECT * FROM cb_users WHERE ( id=1 )  [ RunTime:0.060021s ]
+NOTIC: [2] pg_query() [<a href='function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  relation &quot;cb_donate&quot; does not exist C:\wamp\www\cardmanage\ThinkPHP\Extend\Driver\Db\DbPgsql.class.php 第 88 行.
+SQL: SELECT SUM(money) AS tp_sum FROM cb_donate WHERE ( userid=1 ) LIMIT 1   [ RunTime:0.061140s ]
+ERR: 
+ [ SQL语句 ] : SELECT SUM(money) AS tp_sum FROM cb_donate WHERE ( userid=1 ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.034841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035067s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001607s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001293s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001105s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001516s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005951s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001851s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002019s ]
+
+[ 2014-04-30T18:34:50+08:00 ] 127.0.0.1 /cardmanage/personal.php/Makeappo/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001599s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001791s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001691s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.064258s ]
+SQL: SELECT phonenum FROM cb_users WHERE ( id=1 ) LIMIT 1   [ RunTime:0.071670s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer C:\wamp\www\cardmanage\Personal\Runtime\Cache\f1db0b875958fefc072661745fcb006b.php 第 127 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.080795s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081008s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001376s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001457s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001380s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001647s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006347s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002164s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002350s ]
+
+[ 2014-04-30T18:34:51+08:00 ] 127.0.0.1 /cardmanage/personal.php/Reducenum/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001596s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001782s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001538s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_shortnum' or c.relname = lower('cb_shortnum'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.065249s ]
+SQL: SELECT * FROM cb_shortnum WHERE ( userid=1 )  [ RunTime:0.073774s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer C:\wamp\www\cardmanage\Personal\Runtime\Cache\0b025ed763773bb928ac536adf3e576b.php 第 51 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046667s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001564s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001794s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001273s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007327s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001678s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001887s ]
+
+[ 2014-04-30T18:34:54+08:00 ] 127.0.0.1 /cardmanage/personal.php/Reducenum/update?id=2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001873s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002051s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001587s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_shortnum' or c.relname = lower('cb_shortnum'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.064399s ]
+SQL: SELECT * FROM cb_shortnum WHERE ( id=2 )  [ RunTime:0.064830s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer C:\wamp\www\cardmanage\Personal\Runtime\Cache\f3ecc4544dc95c45715732c6ba415058.php 第 109 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030441s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001376s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001345s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001649s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001527s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006355s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001534s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001692s ]
+
+[ 2014-04-30T18:35:00+08:00 ] 127.0.0.1 /cardmanage/personal.php/Reducenum/updateshortnum
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001672s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001846s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001467s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_shortnum' or c.relname = lower('cb_shortnum'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.063788s ]
+SQL: SELECT * FROM cb_shortnum WHERE ( shortnum=3333and userid=1 )  [ RunTime:0.051715s ]
+
+[ 2014-04-30T18:35:25+08:00 ] 127.0.0.1 /cardmanage/personal.php/Reducenum/updateshortnum
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001667s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001839s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001490s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_shortnum' or c.relname = lower('cb_shortnum'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.062832s ]
+SQL: SELECT * FROM cb_shortnum WHERE ( shortnum=3333and userid=1 )  [ RunTime:0.051509s ]
+
+[ 2014-04-30T18:35:28+08:00 ] 127.0.0.1 /cardmanage/personal.php/Reducenum/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001867s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002050s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002061s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_shortnum' or c.relname = lower('cb_shortnum'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.064432s ]
+SQL: SELECT * FROM cb_shortnum WHERE ( userid=1 )  [ RunTime:0.051401s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer C:\wamp\www\cardmanage\Personal\Runtime\Cache\0b025ed763773bb928ac536adf3e576b.php 第 51 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016182s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001301s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001273s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001428s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001499s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006037s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001441s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001593s ]
+
+[ 2014-04-30T18:35:31+08:00 ] 127.0.0.1 /cardmanage/personal.php/Reducenum/update?id=2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001815s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002018s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001668s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_shortnum' or c.relname = lower('cb_shortnum'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.064474s ]
+SQL: SELECT * FROM cb_shortnum WHERE ( id=2 )  [ RunTime:0.051395s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer C:\wamp\www\cardmanage\Personal\Runtime\Cache\f3ecc4544dc95c45715732c6ba415058.php 第 109 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017821s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001368s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001339s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001322s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001467s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005958s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001855s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002030s ]
+
+[ 2014-04-30T18:35:37+08:00 ] 127.0.0.1 /cardmanage/personal.php/Reducenum/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001658s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001839s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001648s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_shortnum' or c.relname = lower('cb_shortnum'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.064475s ]
+SQL: SELECT * FROM cb_shortnum WHERE ( userid=1 )  [ RunTime:0.051359s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer C:\wamp\www\cardmanage\Personal\Runtime\Cache\0b025ed763773bb928ac536adf3e576b.php 第 51 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017231s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017421s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001386s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001704s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001201s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001423s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006172s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001577s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001740s ]
+
+[ 2014-04-30T18:35:41+08:00 ] 127.0.0.1 /cardmanage/personal.php/Reducenum/update?id=2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001724s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001898s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001720s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_shortnum' or c.relname = lower('cb_shortnum'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.064619s ]
+SQL: SELECT * FROM cb_shortnum WHERE ( id=2 )  [ RunTime:0.051355s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer C:\wamp\www\cardmanage\Personal\Runtime\Cache\f3ecc4544dc95c45715732c6ba415058.php 第 109 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017206s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001396s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001370s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001425s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001838s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006505s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001542s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001696s ]
+
+[ 2014-04-30T18:35:43+08:00 ] 127.0.0.1 /cardmanage/personal.php/Reducenum/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001683s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001856s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001531s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_shortnum' or c.relname = lower('cb_shortnum'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.064891s ]
+SQL: SELECT * FROM cb_shortnum WHERE ( userid=1 )  [ RunTime:0.051953s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer C:\wamp\www\cardmanage\Personal\Runtime\Cache\0b025ed763773bb928ac536adf3e576b.php 第 51 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017139s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017337s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001845s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002781s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001274s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001499s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007875s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001685s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001848s ]
+

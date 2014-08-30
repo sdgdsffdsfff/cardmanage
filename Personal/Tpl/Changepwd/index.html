@@ -1,0 +1,132 @@
+<html>
+	<head>
+		<title>管理平台</title>
+		<meta name="Author" content="赵兴壮" />
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css" >
+		
+		<script src="__PUBLIC__/js/common.js"></script>
+		<script src="__PUBLIC__/js/jquery-1.7.2.js"></script>	
+
+
+		<script type="text/javascript">
+							function checkpwd()
+							{   
+								var pwd2=$('#newpwd2').val();
+								var newpwd=$('#newpwd').val();	
+								$('#newmeg').html("");
+								$('#newmeg2').html("");
+								//alert(pwd2);
+
+								//alert(newpwd);
+								if (newpwd==null||newpwd=="") {
+									
+									$('#newpwd').focus();
+									//alert("新密码不能为空");
+									$('#newmeg').html("新密码不能为空!");
+									 return false;
+								}
+								
+								if (pwd2==null||pwd2=="") {
+									 
+									 $('#pwd2').focus();
+									 // alert("确认密码不能为空");
+									 $('#newmeg2').html("确认密码不能为空!");
+									 return false;
+								}
+								if (newpwd.length!=6||pwd2.length!=6) {
+									  
+									  $('#newpwd').focus();
+									  //alert('密码长度限制为六位');
+									  $('#newmeg').html("密码长度为六位!");
+									  $('#newmeg2').html("密码长度为六位!");
+									  return false;
+								}
+								 if (pwd2!=newpwd) {
+									
+									$('#newpwd').focus();
+						            alert("两次输入密码不一致");
+						            return false;
+								}
+
+								
+                                 ajaxcardcheck();
+							}
+
+					function ajaxcardcheck(){
+
+						  $.post(
+						  	"__APP__/Changepwd/changepwd",
+
+						  	{oldpwd:$("#oldpwd").val(),pwd:$('#newpwd').val()},
+
+						    function(data){
+						    
+						    if (data['status']=="success") {
+
+						    	alert(data['message']);
+
+						    }else if (data['status']=="failed") 
+						    {
+						    	alert(data['message']);
+						    }
+						  },
+						   "json");//这里返回的类型有：json,html,xml,text
+						}
+				
+
+
+
+		</script>
+	</head>
+	
+	<body>
+		<div id="main">
+
+		    <div class='head-dark-box'>
+					<div class='tit'>内容管理>本账号管理>密码修改</div>
+			</div>	
+
+			<table   style="font: 12px Verdana,Arial,Helvetica,sans-serif;" cellpadding="0" cellspacing="1" align="center" bgcolor="#E5E5E5" border="0" width="500">
+				<tbody> 
+						<tr>
+								<td colspan="2" align="center" bgcolor="#E5E5E5" height="30"><span style="FONT-SIZE: 9pt"><b>修改密码</b></span></td>
+						</tr>
+
+						<tr>
+								<td align="center" bgcolor="#FFFFFF" height="25" width="88">
+									<p align="right"><span style="FONT-SIZE: 9pt">原密码</span></p>
+								</td>
+								<td align="center" bgcolor="#FFFFFF" width="250"><font style="FONT-SIZE: 9pt" face="??"><input  name="oldpwd" id="oldpwd" style="FLOAT: left; WIDTH: 151px; HEIGHT: 19px" size="25" type="password" ></font></td>
+						</tr>
+
+						<tr>
+								<td style="WIDTH: 88px" align="center" bgcolor="#FFFFFF" height="25">
+									<p align="right"><span style="FONT-SIZE: 9pt">新密码</span></p>
+								</td>
+								<td style="WIDTH: 250px" align="center" bgcolor="#FFFFFF"><font style="FONT-SIZE: 9pt" face="??"><input name="newpwd" id="newpwd" style="FLOAT: left; WIDTH: 151px; HEIGHT: 19px" size="25" type="password"></font><span  style="color:red"id="newmeg"></span></td>
+						</tr>
+
+						<tr>
+								<td style="WIDTH: 88px" align="center" bgcolor="#FFFFFF" height="25">
+									<p align="right"><span style="FONT-SIZE: 9pt">确认密码</span></p>
+								</td>
+								<td style="WIDTH: 250px" align="center" bgcolor="#FFFFFF"><font style="FONT-SIZE: 9pt" face="??"><input name="newpwd2" id="newpwd2" style="FLOAT: left; WIDTH: 151px; HEIGHT: 19px" size="25" type="password"></font><span style="color:red" id="newmeg2"></span></td>
+						</tr>
+
+						<tr>
+								<td colspan="2" align="center" bgcolor="#FFFFFF" height="30" valign="middle"><input name="Button1"   onclick="checkpwd()" value="确定" id="Button1" style="background-color:#E5E5E5;border-color:#507CD1;border-width:1px;border-style:Solid;font-size:9pt;" type="submit"></td>
+						</tr>
+					</tbody>
+				</table>
+
+
+	      <br/><br/><br/>
+	    </div>
+		
+		<br/><br/><br/><br/><br/>
+	<div id="timer">
+	<p><span class="exetime">当前脚本执行用时</span><span class="red_font">{$timer}</span>秒&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>	
+    </div>
+
+	</body>
+</html>

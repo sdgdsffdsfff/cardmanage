@@ -1,0 +1,143 @@
+<html>
+	<head>
+		<title>管理平台</title>
+		<meta name="Author" content="赵兴壮" />
+        <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css" >
+        
+        <script src="__PUBLIC__/js/common.js"></script>
+            
+        <link type="text/css" href="__PUBLIC__/css/jquery-ui-1.8.17.custom.css" rel="stylesheet" />
+        <link type="text/css" href="__PUBLIC__/css/jquery-ui-timepicker-addon.css" rel="stylesheet" />
+        <script type="text/javascript" src="__PUBLIC__/js/jquery-1.7.2.js"></script>
+        <script type="text/javascript" src="__PUBLIC__/js/jquery-ui-1.8.17.custom.min.js"></script>
+        <script type="text/javascript" src="__PUBLIC__/js/jquery-ui-timepicker-addon.js"></script>
+        <script type="text/javascript" src="__PUBLIC__/js/jquery-ui-timepicker-zh-CN.js"></script>
+
+
+		<script type="text/javascript">
+
+              
+					$(document).ready(function(){
+
+
+                        $(".ui_timepicker").datetimepicker({
+                                //showOn: "button",
+                                showSecond: false,
+                                showMinute: false,
+                                showHour: false,
+                                showTime:false,
+                                timeFormat: 'hh:mm:ss',
+                                stepHour: 1,
+                                stepMinute: 1,
+                                stepSecond: 1
+                            })
+
+						   $('#update').click(					   	
+				   				function(){
+				   					ajaxupdate();
+				   				}
+						   	);
+
+				    function ajaxupdate(){
+                          //alert($('#expirydate').val());
+
+						  $.post("__APP__/Upuserexpirydate/updatephonedata",
+						  	{userid:$('#userid').val(),expirydate:$('#expirydate').val()},
+						    function(data){
+						    
+						    if (data['status']=="success") {
+						    	alert(data['message']);
+						    }else if (data['status']=="failed") 
+						    {
+						    	alert(data['message']);
+						    }
+						  },
+						   "json");//这里返回的类型有：json,html,xml,text
+						}
+
+				   });
+
+    	</script>
+
+	</head>
+	
+	<body>
+		<div id="main">
+
+		    <div class='head-dark-box'>
+					<div class='tit'>内容管理>账号卡查询>账号卡信息</div>
+			</div>	
+				<?php
+					 //print_r($userdata);
+					 $userdata=$userdata[0];
+				?>
+<table style="margin-top:0px; font: 12px Verdana,Arial,Helvetica,sans-serif;" cellspacing="1" align="center" bgcolor="#cccccc" width="70%">
+                <tbody><tr>
+                    <td colspan="4" style="height: 25px" align="left" bgcolor="#f4f4f4">
+                        &nbsp;用户资料修改</td>
+                </tr>
+                <tr> <input type="hidden" id="userid" value="<?php echo $userdata['id'];?>">
+                    <td style="height: 25px" align="center" bgcolor="#f4f4f4" width="25%">
+                        &nbsp;登录名</td>
+                    <td style="height: 25px" align="left" bgcolor="#ffffff" width="25%">
+                        &nbsp;<input name="TxtAccount" value="<?php  echo $userdata['loginname'];?>" maxlength="20" id="TxtAccount" disabled="disabled" style="width:120px;" type="text"></td>
+                    <td style="height: 25px" align="center" bgcolor="#f4f4f4" width="25%">
+                        &nbsp;电话号码</td>
+                    <td style="height: 25px" align="left" bgcolor="#ffffff" width="25%">
+                        &nbsp;<input name="bindtel" value="<?php  echo $userdata['phonenum'];?>" disabled="disabled" maxlength="15" id="bindtel"  style="width:120px;" type="text"></td>
+                </tr>
+                <tr>
+                    <td style="height: 25px" align="center" bgcolor="#f4f4f4" width="25%">
+                        &nbsp;密码</td>
+                    <td style="height: 25px" align="left" bgcolor="#ffffff" width="25%">
+                        &nbsp;<input name="loginpwd" value="<?php  echo $userdata['loginpwd'];?>"  maxlength="6" id="loginpwd" disabled="disabled"  style="width:120px;" type="text"></td>
+                    <td style="height: 25px" align="center" bgcolor="#f4f4f4" width="25%">
+                        &nbsp;余额</td>
+                    <td style="height: 25px" align="left" bgcolor="#ffffff" width="25%">
+                        &nbsp;<input name="money" value="<?php echo $userdata['banlance'];?>" disabled="disabled" maxlength="8" id="money" style="width:120px;" type="text"></td>
+                </tr>
+                 <tr>
+                    <td style="height: 25px" align="center" bgcolor="#f4f4f4" width="25%">
+                        &nbsp;最后使用时间</td>
+                    <td style="height: 25px" align="left" bgcolor="#ffffff" width="25%">
+                        &nbsp;<?php  echo $userdata['lastusetime'];?></td>
+                    <td style="height: 25px" align="center" bgcolor="#f4f4f4" width="25%">
+                        &nbsp;注册时间</td>
+                    <td style="height: 25px" align="left" bgcolor="#ffffff" width="25%">
+                        <?php echo $userdata['registedate'];?></td>
+                </tr>
+
+                <tr>
+                    <td style="height: 25px" align="center" bgcolor="#f4f4f4" width="25%">
+                        截止日期</td>
+                    <td style="height: 25px" align="left" bgcolor="#ffffff" width="25%">
+                        
+                     <span id="TxtApplyDate">    
+                        <input type="text" name="expirydate"  id="expirydate" value="<?php  echo $userdata['expirydate'];?>" class="ui_timepicker">         
+                     </span>
+                     </td>
+                    <td style="height: 25px" align="center" bgcolor="#ffffff" width="25%">
+                        </td>
+                    <td style="height: 25px" align="left" bgcolor="#ffffff" width="25%">
+						
+                    </td>
+                </tr>                                 
+
+                
+                <tr>
+                    <td colspan="4" style="height: 25px" align="center" bgcolor="#f4f4f4">
+                        <input name="update" value="修改" id="update"  style="width:56px;" type="submit">&nbsp;<input name="Button5" value="返回" id="Button5" style="width:56px;" onclick="history.back(-1);" type="submit"></td>
+                </tr>
+            </tbody></table>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+		
+	 </div>
+		
+		<br/><br/><br/><br/><br/>
+	<div id="timer">
+	<p><span class="exetime">当前脚本执行用时</span><span class="red_font">{$timer}</span>秒&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>	
+    </div>
+
+	</body>
+</html>

@@ -1,0 +1,94 @@
+<?php if (!defined('THINK_PATH')) exit();?><html>
+	<head>
+		<title>管理平台</title>
+		<meta name="Author" content="赵兴壮" />
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css" >
+		
+		<script src="__PUBLIC__/js/common.js"></script>
+		<script src="__PUBLIC__/js/jquery-1.7.2.js"></script>	
+
+		<script>
+				
+				
+					function checkfield(){
+
+						   ajaxadd();
+
+						}
+
+						function ajaxadd(){
+							
+						  //alert('sdadsa');
+
+						  $.post("__APP__/Blackcallednum/addblacknum",
+						  	{blacknum:$('#blacknum').val()},
+						  function(data){
+						    
+						    if (data['status']=="success") {
+
+						    	alert(data['message']);
+
+						    }else if (data['status']=="failed") 
+						    {
+						    	alert(data['message']);
+						    }
+						  },
+						   "json");//这里返回的类型有：json,html,xml,text
+						}
+
+		</script>
+
+	</head>
+	
+	<body>
+		<div id="main">
+
+		    <div class='head-dark-box'>
+					<div class='tit'>内容管理>黑名单管理</div>
+			</div>	
+<!--action="__APP__/Transfercard/transfer"-->
+          <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+							<table style="margin-top:0px;font: 12px Verdana,Arial,Helvetica,sans-serif;" cellspacing="1" align="center" bgcolor="#cccccc" width="80%">
+                                  <tbody>
+                                    <tr>
+                                        <td colspan="2" style="height: 25px" align="left" bgcolor="#f4f4f4">
+                                            &nbsp;黑名单添加
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width:400px; height: 25px" align="left" bgcolor="#ffffff">
+ 											 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 	 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                                            黑名单号码：
+                                            <input name="blacknum" maxlength="20" style="width:120px;" type="text" id="blacknum">
+                         
+
+										  </td>
+										  
+                                        <td style="height: 25px" align="left" bgcolor="#ffffff">
+
+                                            <input name="submit" value="添加" id="submit" style="height:22px;" onclick="return checkfield()" type="submit">
+                                            <input name="back" value="返回" id="back" onclick="window.location.href='__APP__/Blackcallednum/index'" type="button">
+
+											<span style="color:red" id="msg"></span>
+										                                        
+									   </td>
+                                    </tr>
+                                </tbody>
+                              </table>
+				  <br/><br/>
+
+				  <div> 
+				        <table id="statustable" style="color:red; font: 12px Verdana,Arial,Helvetica,sans-serif;" cellspacing="1" align="center"  width="60%">
+				           
+
+				        </table><br/><br/><br/>
+				  </div>
+
+		</div>
+		<br/><br/><br/><br/><br/>
+	<div id="timer">
+	<p><span class="exetime">当前脚本执行用时</span><span class="red_font"><?php echo ($timer); ?></span>秒&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>	
+    </div>
+
+	</body>
+</html>

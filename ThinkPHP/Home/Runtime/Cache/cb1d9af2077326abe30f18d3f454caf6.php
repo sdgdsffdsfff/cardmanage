@@ -1,0 +1,48 @@
+<?php if (!defined('THINK_PATH')) exit();?><html>
+	<head>
+		<title>管理平台</title>
+		<meta name="Author" content="赵兴壮" />
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css" >
+		<script src="__PUBLIC__/js/common.js"></script>
+		
+	</head>
+	
+	<body>
+		<div id="main">
+		    <div class='head-dark-box'>
+					<div class='tit'>账号管理>代理商管理>删除代理商</div>
+			</div>	
+			<div>
+					
+					
+	<table rules="all" id="MyGridView" style="border-color:Black;border-width:1px;border-style:solid;font-size:10pt;height:10px;width:80%;border-collapse:collapse;" cellpadding="3" cellspacing="0" align="Center" border="1">
+			<tbody>
+				<?php
+ if (!empty($accountdata)) { echo '<tr style="background-color:#E5E5E5;font-weight:bold;height:15px;">
+					<th scope="col">序号</th><th scope="col">帐号</th><th scope="col">密码</th><th scope="col">状态</th><td>类别</td><th scope="col">联系电话</th><th scope="col">上级代理</th><th scope="col">操作</th></tr>'; } ?>
+				
+
+				<?php
+ foreach($accountdata as $key =>$value) { echo '<pre>'; echo '</pre>'; $status=''; if($value['status']==1) { $status='开通'; } else { $status="锁定"; } $type=''; switch (2) { case 1: $type="总管理员"; break; case 2: $type="一级代理"; break; default: $type="二级代理"; break; } echo '<tr><td>'.$key.'</td><td>'.$value['loginname'].'</td><td>******</td><td>'.$status.'</td><td>'.$type.'</td><td>'.$value['tele'].'</td><td>'.$_SESSION['loginname'].'</td><td><a href="__APP__/authority/deleteaccdata?id='.$value['id'].'">【删除】</a></td></tr>'; } ?>
+				
+
+				
+
+
+			</tbody>
+	</table>
+
+				
+
+
+			</div>
+
+		</div>
+		
+
+
+	<div id="timer">
+	<p><span class="exetime">当前脚本执行用时</span><span class="red_font"><?php echo ($timer); ?></span>秒&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>	
+    </div>
+	</body>
+</html>

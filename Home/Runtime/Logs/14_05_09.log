@@ -1,0 +1,1926 @@
+[ 2014-05-09T00:29:33+08:00 ] 61.231.86.2 mx2.mail2000.com.tw:25
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000285s ]
+
+[ 2014-05-09T00:33:41+08:00 ] 27.22.145.200 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000276s ]
+
+[ 2014-05-09T00:44:33+08:00 ] 180.139.73.194 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000277s ]
+
+[ 2014-05-09T00:54:49+08:00 ] 218.95.252.44 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000277s ]
+
+[ 2014-05-09T01:40:23+08:00 ] 113.16.18.152 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+
+[ 2014-05-09T01:47:29+08:00 ] 182.146.245.155 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000278s ]
+
+[ 2014-05-09T01:57:18+08:00 ] 180.136.40.210 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+
+[ 2014-05-09T02:17:52+08:00 ] 180.140.219.165 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+
+[ 2014-05-09T02:38:06+08:00 ] 183.164.179.211 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000279s ]
+
+[ 2014-05-09T03:16:35+08:00 ] 171.112.165.3 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000282s ]
+
+[ 2014-05-09T04:04:59+08:00 ] 222.217.216.240 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000282s ]
+
+[ 2014-05-09T04:35:58+08:00 ] 118.121.12.156 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000282s ]
+
+[ 2014-05-09T05:12:19+08:00 ] 153.0.62.38 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000282s ]
+
+[ 2014-05-09T05:38:23+08:00 ] 150.255.244.71 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000281s ]
+
+[ 2014-05-09T06:16:04+08:00 ] 27.23.183.116 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000282s ]
+
+[ 2014-05-09T06:20:44+08:00 ] 219.139.88.196 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000279s ]
+
+[ 2014-05-09T06:31:19+08:00 ] 117.62.107.206 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000281s ]
+
+[ 2014-05-09T07:21:53+08:00 ] 113.16.105.210 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000282s ]
+
+[ 2014-05-09T09:51:40+08:00 ] 37.215.115.173 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+
+[ 2014-05-09T09:57:41+08:00 ] 182.149.178.106 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+
+[ 2014-05-09T10:21:02+08:00 ] 183.2.59.131 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+
+[ 2014-05-09T10:28:46+08:00 ] 222.246.244.25 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000276s ]
+
+[ 2014-05-09T10:30:45+08:00 ] 125.65.149.147 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+
+[ 2014-05-09T10:37:28+08:00 ] 113.116.31.30 /index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+
+[ 2014-05-09T10:37:28+08:00 ] 113.116.31.30 /index.php/login/index.shtml
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000389s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000268s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /var/www/cardmanage/Home/Lib/Action/LoginAction.class.php:126) /var/www/cardmanage/Home/Lib/Action/PublicAction.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: erro /var/www/cardmanage/Home/Runtime/Cache/fe9703200f8417a0c6155a1fe6fdc2c0.php 第 31 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.003944s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003982s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000139s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000152s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000087s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000196s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000669s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /var/www/cardmanage/Home/Lib/Action/LoginAction.class.php:126) /var/www/cardmanage/ThinkPHP/Lib/Core/View.class.php 第 95 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /var/www/cardmanage/Home/Lib/Action/LoginAction.class.php:126) /var/www/cardmanage/ThinkPHP/Lib/Core/View.class.php 第 96 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /var/www/cardmanage/Home/Lib/Action/LoginAction.class.php:126) /var/www/cardmanage/ThinkPHP/Lib/Core/View.class.php 第 97 行.
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000289s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000325s ]
+
+[ 2014-05-09T10:37:31+08:00 ] 113.116.31.30 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000397s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000278s ]
+
+[ 2014-05-09T10:37:33+08:00 ] 113.116.31.30 /index.php/login/index.shtml
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000385s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /var/www/cardmanage/Home/Lib/Action/LoginAction.class.php:126) /var/www/cardmanage/Home/Lib/Action/PublicAction.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: erro /var/www/cardmanage/Home/Runtime/Cache/fe9703200f8417a0c6155a1fe6fdc2c0.php 第 31 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004061s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000136s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000145s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000080s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000648s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /var/www/cardmanage/Home/Lib/Action/LoginAction.class.php:126) /var/www/cardmanage/ThinkPHP/Lib/Core/View.class.php 第 95 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /var/www/cardmanage/Home/Lib/Action/LoginAction.class.php:126) /var/www/cardmanage/ThinkPHP/Lib/Core/View.class.php 第 96 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /var/www/cardmanage/Home/Lib/Action/LoginAction.class.php:126) /var/www/cardmanage/ThinkPHP/Lib/Core/View.class.php 第 97 行.
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000284s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000325s ]
+
+[ 2014-05-09T10:37:34+08:00 ] 113.116.31.30 /index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000381s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000260s ]
+
+[ 2014-05-09T10:37:45+08:00 ] 113.116.31.30 /index.php/Login/islogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000388s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000267s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /var/www/cardmanage/Home/Lib/Action/LoginAction.class.php:126) /var/www/cardmanage/Home/Lib/Action/PublicAction.class.php 第 20 行.
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_account' or c.relname = lower('cb_account'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.003455s ]
+SQL: SELECT * FROM cb_account WHERE ( loginname='admin' and loginpwd='e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.000499s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_power' or c.relname = lower('cb_power'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.001194s ]
+SQL: SELECT * FROM cb_power WHERE ( accountid=1 ) LIMIT 1   [ RunTime:0.000234s ]
+
+[ 2014-05-09T10:37:46+08:00 ] 113.116.31.30 /index.php/Index/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000382s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.003370s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003407s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000126s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000144s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000082s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000635s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000271s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000305s ]
+
+[ 2014-05-09T10:37:46+08:00 ] 113.116.31.30 /index.php/Index/top
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000390s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000261s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.003406s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003443s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000124s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000142s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000076s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000613s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000264s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000299s ]
+
+[ 2014-05-09T10:37:46+08:00 ] 113.116.31.30 /index.php/Index/menu
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000408s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000279s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_account' or c.relname = lower('cb_account'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.003214s ]
+SQL: SELECT id,loginname FROM cb_account WHERE ( ownid=1 )  [ RunTime:0.000258s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009031s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000237s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000158s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000079s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000772s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000282s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000320s ]
+
+[ 2014-05-09T10:37:46+08:00 ] 113.116.31.30 /index.php/Index/main
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001239s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001277s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000267s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.003272s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003318s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000126s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000144s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000082s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000630s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000273s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000307s ]
+
+[ 2014-05-09T10:37:46+08:00 ] 113.116.31.30 /index.php/Index/bottom
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000387s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000274s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.003353s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003397s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000123s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000142s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000077s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000615s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000274s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000307s ]
+
+[ 2014-05-09T10:37:53+08:00 ] 113.116.31.30 /index.php/Querycard/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000387s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+NOTIC: [2] stream_wrapper_unregister() [<a href='function.stream-wrapper-unregister'>function.stream-wrapper-unregister</a>]: Unable to unregister protocol zip:// /var/www/cardmanage/Public/Classes/PHPExcel/Shared/ZipStreamWrapper.php 第 69 行.
+NOTIC: [8] Undefined variable: data /var/www/cardmanage/Home/Lib/Action/QuerycardAction.class.php 第 72 行.
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_cards' or c.relname = lower('cb_cards'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.003256s ]
+NOTIC: [8] Undefined variable: data /var/www/cardmanage/Home/Lib/Action/QuerycardAction.class.php 第 89 行.
+SQL: SELECT COUNT(*) AS tp_count FROM cb_cards LIMIT 1   [ RunTime:0.000355s ]
+NOTIC: [8] Undefined variable: data /var/www/cardmanage/Home/Lib/Action/QuerycardAction.class.php 第 98 行.
+SQL: SELECT * FROM cb_cards ORDER BY id desc LIMIT 17 OFFSET 0   [ RunTime:0.000434s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_account' or c.relname = lower('cb_account'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.001189s ]
+SQL: SELECT id,loginname FROM cb_account  [ RunTime:0.000188s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: querydata /var/www/cardmanage/Home/Runtime/Cache/03d6d54c8125a70435f7b9f1c32056c9.php 第 68 行.
+NOTIC: [8] Undefined variable: timer /var/www/cardmanage/Home/Runtime/Cache/03d6d54c8125a70435f7b9f1c32056c9.php 第 118 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005354s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005394s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000223s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000158s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000077s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000197s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000748s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000267s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000304s ]
+
+[ 2014-05-09T10:38:01+08:00 ] 113.116.31.30 /index.php/Queryphone/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000386s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000278s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.003160s ]
+NOTIC: [8] Undefined index: phonenum /var/www/cardmanage/Home/Lib/Action/QueryphoneAction.class.php 第 35 行.
+NOTIC: [8] Undefined variable: str /var/www/cardmanage/Home/Lib/Action/QueryphoneAction.class.php 第 68 行.
+SQL: SELECT COUNT(*) AS tp_count FROM cb_users LIMIT 1   [ RunTime:0.000323s ]
+SQL: SELECT * FROM cb_users ORDER BY registedate LIMIT 17 OFFSET 0   [ RunTime:0.000401s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer /var/www/cardmanage/Home/Runtime/Cache/29442bacb6ac93dcf6e6fc6f581e2664.php 第 57 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004509s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000213s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000150s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000077s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000731s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000270s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000308s ]
+
+[ 2014-05-09T10:38:04+08:00 ] 113.116.31.30 /index.php/Calltransfernum/querynum
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000384s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+NOTIC: [2] stream_wrapper_unregister() [<a href='function.stream-wrapper-unregister'>function.stream-wrapper-unregister</a>]: Unable to unregister protocol zip:// /var/www/cardmanage/Public/Classes/PHPExcel/Shared/ZipStreamWrapper.php 第 69 行.
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_test' or c.relname = lower('cb_test'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.004997s ]
+SQL: select count(*) from cb_numberpool [ RunTime:0.000909s ]
+SQL: select * from cb_numberpool limit 17 offset 0 [ RunTime:0.000784s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004137s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004194s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000163s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000145s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000078s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000197s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000676s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000292s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000330s ]
+
+[ 2014-05-09T10:38:05+08:00 ] 113.116.31.30 /index.php/Calltransfernum/querynum
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000430s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000286s ]
+NOTIC: [2] stream_wrapper_unregister() [<a href='function.stream-wrapper-unregister'>function.stream-wrapper-unregister</a>]: Unable to unregister protocol zip:// /var/www/cardmanage/Public/Classes/PHPExcel/Shared/ZipStreamWrapper.php 第 69 行.
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_test' or c.relname = lower('cb_test'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.004994s ]
+SQL: select count(*) from cb_numberpool [ RunTime:0.000906s ]
+SQL: select * from cb_numberpool limit 17 offset 0 [ RunTime:0.000846s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004526s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004577s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000182s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000160s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000080s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000717s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000294s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000332s ]
+
+[ 2014-05-09T10:38:06+08:00 ] 113.116.31.30 /index.php/Blackcallednum/querynum
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000382s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+NOTIC: [2] stream_wrapper_unregister() [<a href='function.stream-wrapper-unregister'>function.stream-wrapper-unregister</a>]: Unable to unregister protocol zip:// /var/www/cardmanage/Public/Classes/PHPExcel/Shared/ZipStreamWrapper.php 第 69 行.
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_test' or c.relname = lower('cb_test'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.004993s ]
+SQL: select count(*) from cb_blacklist [ RunTime:0.000937s ]
+SQL: select * from cb_blacklist limit 17 offset 0 [ RunTime:0.000801s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004083s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000134s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000142s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000078s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000636s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000278s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000312s ]
+
+[ 2014-05-09T10:38:09+08:00 ] 113.116.31.30 /index.php/Queryphone/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000384s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.003154s ]
+NOTIC: [8] Undefined index: phonenum /var/www/cardmanage/Home/Lib/Action/QueryphoneAction.class.php 第 35 行.
+NOTIC: [8] Undefined variable: str /var/www/cardmanage/Home/Lib/Action/QueryphoneAction.class.php 第 68 行.
+SQL: SELECT COUNT(*) AS tp_count FROM cb_users LIMIT 1   [ RunTime:0.000298s ]
+SQL: SELECT * FROM cb_users ORDER BY registedate LIMIT 17 OFFSET 0   [ RunTime:0.000390s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer /var/www/cardmanage/Home/Runtime/Cache/29442bacb6ac93dcf6e6fc6f581e2664.php 第 57 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004484s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004527s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000216s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000150s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000078s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000735s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000275s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000311s ]
+
+[ 2014-05-09T10:38:21+08:00 ] 113.116.31.30 /index.php/Queryphone/updatephone?id=22
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000387s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000265s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.003141s ]
+SQL: SELECT * FROM cb_users WHERE ( id=22 )  [ RunTime:0.000326s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: up_cardmoney /var/www/cardmanage/Home/Runtime/Cache/cf1b9907f241301e0e46df96480ddf05.php 第 123 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005409s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005446s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000180s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000147s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000078s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000687s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000267s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000302s ]
+
+[ 2014-05-09T10:38:23+08:00 ] 113.116.31.30 /index.php/queryphone/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000386s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000272s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.003103s ]
+NOTIC: [8] Undefined index: bindtel /var/www/cardmanage/Home/Lib/Action/QueryphoneAction.class.php 第 23 行.
+NOTIC: [8] Undefined index: phonenum /var/www/cardmanage/Home/Lib/Action/QueryphoneAction.class.php 第 35 行.
+NOTIC: [8] Undefined variable: str /var/www/cardmanage/Home/Lib/Action/QueryphoneAction.class.php 第 68 行.
+SQL: SELECT COUNT(*) AS tp_count FROM cb_users LIMIT 1   [ RunTime:0.000297s ]
+SQL: SELECT * FROM cb_users ORDER BY registedate LIMIT 17 OFFSET 0   [ RunTime:0.000392s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer /var/www/cardmanage/Home/Runtime/Cache/29442bacb6ac93dcf6e6fc6f581e2664.php 第 57 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004259s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004294s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000195s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000147s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000077s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000201s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000712s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000267s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000301s ]
+
+[ 2014-05-09T10:38:39+08:00 ] 113.116.31.30 /index.php/Queryphone/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000388s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000265s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.003176s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) LIMIT 1   [ RunTime:0.000413s ]
+SQL: SELECT * FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) ORDER BY registedate LIMIT 17 OFFSET 0   [ RunTime:0.000349s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer /var/www/cardmanage/Home/Runtime/Cache/29442bacb6ac93dcf6e6fc6f581e2664.php 第 57 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004231s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004269s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000136s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000143s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000080s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000641s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000278s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000311s ]
+
+[ 2014-05-09T10:38:41+08:00 ] 113.116.31.30 /index.php/Queryphone/querybillrecord?id=18
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000378s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000261s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_billrecord' or c.relname = lower('cb_billrecord'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.003093s ]
+SQL: SELECT * FROM cb_billrecord WHERE ( userid=18 )  [ RunTime:0.000373s ]
+SQL: SELECT SUM(duration) AS tp_sum FROM cb_billrecord WHERE ( userid=18 ) LIMIT 1   [ RunTime:0.000232s ]
+SQL: SELECT SUM(cost) AS tp_sum FROM cb_billrecord WHERE ( userid=18 ) LIMIT 1   [ RunTime:0.000144s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: userdata /var/www/cardmanage/Home/Runtime/Cache/4ee92d84c570ce2d23709ef1eed8f11e.php 第 81 行.
+NOTIC: [8] Undefined variable: timer /var/www/cardmanage/Home/Runtime/Cache/4ee92d84c570ce2d23709ef1eed8f11e.php 第 162 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005076s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005112s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000200s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000152s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000086s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000193s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000725s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000268s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000306s ]
+
+[ 2014-05-09T10:39:13+08:00 ] 113.116.31.30 /index.php/Queryphone/queryrechargemsg?phonenum=18620382975&id=18
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000387s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_cards' or c.relname = lower('cb_cards'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.003220s ]
+SQL: SELECT id,money,cardnum,filltime FROM cb_cards WHERE ( bindtel=18620382975and status=2 )  [ RunTime:0.000522s ]
+SQL: SELECT SUM(money) AS tp_sum FROM cb_cards WHERE ( bindtel=18620382975and status=2 ) LIMIT 1   [ RunTime:0.000233s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: userdata /var/www/cardmanage/Home/Runtime/Cache/c7c34f2a8864b663b620422f26ecdda4.php 第 73 行.
+NOTIC: [8] Undefined variable: timer /var/www/cardmanage/Home/Runtime/Cache/c7c34f2a8864b663b620422f26ecdda4.php 第 145 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005228s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005264s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000167s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000148s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000080s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000692s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000278s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000315s ]
+
+[ 2014-05-09T10:40:03+08:00 ] 113.116.31.30 /index.php/Calltransfernum/querynum
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000390s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+NOTIC: [2] stream_wrapper_unregister() [<a href='function.stream-wrapper-unregister'>function.stream-wrapper-unregister</a>]: Unable to unregister protocol zip:// /var/www/cardmanage/Public/Classes/PHPExcel/Shared/ZipStreamWrapper.php 第 69 行.
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_test' or c.relname = lower('cb_test'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.004989s ]
+SQL: select count(*) from cb_numberpool [ RunTime:0.000931s ]
+SQL: select * from cb_numberpool limit 17 offset 0 [ RunTime:0.000757s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004490s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004542s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000184s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000149s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000081s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000717s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000290s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000327s ]
+
+[ 2014-05-09T10:40:44+08:00 ] 106.120.160.109 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+
+[ 2014-05-09T10:40:44+08:00 ] 106.120.160.109 /index.php/login/index.shtml
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000388s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000277s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /var/www/cardmanage/Home/Lib/Action/LoginAction.class.php:126) /var/www/cardmanage/Home/Lib/Action/PublicAction.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: erro /var/www/cardmanage/Home/Runtime/Cache/fe9703200f8417a0c6155a1fe6fdc2c0.php 第 31 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004133s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004170s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000140s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000151s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000083s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000670s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /var/www/cardmanage/Home/Lib/Action/LoginAction.class.php:126) /var/www/cardmanage/ThinkPHP/Lib/Core/View.class.php 第 95 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /var/www/cardmanage/Home/Lib/Action/LoginAction.class.php:126) /var/www/cardmanage/ThinkPHP/Lib/Core/View.class.php 第 96 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /var/www/cardmanage/Home/Lib/Action/LoginAction.class.php:126) /var/www/cardmanage/ThinkPHP/Lib/Core/View.class.php 第 97 行.
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000289s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000325s ]
+
+[ 2014-05-09T10:42:14+08:00 ] 220.181.132.19 /index.php/login/index.shtml
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000394s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /var/www/cardmanage/Home/Lib/Action/LoginAction.class.php:126) /var/www/cardmanage/Home/Lib/Action/PublicAction.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: erro /var/www/cardmanage/Home/Runtime/Cache/fe9703200f8417a0c6155a1fe6fdc2c0.php 第 31 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.003977s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004019s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000136s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000144s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000081s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000644s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /var/www/cardmanage/Home/Lib/Action/LoginAction.class.php:126) /var/www/cardmanage/ThinkPHP/Lib/Core/View.class.php 第 95 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /var/www/cardmanage/Home/Lib/Action/LoginAction.class.php:126) /var/www/cardmanage/ThinkPHP/Lib/Core/View.class.php 第 96 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /var/www/cardmanage/Home/Lib/Action/LoginAction.class.php:126) /var/www/cardmanage/ThinkPHP/Lib/Core/View.class.php 第 97 行.
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000282s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000319s ]
+
+[ 2014-05-09T10:42:22+08:00 ] 118.118.3.242 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000284s ]
+
+[ 2014-05-09T10:42:59+08:00 ] 220.181.132.200 /index.php/login/index.shtml
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000389s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000266s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /var/www/cardmanage/Home/Lib/Action/LoginAction.class.php:126) /var/www/cardmanage/Home/Lib/Action/PublicAction.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: erro /var/www/cardmanage/Home/Runtime/Cache/fe9703200f8417a0c6155a1fe6fdc2c0.php 第 31 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.003944s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003980s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000136s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000147s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000081s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000647s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /var/www/cardmanage/Home/Lib/Action/LoginAction.class.php:126) /var/www/cardmanage/ThinkPHP/Lib/Core/View.class.php 第 95 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /var/www/cardmanage/Home/Lib/Action/LoginAction.class.php:126) /var/www/cardmanage/ThinkPHP/Lib/Core/View.class.php 第 96 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /var/www/cardmanage/Home/Lib/Action/LoginAction.class.php:126) /var/www/cardmanage/ThinkPHP/Lib/Core/View.class.php 第 97 行.
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000286s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000322s ]
+
+[ 2014-05-09T10:43:42+08:00 ] 113.116.31.30 /index.php/Queryphone/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000391s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000266s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.003129s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) LIMIT 1   [ RunTime:0.000401s ]
+SQL: SELECT * FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) ORDER BY registedate LIMIT 17 OFFSET 0   [ RunTime:0.000352s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer /var/www/cardmanage/Home/Runtime/Cache/29442bacb6ac93dcf6e6fc6f581e2664.php 第 57 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004264s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000135s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000144s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000079s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000634s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000268s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000302s ]
+
+[ 2014-05-09T10:43:44+08:00 ] 113.116.31.30 /index.php/Queryphone/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000382s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.003139s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) LIMIT 1   [ RunTime:0.000390s ]
+SQL: SELECT * FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) ORDER BY registedate LIMIT 17 OFFSET 0   [ RunTime:0.000360s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer /var/www/cardmanage/Home/Runtime/Cache/29442bacb6ac93dcf6e6fc6f581e2664.php 第 57 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004232s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004268s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000132s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000141s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000077s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000623s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000266s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000300s ]
+
+[ 2014-05-09T10:43:45+08:00 ] 113.116.31.30 /index.php/Queryphone/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000383s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.003148s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) LIMIT 1   [ RunTime:0.000401s ]
+SQL: SELECT * FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) ORDER BY registedate LIMIT 17 OFFSET 0   [ RunTime:0.000366s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer /var/www/cardmanage/Home/Runtime/Cache/29442bacb6ac93dcf6e6fc6f581e2664.php 第 57 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004153s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004189s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000132s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000142s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000077s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000623s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000266s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000300s ]
+
+[ 2014-05-09T10:43:46+08:00 ] 113.116.31.30 /index.php/Queryphone/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000392s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000265s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.003152s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) LIMIT 1   [ RunTime:0.000399s ]
+SQL: SELECT * FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) ORDER BY registedate LIMIT 17 OFFSET 0   [ RunTime:0.000357s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer /var/www/cardmanage/Home/Runtime/Cache/29442bacb6ac93dcf6e6fc6f581e2664.php 第 57 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004163s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004199s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000132s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000141s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000077s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000624s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000267s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000300s ]
+
+[ 2014-05-09T10:43:48+08:00 ] 113.116.31.30 /index.php/Queryphone/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000390s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.003159s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) LIMIT 1   [ RunTime:0.000390s ]
+SQL: SELECT * FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) ORDER BY registedate LIMIT 17 OFFSET 0   [ RunTime:0.000361s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer /var/www/cardmanage/Home/Runtime/Cache/29442bacb6ac93dcf6e6fc6f581e2664.php 第 57 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004179s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004215s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000132s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000142s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000077s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000623s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000266s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000300s ]
+
+[ 2014-05-09T10:43:49+08:00 ] 113.116.31.30 /index.php/Queryphone/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000384s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.003153s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) LIMIT 1   [ RunTime:0.000391s ]
+SQL: SELECT * FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) ORDER BY registedate LIMIT 17 OFFSET 0   [ RunTime:0.000348s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer /var/www/cardmanage/Home/Runtime/Cache/29442bacb6ac93dcf6e6fc6f581e2664.php 第 57 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004214s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000132s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000142s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000077s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000623s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000266s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000298s ]
+
+[ 2014-05-09T10:43:51+08:00 ] 113.116.31.30 /index.php/Queryphone/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000387s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.003167s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) LIMIT 1   [ RunTime:0.000392s ]
+SQL: SELECT * FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) ORDER BY registedate LIMIT 17 OFFSET 0   [ RunTime:0.000361s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer /var/www/cardmanage/Home/Runtime/Cache/29442bacb6ac93dcf6e6fc6f581e2664.php 第 57 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004163s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004200s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000133s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000141s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000076s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000624s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000267s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000301s ]
+
+[ 2014-05-09T10:43:53+08:00 ] 113.116.31.30 /index.php/Queryphone/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000385s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.003137s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) LIMIT 1   [ RunTime:0.000390s ]
+SQL: SELECT * FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) ORDER BY registedate LIMIT 17 OFFSET 0   [ RunTime:0.000366s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer /var/www/cardmanage/Home/Runtime/Cache/29442bacb6ac93dcf6e6fc6f581e2664.php 第 57 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004183s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004219s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000132s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000142s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000077s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000623s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000266s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000300s ]
+
+[ 2014-05-09T10:43:54+08:00 ] 113.116.31.30 /index.php/Queryphone/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000384s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.003161s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) LIMIT 1   [ RunTime:0.000401s ]
+SQL: SELECT * FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) ORDER BY registedate LIMIT 17 OFFSET 0   [ RunTime:0.000359s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer /var/www/cardmanage/Home/Runtime/Cache/29442bacb6ac93dcf6e6fc6f581e2664.php 第 57 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004157s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004193s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000132s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000141s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000077s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000623s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000266s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000300s ]
+
+[ 2014-05-09T10:43:56+08:00 ] 113.116.31.30 /index.php/Calltransfernum/querynum
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000389s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000268s ]
+NOTIC: [2] stream_wrapper_unregister() [<a href='function.stream-wrapper-unregister'>function.stream-wrapper-unregister</a>]: Unable to unregister protocol zip:// /var/www/cardmanage/Public/Classes/PHPExcel/Shared/ZipStreamWrapper.php 第 69 行.
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_test' or c.relname = lower('cb_test'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.004991s ]
+SQL: select count(*) from cb_numberpool [ RunTime:0.000928s ]
+SQL: select * from cb_numberpool limit 17 offset 0 [ RunTime:0.000831s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004335s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004389s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000182s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000149s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000080s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000716s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000291s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000328s ]
+
+[ 2014-05-09T10:43:59+08:00 ] 113.116.31.30 /index.php/Queryphone/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000388s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.003158s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) LIMIT 1   [ RunTime:0.000396s ]
+SQL: SELECT * FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) ORDER BY registedate LIMIT 17 OFFSET 0   [ RunTime:0.000360s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer /var/www/cardmanage/Home/Runtime/Cache/29442bacb6ac93dcf6e6fc6f581e2664.php 第 57 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004420s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004463s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000139s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000148s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000083s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000658s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000289s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000326s ]
+
+[ 2014-05-09T10:44:00+08:00 ] 113.116.31.30 /index.php/Queryphone/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000392s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.003169s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) LIMIT 1   [ RunTime:0.000409s ]
+SQL: SELECT * FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) ORDER BY registedate LIMIT 17 OFFSET 0   [ RunTime:0.000360s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer /var/www/cardmanage/Home/Runtime/Cache/29442bacb6ac93dcf6e6fc6f581e2664.php 第 57 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004398s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004440s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000138s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000150s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000082s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000661s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000285s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000322s ]
+
+[ 2014-05-09T10:44:00+08:00 ] 113.116.31.30 /index.php/Queryphone/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000388s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000276s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.003152s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) LIMIT 1   [ RunTime:0.000402s ]
+SQL: SELECT * FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) ORDER BY registedate LIMIT 17 OFFSET 0   [ RunTime:0.000359s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer /var/www/cardmanage/Home/Runtime/Cache/29442bacb6ac93dcf6e6fc6f581e2664.php 第 57 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004442s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004485s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000139s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000148s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000083s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000684s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000286s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000322s ]
+
+[ 2014-05-09T10:44:02+08:00 ] 113.116.31.30 /index.php/Queryphone/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000394s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.003154s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) LIMIT 1   [ RunTime:0.000393s ]
+SQL: SELECT * FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) ORDER BY registedate LIMIT 17 OFFSET 0   [ RunTime:0.000359s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer /var/www/cardmanage/Home/Runtime/Cache/29442bacb6ac93dcf6e6fc6f581e2664.php 第 57 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004391s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004432s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000137s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000149s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000082s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000283s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000746s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000285s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000321s ]
+
+[ 2014-05-09T10:44:02+08:00 ] 113.116.31.30 /index.php/Queryphone/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000382s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000284s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.003154s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) LIMIT 1   [ RunTime:0.000389s ]
+SQL: SELECT * FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) ORDER BY registedate LIMIT 17 OFFSET 0   [ RunTime:0.000361s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer /var/www/cardmanage/Home/Runtime/Cache/29442bacb6ac93dcf6e6fc6f581e2664.php 第 57 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004443s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004485s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000138s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000148s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000082s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000187s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000652s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000285s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000322s ]
+
+[ 2014-05-09T10:44:03+08:00 ] 113.116.31.30 /index.php/Queryphone/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000388s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000276s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.003180s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) LIMIT 1   [ RunTime:0.000396s ]
+SQL: SELECT * FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) ORDER BY registedate LIMIT 17 OFFSET 0   [ RunTime:0.000357s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer /var/www/cardmanage/Home/Runtime/Cache/29442bacb6ac93dcf6e6fc6f581e2664.php 第 57 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004397s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004440s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000137s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000147s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000083s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000651s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000286s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000323s ]
+
+[ 2014-05-09T10:44:10+08:00 ] 113.116.31.30 /index.php/Queryphone/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000386s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000266s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.003135s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) LIMIT 1   [ RunTime:0.000393s ]
+SQL: SELECT * FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) ORDER BY registedate LIMIT 17 OFFSET 0   [ RunTime:0.000357s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer /var/www/cardmanage/Home/Runtime/Cache/29442bacb6ac93dcf6e6fc6f581e2664.php 第 57 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004287s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000135s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000144s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000080s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000635s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000266s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000300s ]
+
+[ 2014-05-09T10:44:11+08:00 ] 113.116.31.30 /index.php/Queryphone/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000377s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000261s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.003137s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) LIMIT 1   [ RunTime:0.000393s ]
+SQL: SELECT * FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) ORDER BY registedate LIMIT 17 OFFSET 0   [ RunTime:0.000359s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer /var/www/cardmanage/Home/Runtime/Cache/29442bacb6ac93dcf6e6fc6f581e2664.php 第 57 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004143s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004178s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000138s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000142s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000078s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000631s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000265s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000298s ]
+
+[ 2014-05-09T10:44:12+08:00 ] 113.116.31.30 /index.php/Queryphone/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000384s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000259s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.003130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) LIMIT 1   [ RunTime:0.000387s ]
+SQL: SELECT * FROM cb_users WHERE ( phonenum LIKE '%1862038%' ) ORDER BY registedate LIMIT 17 OFFSET 0   [ RunTime:0.000359s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer /var/www/cardmanage/Home/Runtime/Cache/29442bacb6ac93dcf6e6fc6f581e2664.php 第 57 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004140s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004176s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000133s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000143s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000078s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000625s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000264s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000298s ]
+
+[ 2014-05-09T10:44:19+08:00 ] 113.116.31.30 /index.php/Calltransfernum/querynum
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000380s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000261s ]
+NOTIC: [2] stream_wrapper_unregister() [<a href='function.stream-wrapper-unregister'>function.stream-wrapper-unregister</a>]: Unable to unregister protocol zip:// /var/www/cardmanage/Public/Classes/PHPExcel/Shared/ZipStreamWrapper.php 第 69 行.
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_test' or c.relname = lower('cb_test'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.004992s ]
+SQL: select count(*) from cb_numberpool [ RunTime:0.000925s ]
+SQL: select * from cb_numberpool limit 17 offset 0 [ RunTime:0.000792s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.003968s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004017s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000156s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000143s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000077s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000189s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000658s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000268s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000307s ]
+
+[ 2014-05-09T10:44:21+08:00 ] 113.116.31.30 /index.php/Queryphone/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000378s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000260s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.003147s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cb_users WHERE ( phonenum LIKE '%1%' ) LIMIT 1   [ RunTime:0.000392s ]
+SQL: SELECT * FROM cb_users WHERE ( phonenum LIKE '%1%' ) ORDER BY registedate LIMIT 17 OFFSET 0   [ RunTime:0.000421s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer /var/www/cardmanage/Home/Runtime/Cache/29442bacb6ac93dcf6e6fc6f581e2664.php 第 57 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004319s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000195s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000147s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000077s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000703s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000266s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000300s ]
+
+[ 2014-05-09T10:44:26+08:00 ] 113.116.31.30 /index.php/Queryphone/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000379s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000260s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.003135s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cb_users WHERE ( phonenum LIKE '%1%' ) LIMIT 1   [ RunTime:0.000393s ]
+SQL: SELECT * FROM cb_users WHERE ( phonenum LIKE '%1%' ) ORDER BY registedate LIMIT 17 OFFSET 0   [ RunTime:0.000419s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer /var/www/cardmanage/Home/Runtime/Cache/29442bacb6ac93dcf6e6fc6f581e2664.php 第 57 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004210s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004247s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000194s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000149s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000077s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000704s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000266s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000300s ]
+
+[ 2014-05-09T10:44:27+08:00 ] 113.116.31.30 /index.php/Queryphone/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000378s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000260s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.003124s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cb_users WHERE ( phonenum LIKE '%1%' ) LIMIT 1   [ RunTime:0.000386s ]
+SQL: SELECT * FROM cb_users WHERE ( phonenum LIKE '%1%' ) ORDER BY registedate LIMIT 17 OFFSET 0   [ RunTime:0.000419s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer /var/www/cardmanage/Home/Runtime/Cache/29442bacb6ac93dcf6e6fc6f581e2664.php 第 57 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.004265s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004300s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000193s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000148s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000077s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000703s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000265s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000300s ]
+
+[ 2014-05-09T10:55:49+08:00 ] 178.124.223.18 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+
+[ 2014-05-09T10:57:49+08:00 ] 125.68.15.121 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000274s ]
+
+[ 2014-05-09T11:02:48+08:00 ] 113.17.162.252 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000286s ]
+
+[ 2014-05-09T11:23:30+08:00 ] 171.111.194.206 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000282s ]
+
+[ 2014-05-09T11:54:49+08:00 ] 125.26.177.204 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+
+[ 2014-05-09T12:22:54+08:00 ] 182.151.3.18 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000281s ]
+
+[ 2014-05-09T12:45:50+08:00 ] 118.183.6.33 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000281s ]
+
+[ 2014-05-09T13:04:49+08:00 ] 61.139.248.153 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000276s ]
+
+[ 2014-05-09T13:39:37+08:00 ] 182.149.37.208 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+
+[ 2014-05-09T13:39:54+08:00 ] 223.240.173.123 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000276s ]
+
+[ 2014-05-09T14:04:40+08:00 ] 49.83.104.162 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000281s ]
+
+[ 2014-05-09T14:21:15+08:00 ] 171.222.21.187 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+
+[ 2014-05-09T14:22:53+08:00 ] 218.65.20.164 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+
+[ 2014-05-09T14:22:53+08:00 ] 218.65.20.164 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000271s ]
+
+[ 2014-05-09T14:22:53+08:00 ] 218.65.20.164 /index.php/login/index.shtml
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000389s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /var/www/cardmanage/Home/Lib/Action/LoginAction.class.php:126) /var/www/cardmanage/Home/Lib/Action/PublicAction.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: erro /var/www/cardmanage/Home/Runtime/Cache/fe9703200f8417a0c6155a1fe6fdc2c0.php 第 31 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.003837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003873s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000136s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000149s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000080s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000642s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /var/www/cardmanage/Home/Lib/Action/LoginAction.class.php:126) /var/www/cardmanage/ThinkPHP/Lib/Core/View.class.php 第 95 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /var/www/cardmanage/Home/Lib/Action/LoginAction.class.php:126) /var/www/cardmanage/ThinkPHP/Lib/Core/View.class.php 第 96 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /var/www/cardmanage/Home/Lib/Action/LoginAction.class.php:126) /var/www/cardmanage/ThinkPHP/Lib/Core/View.class.php 第 97 行.
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000266s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000299s ]
+
+[ 2014-05-09T14:22:53+08:00 ] 218.65.20.164 /index.php/login/index.shtml
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000384s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /var/www/cardmanage/Home/Lib/Action/LoginAction.class.php:126) /var/www/cardmanage/Home/Lib/Action/PublicAction.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: erro /var/www/cardmanage/Home/Runtime/Cache/fe9703200f8417a0c6155a1fe6fdc2c0.php 第 31 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.003816s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003850s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000136s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000144s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000080s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000642s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /var/www/cardmanage/Home/Lib/Action/LoginAction.class.php:126) /var/www/cardmanage/ThinkPHP/Lib/Core/View.class.php 第 95 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /var/www/cardmanage/Home/Lib/Action/LoginAction.class.php:126) /var/www/cardmanage/ThinkPHP/Lib/Core/View.class.php 第 96 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /var/www/cardmanage/Home/Lib/Action/LoginAction.class.php:126) /var/www/cardmanage/ThinkPHP/Lib/Core/View.class.php 第 97 行.
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000269s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000306s ]
+
+[ 2014-05-09T15:22:14+08:00 ] 220.173.190.36 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000282s ]
+
+[ 2014-05-09T15:22:43+08:00 ] 116.11.98.104 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000276s ]
+
+[ 2014-05-09T15:49:14+08:00 ] 1.163.197.238 mx3.mail2000.com.tw:25
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000281s ]
+
+[ 2014-05-09T16:40:02+08:00 ] 27.224.0.24 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+
+[ 2014-05-09T16:43:53+08:00 ] 182.131.80.206 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000287s ]
+
+[ 2014-05-09T17:29:45+08:00 ] 180.141.109.198 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000281s ]
+
+[ 2014-05-09T17:39:35+08:00 ] 182.150.141.92 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000281s ]
+
+[ 2014-05-09T18:08:13+08:00 ] 116.8.61.11 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000278s ]
+
+[ 2014-05-09T18:30:50+08:00 ] 116.11.217.15 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000282s ]
+
+[ 2014-05-09T18:39:56+08:00 ] 182.129.74.93 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000285s ]
+
+[ 2014-05-09T19:14:42+08:00 ] 222.218.36.253 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+
+[ 2014-05-09T19:29:58+08:00 ] 113.13.240.176 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000281s ]
+
+[ 2014-05-09T19:42:14+08:00 ] 182.141.15.11 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000279s ]
+
+[ 2014-05-09T19:47:20+08:00 ] 116.11.208.184 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000276s ]
+
+[ 2014-05-09T19:53:32+08:00 ] 118.116.16.2 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000279s ]
+
+[ 2014-05-09T19:56:13+08:00 ] 85.100.126.93 http://www.yahoo.com/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+
+[ 2014-05-09T20:14:48+08:00 ] 182.201.37.42 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000282s ]
+
+[ 2014-05-09T20:19:21+08:00 ] 183.38.209.21 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+
+[ 2014-05-09T20:23:51+08:00 ] 111.172.230.173 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+
+[ 2014-05-09T22:19:02+08:00 ] 180.108.241.65 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+
+[ 2014-05-09T22:33:12+08:00 ] 37.213.10.52 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000278s ]
+
+[ 2014-05-09T22:57:15+08:00 ] 1.163.3.2 mx0.mail2000.com.tw:25
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+
+[ 2014-05-09T23:18:22+08:00 ] 218.89.123.150 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000281s ]
+
+[ 2014-05-09T23:42:16+08:00 ] 202.53.8.82 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+
+[ 2014-05-09T23:50:01+08:00 ] 118.124.206.144 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000279s ]
+
+[ 2014-05-09T23:52:37+08:00 ] 85.105.232.55 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000272s ]
+
+[ 2014-05-09T23:56:38+08:00 ] 118.121.2.216 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000276s ]
+

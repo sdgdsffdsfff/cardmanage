@@ -1,0 +1,98 @@
+<?php if (!defined('THINK_PATH')) exit();?><html>
+	<head>
+		<title>管理平台</title>
+		<meta name="Author" content="赵兴壮" />
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css" >
+		<script src="__PUBLIC__/js/common.js"></script>
+		<script src="__PUBLIC__/js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/js/tc.min.js"></script>
+		<script type="text/javascript">
+
+					function ajaxdelete(id){
+							if(window.confirm("您确定删除该费率?"))
+							{                      
+								  $.post("__APP__/Ratemanage/delete",
+								  	{id:id},
+								    function(data){
+								    
+									    if (data['status']=="success") {
+									    	alert(data['message']);
+									    	$('#tr'+id).remove();
+
+									    }else if (data['status']=="failed") 
+									    {
+									    	alert(data['message']);
+									    }				    
+								   },
+								   "json");//这里返回的类型有：json,html,xml,text
+									}
+						}
+
+		</script>
+</head>
+<body>
+<div id="main">
+<div class="head-dark-box">
+					<div class="tit">内容管理&gt;费率管理&gt;费率管理</div>
+			</div>
+			   <br/><br/><br/>
+   <div style="width:90%;padding-left:70px" align="left">
+   <form name="Form" method="post"  target="main">
+       代理商：<select  id="id"  onchange="window.location='__APP__/Ratemanage/qubyacc?id='+document.Form.id.options[selectedIndex].value">
+            <option value="<?php echo $id;?>">管理员</option>
+			<?php  foreach ($accountdata as $value) { if($value['power']!=1){ if($value['id']==$accountid) { echo '<option value ="'.$value['id'].'" selected >'.$value['loginname'].'</option>'; } else { echo '<option value ="'.$value['id'].'">'.$value['loginname'].'</option>'; } } } ?>
+		</select>
+		<span style="color:red">&nbsp;&nbsp;&nbsp;&nbsp;如果代理商没有设定费率,则执行管理员费率。</span>
+	 </form>
+   </div>
+			   <br/>
+			   <br/>
+<table rules="all" id="MyGridView" style="border-color:Black;border-width:1px;border-style:solid;font-size:10pt;height:10px;width:90%;border-collapse:collapse;" cellpadding="3" cellspacing="0" align="Center" border="1">
+	<tbody>
+
+		<tr>
+			    <td colspan="7">
+						<a href="__APP__/Ratemanage/add?ownid=<?php echo $id;?>">添加费率</a> 
+						<a href="__APP__/Ratemanage/defaultrate?ownid=<?php echo $id;?>">默认费率</a>
+				</td>			
+		</tr>
+		<tr style="background-color:#E5E5E5;font-weight:bold;height:15px;">
+			<th scope="col">编号</th>
+			<th scope="col">账号</th>
+		
+			<th scope="col">开始时间</th>
+			<th scope="col">结束时间</th>
+			<th scope="col">费率</th>
+			<th scope="col">修改</th>
+		</tr>
+
+	 
+		   <?php  foreach ($feedata as $key => $pervalue) { if(($pervalue['starttime']=="0000")&&($pervalue['endtime']=="0000")){ } else { echo '<tr id="tr'.$pervalue['id'].'">
+			  		    		  <td>'.$key.'</td><td>'.$pervalue['loginname'].'</td><td>'.$pervalue['starttime'].'</td>
+			  		              <td>'.$pervalue['endtime'].'</td><td>'.$pervalue['fee'].'</td>
+			  		              <td align="center">
+			  		              <a href="__APP__/Ratemanage/updateratedata?id='.$pervalue['id'].'&ownid='.$pervalue['ownid'].'">修改</a>
+			  		              <a id="lock" style="cursor:pointer" onclick="ajaxdelete('.$pervalue['id'].')" >删除</a>
+			  		              </td>
+			  		         </tr>'; } } ?>
+			  
+	 
+
+		 <tr>       
+		           <?php
+ if (empty($feedata)) { echo "<td colspan='6' align='center' style='color:red;'> 该代理商没有设置费率,执行管理员费率</td>"; } if (!empty($defaultfeedata)){ echo '<td colspan="6" align="center" style="color:red;">如果不在以上时间段执行默认费率 '.$defaultfeedata[0]['fee'].'元</td>'; } else { echo "<td colspan='6' align='center' style='color:red;'> 您没有设置默认费率,执行管理员默认费率</td>"; } ?>
+                  
+         </tr>
+
+		</tbody>
+</table>
+
+
+
+    <br/><br/><br/><br/><br/>
+	<div id="timer">
+	<p><span class="exetime">当前脚本执行用时</span><span class="red_font"><?php echo ($timer); ?></span>秒&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>	
+    </div>
+
+</body>
+</html>

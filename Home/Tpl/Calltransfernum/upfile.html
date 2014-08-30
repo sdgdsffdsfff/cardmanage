@@ -1,0 +1,97 @@
+<html>
+	<head>
+		<title>管理平台</title>
+		<meta name="Author" content="赵兴壮" />
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css" >
+		<script src="__PUBLIC__/js/common.js"></script>
+		<script src="__PUBLIC__/js/jquery-1.7.2.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/js/tc.min.js"></script>
+		<script type="text/javascript">
+
+					function ajaxdelete(id){
+
+                          //alert(id);                        
+						  $.post("__APP__/Calltransfernum/delete",
+						  	{id:id},
+						    function(data){
+						    
+						    if (data['status']=="success") {
+						    	alert(data['message']);
+						    	$('#tr'+id).remove();
+
+						    }else if (data['status']=="failed") 
+						    {
+						    	alert(data['message']);
+						    }				    
+						  },
+						   "json");//这里返回的类型有：json,html,xml,text
+                          
+						}
+
+		</script>
+</head>
+<body>
+<div id="main">
+<div class="head-dark-box">
+					<div class="tit">内容管理&gt;互转号码管理</div>
+			</div>
+			<br/><br/><br/>
+
+<table rules="all" id="MyGridView" style="border-color:Black;border-width:1px;border-style:solid;font-size:10pt;height:10px;width:50%;border-collapse:collapse;" cellpadding="3" cellspacing="0" align="Center" border="1">
+	<tbody>
+
+		<tr>
+			<td colspan="5" >
+					
+						<a href="__APP__/Calltransfernum/add">添加呼转号码</a> 		
+						<a href="__APP__/Calltransfernum/bulkadd">/批量导入呼转号码</a>	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/
+						导出互转号码
+						<a href="__APP__/Calltransfernum/download?id=1">【文本文档】</a>
+						<a href="__APP__/Calltransfernum/download?id=2">【EXCEL】</a>
+				
+			</td>	
+		</tr>
+		<tr style="background-color:#E5E5E5;font-weight:bold;height:15px;">
+			<th scope="col" style="width:30%">编号</th>
+			<th scope="col">号码</th>
+			<th scope="col">操作</th>
+		</tr>
+
+		   <?php 
+		       $key=1;
+			   foreach ($transfernumdata as   $pervalue) {		  			  		    
+			  		    echo '<tr id="tr'.$pervalue['num'].'">
+			  		    		  <td >'.$key.'</td><td>'.$pervalue['num'].'</td>
+			  		              <td align="center">
+			  		              <a id="lock"  style="cursor:pointer" onclick="ajaxdelete('.$pervalue['num'].')" >删除</a>
+			  		              </td>
+			  		         </tr>';	
+			  		         $key++;		  		
+			   }
+		   ?>
+			  
+		<tr><td  align="center" colspan="3">{$page}</td></tr>
+   
+                 <?php 
+                 		echo '<tr><td colspan="3" align="center" style="color:red;">';
+                 		foreach ($addresult as $key => $value) {
+                 			echo $value.'<br/>';
+                 		}
+                 		foreach ($checkresult as $key => $value) {
+                 			echo $value.'<br>';
+                 		}
+                 		echo '</tr></td>';
+                 ?>
+                 
+        
+		</tbody>
+		
+</table>
+
+    <br/><br/><br/><br/><br/>
+	<div id="timer">
+	<p><span class="exetime">当前脚本执行用时</span><span class="red_font">{$timer}</span>秒&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>	
+    </div>
+
+</body>
+</html>

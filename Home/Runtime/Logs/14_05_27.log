@@ -1,0 +1,787 @@
+[ 2014-05-27T16:32:17+08:00 ] 127.0.0.1 /cardmanage/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.013727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.039793s ]
+
+[ 2014-05-27T16:32:18+08:00 ] 127.0.0.1 /cardmanage/index.php?m=login&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.015883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016079s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: erro C:\wamp\www\cardmanage\Home\Runtime\Cache\fe9703200f8417a0c6155a1fe6fdc2c0.php 第 31 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.168113s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.168284s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.019052s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.050118s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.012370s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001331s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.083335s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001278s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001425s ]
+
+[ 2014-05-27T16:32:19+08:00 ] 127.0.0.1 /cardmanage/index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.040270s ]
+INFO: [ route_check ] --END-- [ RunTime:0.040473s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.013238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013423s ]
+
+[ 2014-05-27T16:32:32+08:00 ] 127.0.0.1 /cardmanage/index.php/Login/islogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.007755s ]
+INFO: [ route_check ] --END-- [ RunTime:0.007939s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.008189s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008353s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_account' or c.relname = lower('cb_account'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.145522s ]
+SQL: SELECT * FROM cb_account WHERE ( loginname='admin' and loginpwd='e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.024954s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_power' or c.relname = lower('cb_power'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.021882s ]
+SQL: SELECT * FROM cb_power WHERE ( accountid=1 ) LIMIT 1   [ RunTime:0.022207s ]
+
+[ 2014-05-27T16:32:32+08:00 ] 127.0.0.1 /cardmanage/index.php/Index/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.015514s ]
+INFO: [ route_check ] --END-- [ RunTime:0.015715s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.009931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010090s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.092868s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093067s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.023949s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.016732s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.005583s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.005161s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.051949s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.006454s ]
+INFO: [ view_end ] --END-- [ RunTime:0.006610s ]
+
+[ 2014-05-27T16:32:33+08:00 ] 127.0.0.1 /cardmanage/index.php/Index/top
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.015794s ]
+INFO: [ route_check ] --END-- [ RunTime:0.016004s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.046340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.046531s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_account' or c.relname = lower('cb_account'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.008363s ]
+SQL: SELECT balance FROM cb_account WHERE ( id=1 ) LIMIT 1   [ RunTime:0.001241s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.215010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.215195s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.019741s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.016717s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.010958s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.011268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.059166s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001275s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001436s ]
+
+[ 2014-05-27T16:32:33+08:00 ] 127.0.0.1 /cardmanage/index.php/Index/menu
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.016533s ]
+INFO: [ route_check ] --END-- [ RunTime:0.016698s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.011352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011536s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_account' or c.relname = lower('cb_account'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.008301s ]
+SQL: SELECT id,loginname FROM cb_account WHERE ( ownid=1 )  [ RunTime:0.001257s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.101956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102175s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.014583s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.008358s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001121s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001401s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.025911s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001370s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001516s ]
+
+[ 2014-05-27T16:32:34+08:00 ] 127.0.0.1 /cardmanage/index.php/Index/bottom
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.015599s ]
+INFO: [ route_check ] --END-- [ RunTime:0.015786s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.011814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012023s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.273448s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.273653s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.022995s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.025060s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.006304s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.056076s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001201s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001357s ]
+
+[ 2014-05-27T16:32:34+08:00 ] 127.0.0.1 /cardmanage/index.php/Index/main
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.016404s ]
+INFO: [ route_check ] --END-- [ RunTime:0.016614s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.011710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011962s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.216567s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.216783s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.016565s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.016774s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001596s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001561s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.036960s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001271s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001429s ]
+
+[ 2014-05-27T16:32:39+08:00 ] 127.0.0.1 /cardmanage/index.php/Querycard/download
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.010559s ]
+INFO: [ route_check ] --END-- [ RunTime:0.010761s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.008234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008438s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_cards' or c.relname = lower('cb_cards'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.014722s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\cardmanage\Home\Lib\Action\QuerycardAction.class.php 第 201 行.
+SQL: SELECT * FROM cb_cards ORDER BY cardnum ASC  [ RunTime:0.019244s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_account' or c.relname = lower('cb_account'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.004411s ]
+SQL: SELECT id,loginname FROM cb_account  [ RunTime:0.001175s ]
+NOTIC: [8] Undefined index: 11 C:\wamp\www\cardmanage\Home\Lib\Action\QuerycardAction.class.php 第 333 行.
+
+[ 2014-05-27T16:33:06+08:00 ] 127.0.0.1 /cardmanage/index.php/Ratemanage/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.009754s ]
+INFO: [ route_check ] --END-- [ RunTime:0.009947s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.021332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021541s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_fee' or c.relname = lower('cb_fee'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.021963s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_account' or c.relname = lower('cb_account'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.004246s ]
+SQL: SELECT id FROM cb_account WHERE ( ownid = 0 ) LIMIT 1   [ RunTime:0.001237s ]
+SQL: SELECT * FROM cb_fee WHERE ( ownid=1 ) ORDER BY id asc  [ RunTime:0.022951s ]
+SQL: SELECT id,loginname FROM cb_account  [ RunTime:0.000796s ]
+SQL: SELECT * FROM cb_fee WHERE ( starttime='0000'and endtime='0000' and ownid =1 )  [ RunTime:0.001383s ]
+SQL: SELECT id,loginname,power FROM cb_account  [ RunTime:0.000715s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: accountid C:\wamp\www\cardmanage\Home\Runtime\Cache\a67f6b79c2968476618f0b3a68ac87f1.php 第 43 行.
+NOTIC: [8] Undefined variable: accountid C:\wamp\www\cardmanage\Home\Runtime\Cache\a67f6b79c2968476618f0b3a68ac87f1.php 第 43 行.
+NOTIC: [8] Undefined variable: accountid C:\wamp\www\cardmanage\Home\Runtime\Cache\a67f6b79c2968476618f0b3a68ac87f1.php 第 43 行.
+NOTIC: [8] Undefined variable: accountid C:\wamp\www\cardmanage\Home\Runtime\Cache\a67f6b79c2968476618f0b3a68ac87f1.php 第 43 行.
+NOTIC: [8] Undefined variable: accountid C:\wamp\www\cardmanage\Home\Runtime\Cache\a67f6b79c2968476618f0b3a68ac87f1.php 第 43 行.
+NOTIC: [8] Undefined variable: accountid C:\wamp\www\cardmanage\Home\Runtime\Cache\a67f6b79c2968476618f0b3a68ac87f1.php 第 43 行.
+NOTIC: [8] Undefined variable: accountid C:\wamp\www\cardmanage\Home\Runtime\Cache\a67f6b79c2968476618f0b3a68ac87f1.php 第 43 行.
+NOTIC: [8] Undefined variable: accountid C:\wamp\www\cardmanage\Home\Runtime\Cache\a67f6b79c2968476618f0b3a68ac87f1.php 第 43 行.
+NOTIC: [8] Undefined variable: accountid C:\wamp\www\cardmanage\Home\Runtime\Cache\a67f6b79c2968476618f0b3a68ac87f1.php 第 43 行.
+NOTIC: [8] Undefined variable: accountid C:\wamp\www\cardmanage\Home\Runtime\Cache\a67f6b79c2968476618f0b3a68ac87f1.php 第 43 行.
+NOTIC: [8] Undefined variable: accountid C:\wamp\www\cardmanage\Home\Runtime\Cache\a67f6b79c2968476618f0b3a68ac87f1.php 第 43 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.146208s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.146393s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.014130s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.008222s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001022s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.025043s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001203s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001359s ]
+
+[ 2014-05-27T16:33:09+08:00 ] 127.0.0.1 /cardmanage/index.php/Changecdstatus/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.008337s ]
+INFO: [ route_check ] --END-- [ RunTime:0.008534s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.009904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010083s ]
+NOTIC: [8] Undefined variable: carddata C:\wamp\www\cardmanage\Home\Lib\Action\ChangecdstatusAction.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.138065s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.138310s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.014801s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.025097s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000847s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000942s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.042174s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001028s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001190s ]
+
+[ 2014-05-27T16:33:11+08:00 ] 127.0.0.1 /cardmanage/index.php/ChangecdstatusBy/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.009649s ]
+INFO: [ route_check ] --END-- [ RunTime:0.009854s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.041096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.041583s ]
+NOTIC: [8] Undefined variable: carddata C:\wamp\www\cardmanage\Home\Lib\Action\ChangecdstatusByAction.class.php 第 12 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.329771s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.329987s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.015414s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.024976s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000905s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.042846s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001301s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001473s ]
+
+[ 2014-05-27T16:33:14+08:00 ] 127.0.0.1 /cardmanage/index.php/Authority/cardset
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.009648s ]
+INFO: [ route_check ] --END-- [ RunTime:0.009841s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.046457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.046628s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_card_generate_rule' or c.relname = lower('cb_card_generate_rule'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.008406s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cb_card_generate_rule r LEFT JOIN cb_account c ON c.id=r.account_id LIMIT 1   [ RunTime:0.044031s ]
+SQL: SELECT r.*,c.loginname FROM cb_card_generate_rule r LEFT JOIN cb_account c ON c.id=r.account_id ORDER BY r.id ASC LIMIT 10 OFFSET 0   [ RunTime:0.001800s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.129320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.129521s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.014350s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.008485s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000994s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001129s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.025412s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001086s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001235s ]
+
+[ 2014-05-27T16:33:16+08:00 ] 127.0.0.1 /cardmanage/index.php/card/index.php?m=amount&a=index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.039142s ]
+INFO: [ route_check ] --END-- [ RunTime:0.039347s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.044571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.044784s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_account' or c.relname = lower('cb_account'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.009163s ]
+SQL: SELECT id,loginname FROM cb_account WHERE ( ownid=1 ) ORDER BY id ASC  [ RunTime:0.001702s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_amount_setting' or c.relname = lower('cb_amount_setting'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.003775s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SELECT COUNT(*) AS tp_count FROM cb_amount_setting LIMIT 1   [ RunTime:0.007311s ]
+SQL: SELECT * FROM cb_amount_setting ORDER BY id ASC LIMIT 15 OFFSET 0   [ RunTime:0.001326s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant accountid - assumed 'accountid' C:\wamp\www\cardmanage\Home\Runtime\Cache\e939000d633c85832044b29019f64aed.php 第 39 行.
+NOTIC: [8] Use of undefined constant expiry - assumed 'expiry' C:\wamp\www\cardmanage\Home\Runtime\Cache\e939000d633c85832044b29019f64aed.php 第 39 行.
+NOTIC: [8] Use of undefined constant accountid - assumed 'accountid' C:\wamp\www\cardmanage\Home\Runtime\Cache\e939000d633c85832044b29019f64aed.php 第 39 行.
+NOTIC: [8] Use of undefined constant expiry - assumed 'expiry' C:\wamp\www\cardmanage\Home\Runtime\Cache\e939000d633c85832044b29019f64aed.php 第 39 行.
+NOTIC: [8] Use of undefined constant accountid - assumed 'accountid' C:\wamp\www\cardmanage\Home\Runtime\Cache\e939000d633c85832044b29019f64aed.php 第 39 行.
+NOTIC: [8] Use of undefined constant expiry - assumed 'expiry' C:\wamp\www\cardmanage\Home\Runtime\Cache\e939000d633c85832044b29019f64aed.php 第 39 行.
+NOTIC: [8] Use of undefined constant accountid - assumed 'accountid' C:\wamp\www\cardmanage\Home\Runtime\Cache\e939000d633c85832044b29019f64aed.php 第 39 行.
+NOTIC: [8] Use of undefined constant expiry - assumed 'expiry' C:\wamp\www\cardmanage\Home\Runtime\Cache\e939000d633c85832044b29019f64aed.php 第 39 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.131471s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.131654s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.017119s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.008434s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001107s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001063s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.028186s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001657s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001828s ]
+
+[ 2014-05-27T16:33:18+08:00 ] 127.0.0.1 /cardmanage/index.php/Transfercard/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.010225s ]
+INFO: [ route_check ] --END-- [ RunTime:0.010441s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.012992s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013170s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_account' or c.relname = lower('cb_account'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.008381s ]
+SQL: SELECT id,loginname FROM cb_account WHERE ( ownid=1 )  [ RunTime:0.001308s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.264689s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.264915s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.055859s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.025061s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000961s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.083444s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001051s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001205s ]
+
+[ 2014-05-27T16:33:20+08:00 ] 127.0.0.1 /cardmanage/index.php/Producecard/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.009840s ]
+INFO: [ route_check ] --END-- [ RunTime:0.010033s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.013249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013421s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.062932s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063137s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.016641s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.008351s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000896s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.027476s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001106s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001382s ]
+
+[ 2014-05-27T16:33:22+08:00 ] 127.0.0.1 /cardmanage/index.php/ProducecardBy/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.008102s ]
+INFO: [ route_check ] --END-- [ RunTime:0.008300s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.013411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013593s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.145802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.146028s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.023361s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.008489s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.022809s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.046734s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.101937s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.012107s ]
+INFO: [ view_end ] --END-- [ RunTime:0.012301s ]
+
+[ 2014-05-27T16:33:25+08:00 ] 127.0.0.1 /cardmanage/index.php/Authority/addaccount
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.015282s ]
+INFO: [ route_check ] --END-- [ RunTime:0.015470s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.010444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010610s ]
+NOTIC: [2] Missing argument 1 for Action::assign(), called in C:\wamp\www\cardmanage\Home\Lib\Action\AuthorityAction.class.php on line 127 and defined C:\wamp\www\cardmanage\ThinkPHP\Lib\Core\Action.class.php 第 164 行.
+NOTIC: [8] Undefined variable: name C:\wamp\www\cardmanage\ThinkPHP\Lib\Core\Action.class.php 第 165 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.064035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064271s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.014918s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.008181s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000989s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.025646s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001121s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001279s ]
+
+[ 2014-05-27T16:33:26+08:00 ] 127.0.0.1 /cardmanage/index.php/Authority/updateaccount
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.007857s ]
+INFO: [ route_check ] --END-- [ RunTime:0.008042s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.010347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010516s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_account' or c.relname = lower('cb_account'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.009152s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cb_account WHERE ( ownid=1 ) LIMIT 1   [ RunTime:0.001434s ]
+NOTIC: [8] Undefined variable: pagesize C:\wamp\www\cardmanage\Home\Lib\Action\AuthorityAction.class.php 第 443 行.
+SQL: SELECT * FROM cb_account WHERE ( ownid=1 ) ORDER BY id desc LIMIT 20 OFFSET 0   [ RunTime:0.001617s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.127372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.127655s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.013768s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.025053s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.010753s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001399s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.051466s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001660s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001842s ]
+
+[ 2014-05-27T16:33:28+08:00 ] 127.0.0.1 /cardmanage/index.php/ChargeLog/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.010492s ]
+INFO: [ route_check ] --END-- [ RunTime:0.010769s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.054085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.054314s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_account' or c.relname = lower('cb_account'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.008286s ]
+SQL: SELECT id,loginname FROM cb_account WHERE ( ownid=1 ) ORDER BY id ASC  [ RunTime:0.001727s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_charge_log' or c.relname = lower('cb_charge_log'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.003736s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cb_charge_log LIMIT 1   [ RunTime:0.001731s ]
+SQL: SELECT * FROM cb_charge_log ORDER BY addtime desc LIMIT 14 OFFSET 0   [ RunTime:0.001857s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.003968s ]
+SQL: SELECT id,loginname FROM cb_users  [ RunTime:0.011618s ]
+NOTIC: [8] Undefined index: userid C:\wamp\www\cardmanage\Home\Lib\Action\ChargeLogAction.class.php 第 88 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\cardmanage\Home\Lib\Action\ChargeLogAction.class.php 第 88 行.
+NOTIC: [8] Undefined index: userid C:\wamp\www\cardmanage\Home\Lib\Action\ChargeLogAction.class.php 第 88 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\cardmanage\Home\Lib\Action\ChargeLogAction.class.php 第 88 行.
+NOTIC: [8] Undefined index: userid C:\wamp\www\cardmanage\Home\Lib\Action\ChargeLogAction.class.php 第 88 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\cardmanage\Home\Lib\Action\ChargeLogAction.class.php 第 88 行.
+NOTIC: [8] Undefined index: userid C:\wamp\www\cardmanage\Home\Lib\Action\ChargeLogAction.class.php 第 88 行.
+NOTIC: [8] Undefined index:  C:\wamp\www\cardmanage\Home\Lib\Action\ChargeLogAction.class.php 第 88 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: userid C:\wamp\www\cardmanage\Home\Runtime\Cache\e8a389b2f70f98bf6e49145e9f729b53.php 第 60 行.
+NOTIC: [8] Undefined index: 28 C:\wamp\www\cardmanage\Home\Runtime\Cache\e8a389b2f70f98bf6e49145e9f729b53.php 第 82 行.
+NOTIC: [8] Undefined variable: timer C:\wamp\www\cardmanage\Home\Runtime\Cache\e8a389b2f70f98bf6e49145e9f729b53.php 第 112 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.240575s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.240754s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.014484s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.033016s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.014007s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.057865s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.119868s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.006853s ]
+INFO: [ view_end ] --END-- [ RunTime:0.007085s ]
+
+[ 2014-05-27T16:33:31+08:00 ] 127.0.0.1 /cardmanage/index.php/Queryuser/index?id=1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.019355s ]
+INFO: [ route_check ] --END-- [ RunTime:0.019557s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.019860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020031s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.008401s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cb_users WHERE ( expirydate<=1401179610 ) LIMIT 1   [ RunTime:0.001652s ]
+NOTIC: [8] Undefined variable: pagesize C:\wamp\www\cardmanage\Home\Lib\Action\QueryuserAction.class.php 第 61 行.
+SQL: SELECT * FROM cb_users WHERE ( expirydate<=1401179610 ) ORDER BY registedate LIMIT 20 OFFSET 0   [ RunTime:0.001638s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.170573s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.170781s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.022072s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.008343s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.013878s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.046092s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003131s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003325s ]
+
+[ 2014-05-27T16:33:33+08:00 ] 127.0.0.1 /cardmanage/index.php/Queryuser/index?id=2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.039141s ]
+INFO: [ route_check ] --END-- [ RunTime:0.039340s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.027463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.027637s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.008509s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cb_users WHERE ( expirydate>=1398873600and expirydate<=1401179613 ) LIMIT 1   [ RunTime:0.001636s ]
+NOTIC: [8] Undefined variable: pagesize C:\wamp\www\cardmanage\Home\Lib\Action\QueryuserAction.class.php 第 61 行.
+SQL: SELECT * FROM cb_users WHERE ( expirydate>=1398873600and expirydate<=1401179613 ) ORDER BY registedate LIMIT 20 OFFSET 0   [ RunTime:0.001640s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.181794s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.182000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.014192s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.033361s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.013975s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.063119s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001127s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001328s ]
+
+[ 2014-05-27T16:33:36+08:00 ] 127.0.0.1 /cardmanage/index.php/Queryuser/index?id=3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.025766s ]
+INFO: [ route_check ] --END-- [ RunTime:0.025963s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.053124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.053301s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.008478s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cb_users WHERE ( lastusetime<=1393403615 ) LIMIT 1   [ RunTime:0.001572s ]
+NOTIC: [8] Undefined variable: pagesize C:\wamp\www\cardmanage\Home\Lib\Action\QueryuserAction.class.php 第 61 行.
+SQL: SELECT * FROM cb_users WHERE ( lastusetime<=1393403615 ) ORDER BY registedate LIMIT 20 OFFSET 0   [ RunTime:0.001531s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\cardmanage\Home\Lib\Action\QueryuserAction.class.php 第 98 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.343018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.343227s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.040021s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.050157s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001301s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001083s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.093008s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.014842s ]
+INFO: [ view_end ] --END-- [ RunTime:0.015034s ]
+
+[ 2014-05-27T16:33:38+08:00 ] 127.0.0.1 /cardmanage/index.php/Queryuser/index?id=4
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.010369s ]
+INFO: [ route_check ] --END-- [ RunTime:0.010561s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.011326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011507s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_users' or c.relname = lower('cb_users'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.008532s ]
+SQL: SELECT COUNT(*) AS tp_count FROM cb_users WHERE ( banlance<='0' and limitflag = 0 ) LIMIT 1   [ RunTime:0.001613s ]
+NOTIC: [8] Undefined variable: pagesize C:\wamp\www\cardmanage\Home\Lib\Action\QueryuserAction.class.php 第 61 行.
+SQL: SELECT * FROM cb_users WHERE ( banlance<='0' and limitflag = 0 ) ORDER BY registedate LIMIT 20 OFFSET 0   [ RunTime:0.001587s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.054538s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054734s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.016422s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.008454s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000884s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.027463s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001342s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001507s ]
+
+[ 2014-05-27T17:01:53+08:00 ] 127.0.0.1 /cardmanage/index.php/Index/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.050703s ]
+INFO: [ route_check ] --END-- [ RunTime:0.050917s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.083677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.083880s ]
+
+[ 2014-05-27T17:01:55+08:00 ] 127.0.0.1 /cardmanage/index.php?m=login&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.064457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.064653s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: erro C:\wamp\www\cardmanage\Home\Runtime\Cache\fe9703200f8417a0c6155a1fe6fdc2c0.php 第 31 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.554736s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.554929s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.057246s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.058415s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.022980s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.273465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.412629s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.068659s ]
+INFO: [ view_end ] --END-- [ RunTime:0.068850s ]
+

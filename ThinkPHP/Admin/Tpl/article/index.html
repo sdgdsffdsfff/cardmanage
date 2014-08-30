@@ -1,0 +1,92 @@
+<html>
+	<head>
+		<title>管理平台</title>
+		<meta name="Author" content="赵兴壮" />
+		<link rel="stylesheet" type="text/css" href="/MyCMS/Admin/Tpl/resource/css/style.css" >
+		<script src="/MyCMS/Admin/Tpl/resource/js/common.js"></script>
+	</head>
+	
+	<body>
+		<div id="main">
+		   <div class='head-dark-box'>
+					<div class='tit'>内容管理>信息管理>管理信息</div>
+				</div>	
+						<div class='tip-msg'>
+								  提示: 请选择栏目目录并操作 
+						</div>
+			<div class="msg-box">
+				<ul class="viewmess">
+					
+					<li class="light-row">
+					
+					<form name="Form" method="post"  target="main">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请选择需要编辑信息的栏目&nbsp;&nbsp; 
+					
+				  
+                                                 				
+					<select class="text-box" name="colId" id="catId" onchange="window.location='__APP__/Article/index/colId/'+document.Form.colId.options[selectedIndex].value">
+                        
+					
+					<?php foreach($cat as $value){?> 
+					<?php if (isset($colId)&&($value["colId"]==$colId)){ ?>
+				    <option selected value="<?php echo $value["colId"];?>"><?php echo $value["colTitle"];?></option>
+			        <?php }else{ ?>
+				    <option value="<?php echo $value["colId"];?>"><?php echo $value["colTitle"];?></option>
+			        <?php } ?>
+					
+					
+					<?php } ?>
+					
+					</select>
+				    
+				    </form> 
+						
+					</li>
+					
+				
+					
+					<li class="dark-row">
+						<span class="list_width width_font">标题</span>
+						<span class="list_width width_font">作&nbsp;&nbsp;者</span>
+						<span class="list_width width_font">添加时间</span>
+						<span class="list_width width_font">操&nbsp;&nbsp;作</span>
+					</li>
+					    <?php if($article){ ?>
+				        <?php foreach($article as $value){ ?>
+						<li class="light-row" style="padding-top:2px; padding-bottom:2px">
+							<span class="list_width"><input type="checkbox" name="del[]" value="<?php echo $value["id"]; ?>"><a href="__APP__/Article/mod/id/<?php echo $value["id"]; ?>" >
+							<?php echo $value["title"]; ?></a></span>
+							<span class="list_width"><?php echo $value["author"]; ?></span>
+							<span class="list_width"><?php echo date("Y-m-d H:i:s",$value["postTime"]); ?></span>
+				
+							<span class="list_width" style="width:160px;">
+				
+							<a href="__APP__/Article/mod/id/<?php echo $value["id"]; ?>">【修改】</a>
+		
+		        			【<a onclick="return confirm('确定要删除<?php echo $value["title"]; ?>吗？')" href="__APP__/Article/del/id/<?php echo $value["id"]; ?>">删除</a>】
+							</span>
+						</li>
+					     <?php } ?>
+						 
+						 <?php  }else{  ?>
+						<li class="light-row">
+							<?php echo "本页没有文章"; ?>
+						</li>
+					<?php } ?>
+				
+					<li class="dark-row">
+						<span class="col_width" style="margin-left:15px;width:240px"> 
+							<a href="javascript:select()">全选</a>/<a href="javascript:fanselect()">反选</a>/<a href="javascript:noselect()">全不选</a>&nbsp;&nbsp;选中项: 
+							<input  name="dels" type="image" title="删除" onClick="return confirm('你确定要删除选中选项吗?')"  src="/MyCMS/Admin/Tpl/resource/images/delete.gif">&nbsp;&nbsp;
+						 </span> 
+					</li>
+				</ul>	
+			</div>
+                    
+		</div>
+		
+									<div id="timer">
+	<p><span class="exetime">当前脚本执行用时</span><span class="red_font">{$timer}</span>秒&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>	
+</div>
+	</body>
+</html>

@@ -1,0 +1,401 @@
+系统标签：
+{dede:global.cfg_basehost/}
+{dede:global.cfg_webname/}
+{dede:global.cfg_powerby/}版权信息
+{dede:field.keywords/}
+{dede:field.description/}
+{dede:global.cfg_beian/}
+{dede:global.cfg_templets_skin/}/style/
+{dede:global.cfg_templets_skin/}/js/
+{dede:global.cfg_templets_skin/}/images/
+{dede:global.cfg_indexurl/}主页链接
+{dede:global.cfg_indexname/}主页名称
+{dede:include filename="header.html"/}
+
+导航标签：
+{dede:channel type ='top' （typeid=''  reid ='上级栏目id'）}
+<a href="[field:typelink/]" target="_self" class="menumain_dolphin">[field:typename/]</a>
+{/dede:channel}	
+
+
+
+
+
+文档列表标签（首页中）：
+{dede:arclist  flag='h' typeid='' row='' col='' titlelen='' infolen='' imgwidth='' imgheight='' listtype='' orderby='' keyword='' limit='0,1'}
+<a href='[field:arcurl/]'>[field:title/]</a>
+{/dede:arclist}
+
+
+文章列表标签
+{dede:list col='' titlelen='' infolen='' imgwidth='' imgheight='' orderby='' pagesize=''}
+[field:title/]
+{/dede:list} 
+{dede:pagelist listitem="info,index,end,pre,next,pageno,option"listsize="5"/}
+
+产品列表
+{dede:list col='' titlelen='' infolen='' imgwidth='' imgheight='' orderby='' pagesize=''}
+[field:title/]
+[field:litpic/]
+[field:arcurl/]
+{/dede:list} 
+{dede:pagelist listitem="info,index,end,pre,next,pageno,option"listsize="5"/}
+
+
+
+
+
+
+文章详细页标签
+{dede:field name='position'/}//当前位置
+{dede:field.title/}//标题
+{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}发布时间
+{dede:field.source/}来源
+{dede:field.writer/}作者
+<script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}"type='text/javascript' language="javascript"></script>点击数
+{dede:field.body/}内容
+
+{dede:prenext get='pre'/}上一篇
+{dede:prenext get='next'/}下一篇
+文章列表标签
+{dede:list pagesize ='5'}
+[field:title/] [field:arcurl/][field:pubdate function="MyDate('Y-m-d',@me)"/]
+{/dede:list}
+分页：
+<div class="dede_pages"><ul class=pagelist>{dede:pagelist listitem="info,index,end,pre,next,pageno,option"listsize="5"/}</ul></div>
+相关文章
+{dede:likearticle mytypeid='1' titlelen='20' row='5'}
+{/dede:likearticle}
+
+
+图片轮换
+{dede:list pagesize='12'}
+[field:litpic/] [field:title/] 
+ [field:global name=autoindex runphp=yes]
+              if(@me % 4 ==0){
+                 @me = '</tr></table><table width="97%" height="36" border="0" align="center" cellpadding="0" cellspacing="0" style="margin-top:10px;"><tr>';
+              }else{
+              @me="";
+              }[/field:global]
+        	{/dede:list}
+
+
+网站名称：{dede:global.cfg_webname/}
+ 
+网站根网址：{dede:global.cfg_basehost/}
+ 
+网站根目录：{dede:global.cfg_cmsurl/}
+ 
+网页主页链接：{dede:global.cfg_indexurl/}
+ 
+网站描述：{dede:global.cfg_description/}
+ 
+网站关键字：{dede:global.cfg_keywords/}
+ 
+模板路径：{dede:global.cfg_templets_skin/}
+ 
+调用页面：{dede:include filename="head.htm"/}
+ 
+网站编码：{dede:global.cfg_soft_lang/}
+
+调用时间：[field:pubdate function=MyDate('y-m-d',@me)/]
+ 
+调用缩略图：
+{dede:arclist row=10 orderby=pubdate type='image.' imgwidth='定义图片宽度' imgheight='高度'}
+[field:image/]
+{/dede:arclist}
+ 
+调用缩略图原图：
+[field:litpic runphp='yes'] 
+$youjoys = array("-lp", "_lit"); 
+@me = str_replace ($youjoys, "", @me); 
+[/field:litpic]
+ 
+调用单个栏目：
+{dede:type}
+<a href="[field:typelink /]">[field:typename /]</a>
+{/dede:type}
+-----------------------------------------------------------------------------------------------
+文章标题：{dede:field.title/}
+ 
+文章描述：{dede:field.description function='html2text(@me)'/}
+ 
+文章关键词：{dede:field.keywords/}
+ 
+当前位置：{dede:field name='position'/}
+ 
+文章时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}
+ 
+文章来源：{dede:field.source/}
+ 
+文章作者：{dede:field.writer/}
+ 
+文章内容：{dede:field.body/}
+ 
+上一篇：{dede:prenext get='pre'/}
+ 
+下一篇：{dede:prenext get='next'/}
+ 
+点击量：<script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}" type='text/javascript' language="javascript"></script>
+-----------------------------------------------------------------------------------------------
+channel|频道标签：
+ 
+标签名称：channel
+标记简介：织梦常用标记，通常用于网站顶部以获取站点栏目信息，方便网站会员分类浏览整站信息
+功能说明：用于获取栏目列表
+适用范围：全局使用
+ 
+基本语法：
+{dede:channel type='top' row='8' currentstyle="<li><a href='~typelink~' class='thisclass'>~typename~</a> </li>"}
+ <li><a href='[field:typelink/]'>[field:typename/]</a> </li>
+{/dede:channel}
+ 
+参数说明：
+typeid = '0'  栏目ID
+reid = '0' 上级栏目ID
+row = '100' 调用栏目数
+col = '1' 分多少列显示（默认为单列）
+type = 'son | sun' son表示下级栏目,self表示同级栏目,top顶级栏目
+currentstyle = '' 应用样式
+ 
+底层模板字段：
+ID(同 id),typeid, typelink, typename, typeurl,typedir(仅表示栏目的网址)
+ 
+[field:id/]
+[field:typeid/]
+[field:typelink/] 调用栏目名称，点击直接跳转该栏目列表
+[field:typename/] 调用栏目名称，无链接
+[field:typeurl/]
+[field:typedir/]
+ 
+例：
+{dede:channel type='top'}
+<a href='[field:typelink /]'>[field:typename/]</a> 
+{/dede:channel}
+ 
+注：在没有指定typeid的情况下，type标记与模板的环境有关，如，模板生成到栏目一，那么type='son'就表示栏目一的所有子类
+--------------------------------------------------------------------------------------------
+arclist|文档列表： 
+ 
+标签名称：arclist
+标记简介：织梦常用标记，也称为自由列表标记，其中imglist、imginfolist、specart、coolart、autolist都是由该标记所定义的不同属性延伸出来的别名标记。
+功能说明：获取指定文档列表
+适用范围：全局使用
+ 
+基本语法：
+{dede:arclist  flag='h' typeid='' row='' col='' titlelen='' infolen='' imgwidth='' imgheight='' listtype='' orderby='' keyword='' limit='0,1'}
+<a href='[field:arcurl/]'>[field:title/]</a>
+{/dede:arclist}
+ 
+参数说明：
+col='' 分多少列显示（默认为单列），5.3版中本属性可以通过多种方式进行多行显示
+如果col='1'要多列显示的可用div+css实现
+以下为通过div+css实现多列的示例：
+<style type=text/css>
+div{width:400px;float:left;}
+</style>
+{dede:arclist row='10' titlelen='24' orderby='pubdate' idlist='' col='2'}
+?[field:textlink/]([field:pubdate function=MyDate('m-d',@me)/])<br/>
+{/dede:arclist}
+当col>1将使用原来的table多列方式显示
+row='10' 返回文档列表总数
+typeid='' 栏目ID,在列表模板和档案模板中一般不需要指定，在首页模板中允许用","分开表示多个栏目；
+getall='1' 在没有指定这属性的情况下,在栏目页、文章页模板,不会获取以","分开的多个栏目的下级子类
+titlelen = '30' 标题长度 等同于titlelength
+infolen='160' 表示内容简介长度 等同于infolength
+imgwidth='120' 缩略图宽度
+imgheight='90' 缩略图高度
+listtype='all' 栏目类型 image含有缩略图 commend推荐
+orderby='sortrank' 文档排序方式
+§ orderby='hot' 或 orderby='click' 表示按点击数排列
+§ orderby='sortrank' 或 orderby='pubdate' 按出版时间排列
+§ orderby='near'
+§ orderby=='lastpost' 按最后评论时间
+§ orderby=='scores' 按得分排序
+§ orderby='id' 按文章ID排序
+§ orderby='rand' 随机获得指定条件的文档列表
+keyword='' 含有指定关键字的文档列表，多个关键字用","分
+innertext = '' 单条记录样式
+aid='' 指定文档ID
+idlist ='' 提取特定文档（文档ID）
+channelid 频道ID
+limit='起始ID,记录数'  （起始ID从0开始）表示限定的记录范围（如：limit='1,2'  表示从ID为1的记录开始，取2条记录）
+flag = 'h' 自定义属性值：头条[h]推荐[c]图片[p]幻灯[f]滚动[s]跳转[j]图文[a]加粗[b]
+noflag = '' 同flag，但这里是表示不包含这些属性
+orderway='desc' 值为 desc 或 asc ，指定排序方式是降序还是顺向排序，默认为降序
+subday='天数' 表示在多少天以内的文档
+ 
+ 
+用arclist调用于附加表字段的方法：
+ 
+要获取附加表内容，必须符合两个条件
+1、指定 channelid 属性
+2、指定要获得的字段 addfields='字段1,字段'
+如：
+{dede:arclist addfields='filetype,language,softtype' row='8' channelid='3'}
+[field:textlink /] - [field:softtype /]<br />
+{/dede:arclist}
+ 
+底层模板字段：
+ID(同 id),typeid,sortrank,flag,ismake,channel,arcrank,click,money,title,shorttitle,color,writer,
+source,litpic(同picname),pubdate,senddate,mid, lastpost,scores,goodpost,badpost,notpost,
+description(同infos),filename, image, imglink, fulltitle, textlink, typelink,plusurl, memberurl, templeturl,
+stime(pubdate 的"0000-00-00"格式)
+其中：
+textlink = <a href='arcurl'>title</a>
+typelink = <a href='typeurl'>typename</a>
+imglink = <a href='arcurl'><img src='picname' border='0' width='imgwidth' height='imgheight'></a>
+image = <img src='picname' border='0' width='imgwidth' height='imgheight' alt=’titile’>
+字段调用方法：[field:varname/]
+如：
+{dede:arclist infolen='100'}
+[field:textlink/]
+<br>
+[field:infos/]
+<br>
+{/dede:arclist}
+注：底层模板里的Field实现也是织梦标记的一种形式，因此支持使用PHP语法，Function扩展等功能。
+如： 给当天发布的内容加上 (new) 标志
+[field:senddate runphp='yes'] 
+$ntime = time();
+$oneday = 3600 * 24;
+if(($ntime - @me)<$oneday) @me = "<font color='red'>(new)</font>";
+else @me = "";
+[/field:senddate]
+
+
+
+dedecms列表隔5行加一行线：
+{dede:list pagesize=50}
+<LI><a href="[field:arcurl /]" title="[field:title function=htmlspecialchars(@me)/]" 
+              target=_blank>[field:title function="cn_substr(@me,48)"/]</a>[field:pubdate runphp=yes] 
+$a="<font color=red>".strftime(%m-%d,@me)."</font>";
+$b=strftime(%m-%d,@me);
+$ntime = time(); 
+$day3 = 3600 * 24;
+if(($ntime - @me) < $day3) @me = $a;
+else @me =$b; 
+[/field:pubdate]<br>
+[field:global name=autoindex runphp="yes"]
+if(@me%5==0)@me="<hr />";
+else @me="";
+[/field:global]
+{/dede:list}
+<DIV class="line2 m1 m3"></DIV></LI>
+dedecms最新 文章列表 “隔行换色” 的方法
+{dede:arclist orderby=pubdate titlelen=26 row=10} 
+[field:global runphp=yes name=autoindex]
+$a="<div id=a>";
+$b="<div id=b>";
+if ((@me%2)==0) @me=$a;
+else @me=$b;
+[/field:global] 
+<ul>
+<li>[field:title/]</li>
+</ul>
+</div>
+{/dede:arclist}
+dedecms24小时内更新的文章时间显示为红色：
+dedecms[field:pubdate runphp=yes] 
+$a="<font color=red>".strftime(%m-%d,@me)."</font>";
+$b=strftime(%m-%d,@me);
+$ntime = time(); 
+$day3 = 3600 * 24;
+if(($ntime - @me) < $day3) @me = $a;
+else @me =$b; 
+[/field:pubdate]
+dedecmsCOPY页面内容，自动在后面加上网站信息，利于SEO
+<script type="text/javascript">
+document.body.oncopy = function () { setTimeout( function () { var text = clipboardData.getData("text"); if (text) { text = text + "\r\n本篇文章来源于 www.地址.COM 原文链接："+location.href; clipboardData.setData("text", text); } }, 100 ) }
+</script>
+dedecms按时间点击文章排行榜调用标签：
+按总： {dede:arclist row=24 titlelen=24 orderby=click}
+按月： {dede:arclist row=24 titlelen=8 orderby=click subday=30}
+按周： {dede:arclist row=24 titlelen=8 orderby=click subday=7}
+在首页调用某栏目的子栏目
+{dede:channel type=’sun’ typeid=’栏目ID’}
+<a href=”[field:typelink/]“>[field:typename/]</a>
+{/dede:channel}
+或者
+{dede:global name=’maplist’/}
+dedecms搜索表单调用标签： <form action="{dede:global name=cfg_phpurl/}/search.php" name="formsearch">
+      <input type="hidden" name="kwtype" value="1" />
+      <input name="keyword" id="keyword" type="text" class="searchtxt" />
+      <select name="searchtype" id="searchtype">
+        <option value="titlekeyword" selected>智能模糊搜索</option>
+        <option value="title">仅搜索标题</option>
+      </select>
+      <input type="image" src="{dede:field name=templeturl/}/images/topsearch_submit.gif" />
+    </form>
+dedecms实现“文章标题-2级栏目-1级栏目-网站名”形式
+{dede:field name=title/}-{dede:field name=position runphp=yes}
+$tc="-"; //分隔符
+$tw=$GLOBALS[cfg_list_symbol]; //调用位置分隔符
+@me=html2text(@me); //去除html标签
+$tf=split($tw,@me); //分解成数组
+for($ta=(count($tf)-2);$ta>=1;$ta--){ //循环赋值给$tk
+$tk.=trim($tf[$ta]).$tc;
+}
+$tk=substr($tk,0,-1);
+@me=$tk; //赋值给@me
+{/dede:field}-{dede:global name=cfg_webname/}
+dedecms调用缩略图： <img src={dede:field name="litpic"/}>
+
+
+
+发布的文章显示红色日期或加上new字或new小图片
+dedecms给近三天（或当天）发布的文章显示红色日期或加上new字或new小图片等。
+都是围绕pubdate做文章，写扩展的。
+第2、3要注意的问题是：如："<img src=new.gif />中不能用双引号，否则不行。
+如果要给当天的加，把　3600 * 24 * 3　改为　3600 * 24 　即可。
+1、==========红色的日期========
+
+[field:pubdate runphp=yes] 
+$a="<font color=red>".strftime(%m-%d,@me)."</font>";
+$b=strftime(%m-%d,@me);
+$ntime = time(); 
+$day3 = 3600 * 24 * 3;
+if(($ntime - @me) < $day3) @me = $a;
+else @me =$b; 
+[/field:pubdate]
+
+2、==========红色的(new)========
+
+[field:pubdate runphp=yes]
+$aa=strftime(%m-%d,@me);
+$ntime = time();
+$tagtime = @me;
+$day3 = 3600 * 24 * 3;
+if($tagtime > $ntime-$day3) @me = "<font color=red>(new)</font>";
+else @me = $aa;
+[/field:pubdate]
+
+3、==========加new.gif小图片========
+
+[field:pubdate runphp=yes]
+$aa=strftime(%m-%d,@me);
+$ntime = time();
+$tagtime = @me;
+$day3 = 3600 * 24 * 3;
+if($tagtime > $ntime-$day3) @me = "<img src=new.gif />".$aa;
+else @me = $aa;
+[/field:pubdate]
+时间效果
+[field:pubdate runphp="yes"]
+               if((time()-@me)<(60*60*24)){@me= <font color="#ff6600">.strftime("%H:%M",@me).</FONT>;}
+               else {@me=strftime("%m-%d",@me);}          
+                 [/field:pubdate]
+DEDE seo小技巧 加个百度搜索本篇文章
+【<a href="javascript:" onclick=window.open("http://www.baidu.com/s?q1={dede:field name="title" /}&q2=&q3=&q4=&rn=10&lm=0&ct=1&ft=&q5=&q6=你的网址") target="_top" title="在百度搜索“{dede:field name="title" /}”相关内容"><font color=red>在百度搜索更多繁体字</font></a>】
+把网址改一下，不加http
+【<a href="javascript:" onclick=window.open("http://www.baidu.com/baidu?word={dede:field name="title" /}") target="_top" title="在百度搜索“{dede:field name="title" /}”相关内容
+dedecms调用tag： {dede:field name=keywords runphp=yes }
+if(!empty(@me)){
+$kws = explode( ,@me);
+@me = "";
+foreach($kws as $k){
+@me .= "<a href=/tag.php?/$k/>$k</a> ";
+}
+@me= str_replace(+, ,trim(@me));
+}
+{/dede:field}

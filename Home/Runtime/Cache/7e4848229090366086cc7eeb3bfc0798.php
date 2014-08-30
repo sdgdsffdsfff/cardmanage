@@ -1,0 +1,15 @@
+<?php if (!defined('THINK_PATH')) exit();?><html>
+	<head>
+		<title>广州山基卡管理系统</title>
+		<meta name='Author' content='' />
+	</head>
+	     
+		<frameset rows='61,*,24' cols='*' framespacing='0' frameborder='no' border='0'>
+			<frame src='__APP__/Index/top' name='top' scrolling='no' noresize='noresize' />
+			<frameset name="body"; cols='200, *'>
+				<frame src='__APP__/Index/menu' name='menu' noresize='noresize' scrolling='no' style="height:100px" />
+				<frame src='__APP__/Index/main' name='main' noresize='noresize' scrolling='yes'/>
+			</frameset>
+			<frame src='__APP__/Index/bottom' name='bottom' scrolling='No' noresize='noresize' />
+		</frameset>
+</html>

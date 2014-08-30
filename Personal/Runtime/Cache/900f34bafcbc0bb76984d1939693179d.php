@@ -1,0 +1,20 @@
+<?php if (!defined('THINK_PATH')) exit();?>﻿	<html>
+	<head>
+		<title>管理平台</title>
+		<meta name="Author" content="" />
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css" >
+		<script src="__PUBLIC__/js/common.js"></script>
+		
+	</head>
+	<body>
+		<div id="bottom">
+			<ul>
+				<li class="left">广州山基科技有限公司公司版权所有</a> </li>
+				<li class="right">日期：<?php echo ($date); ?> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+			    
+			</ul>	
+			
+		</div>
+		<div class="nav"></div>
+	</body>
+	</html>

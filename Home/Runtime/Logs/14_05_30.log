@@ -1,0 +1,856 @@
+[ 2014-05-30T20:32:12+08:00 ] 127.0.0.1 /cardmanage/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.039002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.054003s ]
+
+[ 2014-05-30T20:32:12+08:00 ] 127.0.0.1 /cardmanage/index.php?m=login&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: erro C:\wamp\www\cardmanage\Home\Runtime\Cache\fe9703200f8417a0c6155a1fe6fdc2c0.php 第 31 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.173010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.174010s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.019001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.010001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.005000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.016001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.017001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.018001s ]
+
+[ 2014-05-30T20:32:13+08:00 ] 127.0.0.1 /cardmanage/index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.057003s ]
+INFO: [ route_check ] --END-- [ RunTime:0.058003s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.015001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017001s ]
+
+[ 2014-05-30T20:52:09+08:00 ] 127.0.0.1 /cardmanage/index.php/Login/islogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.023001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.024001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.035002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.036002s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_account' or c.relname = lower('cb_account'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.048003s ]
+SQL: SELECT * FROM cb_account WHERE ( loginname='timelesszhuang' and loginpwd='f9d592a818a5180a88cdf6474d5babfb' ) LIMIT 1   [ RunTime:0.052003s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.137008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.137008s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.022001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.019001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.008000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.019001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.073004s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.024002s ]
+INFO: [ view_end ] --END-- [ RunTime:0.025002s ]
+
+[ 2014-05-30T20:52:09+08:00 ] 127.0.0.1 /cardmanage/index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.012001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.014001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.010000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012001s ]
+
+[ 2014-05-30T20:52:26+08:00 ] 127.0.0.1 /cardmanage/index.php/Login/islogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.007000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_account' or c.relname = lower('cb_account'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.018001s ]
+SQL: SELECT * FROM cb_account WHERE ( loginname='timelesszhuang' and loginpwd='4983a8b30f9305385d4aeb648a952a58' ) LIMIT 1   [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.004000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.004000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.005000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.006001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.005000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2014-05-30T20:52:26+08:00 ] 127.0.0.1 /cardmanage/index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+
+[ 2014-05-30T20:52:37+08:00 ] 127.0.0.1 /cardmanage/index.php/Login/islogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.037003s ]
+INFO: [ route_check ] --END-- [ RunTime:0.038003s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.037002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.038002s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' C:\wamp\www\cardmanage\Home\Lib\Action\LoginAction.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\wamp\www\cardmanage\Home\Lib\Action\LoginAction.class.php 第 41 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.080004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.007000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.007000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.006001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.007000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.029001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.006001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.007001s ]
+
+[ 2014-05-30T20:52:37+08:00 ] 127.0.0.1 /cardmanage/index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.008001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.009001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.007001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009001s ]
+
+[ 2014-05-30T20:52:45+08:00 ] 127.0.0.1 /cardmanage/index.php/Public/verify/0.5244797938503325
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.009001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.010001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.012001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013001s ]
+
+[ 2014-05-30T20:52:50+08:00 ] 127.0.0.1 /cardmanage/index.php/Login/islogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.024001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.028001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.012001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014001s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_account' or c.relname = lower('cb_account'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.033002s ]
+SQL: SELECT * FROM cb_account WHERE ( loginname='timelesszhuang' and loginpwd='6cd10172009adda15a4210ea032cf9b4' ) LIMIT 1   [ RunTime:0.005000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.047002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.004000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.006000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.006001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.024002s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.005000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2014-05-30T20:52:50+08:00 ] 127.0.0.1 /cardmanage/index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+
+[ 2014-05-30T20:53:00+08:00 ] 127.0.0.1 /cardmanage/index.php/Login/islogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.017001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.023002s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.022001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.023001s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_account' or c.relname = lower('cb_account'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.019001s ]
+SQL: SELECT * FROM cb_account WHERE ( loginname='timelesszhuang' and loginpwd='e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.006000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.055003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.007001s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.007000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.005001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.006000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.007001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.008001s ]
+
+[ 2014-05-30T20:53:01+08:00 ] 127.0.0.1 /cardmanage/index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.008000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+
+[ 2014-05-30T20:53:24+08:00 ] 127.0.0.1 /cardmanage/index.php/Login/islogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_account' or c.relname = lower('cb_account'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.019001s ]
+SQL: SELECT * FROM cb_account WHERE ( loginname='timelesszhuang' and loginpwd='4983a8b30f9305385d4aeb648a952a58' ) LIMIT 1   [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.052003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.006000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.006000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.006001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.006000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.006000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2014-05-30T20:53:24+08:00 ] 127.0.0.1 /cardmanage/index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.009000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.011001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+
+[ 2014-05-30T20:53:37+08:00 ] 127.0.0.1 /cardmanage/index.php/Login/islogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.032002s ]
+INFO: [ route_check ] --END-- [ RunTime:0.032002s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_account' or c.relname = lower('cb_account'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.017001s ]
+SQL: SELECT * FROM cb_account WHERE ( loginname='timelesszhuang' and loginpwd='4983a8b30f9305385d4aeb648a952a58' ) LIMIT 1   [ RunTime:0.005001s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.050003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.006000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.007001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.006000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.008001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.006000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2014-05-30T20:53:37+08:00 ] 127.0.0.1 /cardmanage/index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+
+[ 2014-05-30T21:04:16+08:00 ] 127.0.0.1 /cardmanage/index.php/Login/islogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.168001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_account' or c.relname = lower('cb_account'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.033201s ]
+SQL: SELECT * FROM cb_account WHERE ( loginname='timelesszhuang' and loginpwd='4983a8b30f9305385d4aeb648a952a58' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_power' or c.relname = lower('cb_power'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.000000s ]
+SQL: SELECT * FROM cb_power WHERE ( accountid=1 ) LIMIT 1   [ RunTime:0.194200s ]
+
+[ 2014-05-30T21:04:18+08:00 ] 127.0.0.1 /cardmanage/index.php/Index/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.015600s ]
+INFO: [ route_check ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.245001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.245001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.015600s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.017600s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.033200s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.015600s ]
+INFO: [ view_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2014-05-30T21:04:21+08:00 ] 127.0.0.1 /cardmanage/index.php/Index/top
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.015600s ]
+INFO: [ route_check ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_account' or c.relname = lower('cb_account'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.015600s ]
+NOTIC: [2] pg_query(): Query failed: 错误:  字段 &quot;balance&quot; 不存在
+LINE 1: SELECT balance FROM cb_account WHERE ( id=1 ) LIMIT 1  
+               ^ C:\wamp\www\cardmanage\ThinkPHP\Extend\Driver\Db\DbPgsql.class.php 第 88 行.
+SQL: SELECT balance FROM cb_account WHERE ( id=1 ) LIMIT 1   [ RunTime:0.649214s ]
+ERR: 
+ [ SQL语句 ] : SELECT balance FROM cb_account WHERE ( id=1 ) LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.436800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.436800s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.015600s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.017601s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.033201s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-05-30T21:04:22+08:00 ] 127.0.0.1 /cardmanage/index.php/Index/menu
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_account' or c.relname = lower('cb_account'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.017600s ]
+SQL: SELECT id,loginname FROM cb_account WHERE ( ownid=1 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\cardmanage\Home\Runtime\Cache\4a000f81e0ae99184c7ca1b6eea5c205.php 第 269 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.219400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.219400s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.015600s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.015600s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.007001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.009001s ]
+
+[ 2014-05-30T21:04:22+08:00 ] 127.0.0.1 /cardmanage/index.php/Index/bottom
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.015600s ]
+INFO: [ route_check ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.046800s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.040003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.004000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.004000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.004001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.006000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005001s ]
+
+[ 2014-05-30T21:04:23+08:00 ] 127.0.0.1 /cardmanage/index.php/Index/main
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.015600s ]
+INFO: [ route_check ] --END-- [ RunTime:0.031200s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.057004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.005000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.005000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.005001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.006000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.006001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.007001s ]
+
+[ 2014-05-30T21:04:55+08:00 ] 127.0.0.1 /cardmanage/index.php/Querycard/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.018600s ]
+INFO: [ route_check ] --END-- [ RunTime:0.019601s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.017600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017600s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\cardmanage\Home\Lib\Action\QuerycardAction.class.php 第 66 行.
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_cards' or c.relname = lower('cb_cards'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.035200s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\cardmanage\Home\Lib\Action\QuerycardAction.class.php 第 80 行.
+SQL: SELECT COUNT(*) AS tp_count FROM cb_cards LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\cardmanage\Home\Lib\Action\QuerycardAction.class.php 第 89 行.
+SQL: SELECT * FROM cb_cards ORDER BY id desc LIMIT 17 OFFSET 0   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: data C:\wamp\www\cardmanage\Home\Lib\Action\QuerycardAction.class.php 第 90 行.
+SQL: SELECT id FROM cb_cards ORDER BY id desc  [ RunTime:0.000000s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_account' or c.relname = lower('cb_account'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.017600s ]
+SQL: SELECT id,loginname FROM cb_account  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\cardmanage\Home\Lib\Action\QuerycardAction.class.php 第 320 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\cardmanage\Home\Lib\Action\QuerycardAction.class.php 第 351 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: timer C:\wamp\www\cardmanage\Home\Runtime\Cache\03d6d54c8125a70435f7b9f1c32056c9.php 第 216 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.892003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.892003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.015600s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-05-30T21:07:04+08:00 ] 127.0.0.1 /cardmanage/index.php/ProducecardBy/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.015600s ]
+INFO: [ route_check ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.015601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015601s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.109200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109200s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.015600s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.015600s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-05-30T21:08:54+08:00 ] 127.0.0.1 /cardmanage/index.php/ProducecardBy/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046800s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-05-30T21:09:15+08:00 ] 127.0.0.1 /cardmanage/index.php/ProducecardBy/producecard_by
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.011001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.013001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_cards' or c.relname = lower('cb_cards'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.032200s ]
+NOTIC: [8] Undefined variable: money C:\wamp\www\cardmanage\Home\Lib\Action\ProducecardByAction.class.php 第 38 行.
+SQL: select id,cardnum,ownid,subownid,status from cb_cards where cardnum >= trim(to_char(1,'000000')) and cardnum <= trim(to_char(20, '000000')) and length(cardnum) = 6 [ RunTime:0.015600s ]
+NOTIC: [2] pg_query(): Query failed: 错误:  函数 pg_catalog.substring(double precision, integer, integer) 不存在
+LINE 2: (trim(to_char(num, '000000')), substring(random() * 10000000...
+                                       ^
+HINT:  没有匹配指定名称和参数类型的函数. 您也许需要增加明确的类型转换.
+QUERY:  insert into cb_cards (cardnum, cardpwd, status, money, createtime, openway, ownid, validityday, expirydate) values 
+(trim(to_char(num, '000000')), substring(random() * 1000000000000000, 1, 6), 0, 0, date_part('epoch'::text, (now())::timestamp without time zone), 0, o_ownid, o_validityday, o_expirydate)
+CONTEXT:  在SQL语句的第10行的PL/pgSQL函数callback_generate_card_by(integer,integer,integer,bigint,integer) C:\wamp\www\cardmanage\ThinkPHP\Extend\Driver\Db\DbPgsql.class.php 第 88 行.
+SQL: SELECT callback_generate_card_by(1,20,30,1401455348,1) [ RunTime:0.095600s ]
+ERR: 
+ [ SQL语句 ] : SELECT callback_generate_card_by(1,20,30,1401455348,1)
+
+[ 2014-05-30T21:09:21+08:00 ] 127.0.0.1 /cardmanage/index.php/ProducecardBy/producecard_by
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.015600s ]
+INFO: [ route_check ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_cards' or c.relname = lower('cb_cards'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: money C:\wamp\www\cardmanage\Home\Lib\Action\ProducecardByAction.class.php 第 38 行.
+SQL: select id,cardnum,ownid,subownid,status from cb_cards where cardnum >= trim(to_char(1,'000000')) and cardnum <= trim(to_char(20, '000000')) and length(cardnum) = 6 [ RunTime:0.017600s ]
+NOTIC: [2] pg_query(): Query failed: 错误:  函数 pg_catalog.substring(double precision, integer, integer) 不存在
+LINE 2: (trim(to_char(num, '000000')), substring(random() * 10000000...
+                                       ^
+HINT:  没有匹配指定名称和参数类型的函数. 您也许需要增加明确的类型转换.
+QUERY:  insert into cb_cards (cardnum, cardpwd, status, money, createtime, openway, ownid, validityday, expirydate) values 
+(trim(to_char(num, '000000')), substring(random() * 1000000000000000, 1, 6), 0, 0, date_part('epoch'::text, (now())::timestamp without time zone), 0, o_ownid, o_validityday, o_expirydate)
+CONTEXT:  在SQL语句的第10行的PL/pgSQL函数callback_generate_card_by(integer,integer,integer,bigint,integer) C:\wamp\www\cardmanage\ThinkPHP\Extend\Driver\Db\DbPgsql.class.php 第 88 行.
+SQL: SELECT callback_generate_card_by(1,20,30,1401455348,1) [ RunTime:0.008000s ]
+ERR: 
+ [ SQL语句 ] : SELECT callback_generate_card_by(1,20,30,1401455348,1)
+
+[ 2014-05-30T21:09:23+08:00 ] 127.0.0.1 /cardmanage/index.php/ProducecardBy/producecard_by
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.046800s ]
+INFO: [ route_check ] --END-- [ RunTime:0.046800s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_cards' or c.relname = lower('cb_cards'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.017600s ]
+NOTIC: [8] Undefined variable: money C:\wamp\www\cardmanage\Home\Lib\Action\ProducecardByAction.class.php 第 38 行.
+SQL: select id,cardnum,ownid,subownid,status from cb_cards where cardnum >= trim(to_char(1,'000000')) and cardnum <= trim(to_char(20, '000000')) and length(cardnum) = 6 [ RunTime:0.017600s ]
+NOTIC: [2] pg_query(): Query failed: 错误:  函数 pg_catalog.substring(double precision, integer, integer) 不存在
+LINE 2: (trim(to_char(num, '000000')), substring(random() * 10000000...
+                                       ^
+HINT:  没有匹配指定名称和参数类型的函数. 您也许需要增加明确的类型转换.
+QUERY:  insert into cb_cards (cardnum, cardpwd, status, money, createtime, openway, ownid, validityday, expirydate) values 
+(trim(to_char(num, '000000')), substring(random() * 1000000000000000, 1, 6), 0, 0, date_part('epoch'::text, (now())::timestamp without time zone), 0, o_ownid, o_validityday, o_expirydate)
+CONTEXT:  在SQL语句的第10行的PL/pgSQL函数callback_generate_card_by(integer,integer,integer,bigint,integer) C:\wamp\www\cardmanage\ThinkPHP\Extend\Driver\Db\DbPgsql.class.php 第 88 行.
+SQL: SELECT callback_generate_card_by(1,20,30,1401455348,1) [ RunTime:0.016001s ]
+ERR: 
+ [ SQL语句 ] : SELECT callback_generate_card_by(1,20,30,1401455348,1)
+
+[ 2014-05-30T21:09:29+08:00 ] 127.0.0.1 /cardmanage/index.php/Producecard/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.238401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.238401s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.015600s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2014-05-30T21:09:43+08:00 ] 127.0.0.1 /cardmanage/index.php/Producecard/producecard
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.015600s ]
+INFO: [ route_check ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_cards' or c.relname = lower('cb_cards'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.017600s ]
+SQL: select id,cardnum,ownid,subownid,status from cb_cards where cardnum >= trim(to_char(1,'00000000')) and cardnum <= trim(to_char(20, '00000000')) [ RunTime:0.000000s ]
+NOTIC: [2] pg_query(): Query failed: 错误:  函数 callback_generate_card(integer, integer, integer, integer, integer, integer) 不存在
+LINE 1: SELECT callback_generate_card(1,20,3,20,1404057600, 1)
+               ^
+HINT:  没有匹配指定名称和参数类型的函数. 您也许需要增加明确的类型转换. C:\wamp\www\cardmanage\ThinkPHP\Extend\Driver\Db\DbPgsql.class.php 第 88 行.
+SQL: SELECT callback_generate_card(1,20,3,20,1404057600, 1) [ RunTime:0.015600s ]
+ERR: 
+ [ SQL语句 ] : SELECT callback_generate_card(1,20,3,20,1404057600, 1)
+
+[ 2014-05-30T21:09:55+08:00 ] 127.0.0.1 /cardmanage/index.php/Producecard/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.015600s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2014-05-30T21:09:57+08:00 ] 127.0.0.1 /cardmanage/index.php/ProducecardBy/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.004000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.004001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.005001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.006001s ]
+
+[ 2014-05-30T21:10:10+08:00 ] 127.0.0.1 /cardmanage/index.php/ProducecardBy/producecard_by
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004001s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_cards' or c.relname = lower('cb_cards'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.015600s ]
+NOTIC: [8] Undefined variable: money C:\wamp\www\cardmanage\Home\Lib\Action\ProducecardByAction.class.php 第 38 行.
+SQL: select id,cardnum,ownid,subownid,status from cb_cards where cardnum >= trim(to_char(1,'000000')) and cardnum <= trim(to_char(20, '000000')) and length(cardnum) = 6 [ RunTime:0.009000s ]
+NOTIC: [2] pg_query(): Query failed: 错误:  函数 pg_catalog.substring(double precision, integer, integer) 不存在
+LINE 2: (trim(to_char(num, '000000')), substring(random() * 10000000...
+                                       ^
+HINT:  没有匹配指定名称和参数类型的函数. 您也许需要增加明确的类型转换.
+QUERY:  insert into cb_cards (cardnum, cardpwd, status, money, createtime, openway, ownid, validityday, expirydate) values 
+(trim(to_char(num, '000000')), substring(random() * 1000000000000000, 1, 6), 0, 0, date_part('epoch'::text, (now())::timestamp without time zone), 0, o_ownid, o_validityday, o_expirydate)
+CONTEXT:  在SQL语句的第10行的PL/pgSQL函数callback_generate_card_by(integer,integer,integer,bigint,integer) C:\wamp\www\cardmanage\ThinkPHP\Extend\Driver\Db\DbPgsql.class.php 第 88 行.
+SQL: SELECT callback_generate_card_by(1,20,12,1398787200,1) [ RunTime:0.015001s ]
+ERR: 
+ [ SQL语句 ] : SELECT callback_generate_card_by(1,20,12,1398787200,1)
+
+[ 2014-05-30T21:14:18+08:00 ] 127.0.0.1 /cardmanage/index.php/ProducecardBy/producecard_by
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.007000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_cards' or c.relname = lower('cb_cards'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.022002s ]
+NOTIC: [8] Undefined variable: money C:\wamp\www\cardmanage\Home\Lib\Action\ProducecardByAction.class.php 第 38 行.
+SQL: select id,cardnum,ownid,subownid,status from cb_cards where cardnum >= trim(to_char(1,'000000')) and cardnum <= trim(to_char(20, '000000')) and length(cardnum) = 6 [ RunTime:0.008000s ]
+NOTIC: [2] pg_query(): Query failed: 错误:  函数 pg_catalog.substring(double precision, integer, integer) 不存在
+LINE 2: (trim(to_char(num, '000000')), substring(random() * 10000000...
+                                       ^
+HINT:  没有匹配指定名称和参数类型的函数. 您也许需要增加明确的类型转换.
+QUERY:  insert into cb_cards (cardnum, cardpwd, status, money, createtime, openway, ownid, validityday, expirydate) values 
+(trim(to_char(num, '000000')), substring(random() * 1000000000000000, 1, 6), 0, 0, date_part('epoch'::text, (now())::timestamp without time zone), 0, o_ownid, o_validityday, o_expirydate)
+CONTEXT:  在SQL语句的第10行的PL/pgSQL函数callback_generate_card_by(integer,integer,integer,bigint,integer) C:\wamp\www\cardmanage\ThinkPHP\Extend\Driver\Db\DbPgsql.class.php 第 88 行.
+SQL: SELECT callback_generate_card_by(1,20,12,1398787200,1) [ RunTime:0.014001s ]
+ERR: 
+ [ SQL语句 ] : SELECT callback_generate_card_by(1,20,12,1398787200,1)
+
+[ 2014-05-30T21:14:25+08:00 ] 127.0.0.1 /cardmanage/index.php/ProducecardBy/producecard_by
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004000s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: select a.attname as "Field",
+            t.typname as "Type",
+            a.attnotnull as "Null",
+            i.indisprimary as "Key",
+            d.adsrc as "Default"
+            from pg_class c
+            inner join pg_attribute a on a.attrelid = c.oid
+            inner join pg_type t on a.atttypid = t.oid
+            left join pg_attrdef d on a.attrelid=d.adrelid and d.adnum=a.attnum
+            left join pg_index i on a.attnum=ANY(i.indkey) and c.oid = i.indrelid
+            where (c.relname='cb_cards' or c.relname = lower('cb_cards'))   AND a.attnum > 0
+                order by a.attnum asc; [ RunTime:0.017001s ]
+NOTIC: [8] Undefined variable: money C:\wamp\www\cardmanage\Home\Lib\Action\ProducecardByAction.class.php 第 38 行.
+SQL: select id,cardnum,ownid,subownid,status from cb_cards where cardnum >= trim(to_char(1,'000000')) and cardnum <= trim(to_char(20, '000000')) and length(cardnum) = 6 [ RunTime:0.005000s ]
+NOTIC: [2] pg_query(): Query failed: 错误:  函数 pg_catalog.substring(double precision, integer, integer) 不存在
+LINE 2: (trim(to_char(num, '000000')), substring(random() * 10000000...
+                                       ^
+HINT:  没有匹配指定名称和参数类型的函数. 您也许需要增加明确的类型转换.
+QUERY:  insert into cb_cards (cardnum, cardpwd, status, money, createtime, openway, ownid, validityday, expirydate) values 
+(trim(to_char(num, '000000')), substring(random() * 1000000000000000, 1, 6), 0, 0, date_part('epoch'::text, (now())::timestamp without time zone), 0, o_ownid, o_validityday, o_expirydate)
+CONTEXT:  在SQL语句的第10行的PL/pgSQL函数callback_generate_card_by(integer,integer,integer,bigint,integer) C:\wamp\www\cardmanage\ThinkPHP\Extend\Driver\Db\DbPgsql.class.php 第 88 行.
+SQL: SELECT callback_generate_card_by(1,20,12,1398787200,1) [ RunTime:0.013001s ]
+ERR: 
+ [ SQL语句 ] : SELECT callback_generate_card_by(1,20,12,1398787200,1)
+

@@ -1,0 +1,161 @@
+<html>
+	<head>
+		<title>管理平台</title>
+		<meta name="Author" content="赵兴壮" />
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css" >
+
+		<script src="__PUBLIC__/js/common.js"></script>
+		<script src="__PUBLIC__/js/jquery-1.7.2.js"></script>	
+
+		<script>
+					//表单验证实现
+					function checkfield()
+		            {
+		        	 
+		        	 //return false;
+		        	 var str=$('#tele').val();
+		        	 //alert($("#telemsg").html());
+		        	// $('#telemsg').innerHTML="手机号码不能为空！";
+		        	 var regPartton=/1[3-8]+\d{9}/;
+		        	  var regPartton1=/^(0[0-9]{2,3}[\-]?[2-9][0-9]{6,7}[\-]?[0-9]?)$/;
+		        	 if(!str || str==null){
+							$('#telemsg').html=("电话号码不能为空！");
+							
+							return false;
+						}
+						else if(!(regPartton.test(str)||regPartton1.test(str)))
+						{
+							$('#telemsg').html("电话号码格式不正确！");			
+							return false;
+						}else{
+
+							$('#telemsg').html("");
+							return true;
+
+						}
+		        }
+
+		        	function ajaxlock(id)
+		        	{
+		        		 $.post("__APP__/Authority/deleteaccdata",
+						  	{id:id},
+						    function(data){
+						    
+						    if (data['status']=="success") {
+						    	alert(data['message']);
+
+						    	$('#status'+id).html('锁定');
+						    	$('#td'+id).html('<a href="__APP__/Authority/updateaccdata?id='+id+'">修改</a>/<a id="lock"  onclick="ajaxopen('+id+')" >开通</a>');
+
+						    }else if (data['status']=="failed") 
+						    {
+						    	alert(data['message']);
+						    }
+						  },
+						   "json");
+
+		        	}
+
+		        	function ajaxopen(id)
+		        	{
+		        		 $.post("__APP__/Authority/openaccdata",
+						  	{id:id},
+						    function(data){
+						    
+						    if (data['status']=="success") {
+						    	alert(data['message']);
+
+						    	$('#status'+id).html('开通');
+						    	$('#td'+id).html('<a href="__APP__/Authority/updateaccdata?id='+id+'">修改</a>/<a id="lock"  onclick="ajaxlock('+id+')" >锁定</a>');
+
+						    }else if (data['status']=="failed") 
+						    {
+						    	alert(data['message']);
+						    }
+						  },
+						   "json");
+
+		        	}
+
+		</script>
+
+	</head>
+	
+	<body>
+		<div id="main">
+
+		    <div class='head-dark-box'>
+					<div class='tit'>账号管理>代理商管理>代理商管理</div>
+			</div>	
+				  
+		   	<table rules="all" id="MyGridView" style="border-color:Black;border-width:1px;border-style:solid;font-size:10pt;height:10px;width:80%;border-collapse:collapse;" cellpadding="3" cellspacing="0" align="Center" border="1">
+			<tbody>
+				<tr style="background-color:#E5E5E5;font-weight:bold;height:15px;">
+					<th scope="col">序号</th><th scope="col">帐号</th><th scope="col">密码</th><th scope="col">状态</th><td>类别</td><th scope="col">联系电话</th><th scope="col">上级代理</th><th scope="col">代理充值</th><th scope="col">操作</th>
+				</tr>
+				<?php
+
+					foreach($accountdata as $key =>$value)
+					{		
+						    echo '<pre>';
+						    //print_r($value);
+						    echo '</pre>';
+						    $status='';
+						    if($value['status']==1)
+						    {
+						       $status='开通';
+						    }
+						    else
+						    {
+						    	$status="锁定";
+						    }
+
+						    $type='';
+						    //不知道以后还有没有其他的级别
+						    switch ($value['power']) {
+						    	case 1:
+						    		$type="总管理员";
+						    		break; 
+						    	case 2:
+						    	    $type="一级代理";	
+						    	    break;
+						    	default:
+						    	     $type="二级代理";
+						    	     break;
+						    }
+						   		
+						    echo '<tr><td>'.$key.'</td><td>'.$value['loginname'].'</td><td>******</td><td id="status'.$value['id'].'">'.$status.'</td><td>'.$type.'</td><td>'.$value['tele'].'</td><td>'.$_SESSION['loginname'].'</td><td>余额：'.$value['balance'].'　<a href="'.U('balance?id='.$value['id']).'">立即充值</a></td> 
+						    <td align="center" id="td'.$value['id'].'"> 
+						    <a href="__APP__/Authority/updateaccdata?id='.$value['id'].'">修改</a>';
+						    if ($status=="开通") {
+						    		 echo '/<a id="lock"  onclick="ajaxlock('.$value['id'].')" >锁定</a>';	
+						    }
+						    else if ($status=="锁定") {
+						    	     echo '/<a id="lock"  onclick="ajaxopen('.$value['id'].')" >开通</a>';	
+						    }
+						   
+						    echo '</td>
+							</tr>';
+
+					}
+
+
+
+
+
+				?>
+				<tr>
+				  <td colspan="9" align="center"> 
+							{$page}
+				  </td>
+				</tr>
+
+		  </tbody>
+		  </table>
+		</div>
+	<div id="timer">
+	<p><span class="exetime">当前脚本执行用时</span><span class="red_font">{$timer}</span>秒&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>	
+    </div>
+
+	</body>
+</html>

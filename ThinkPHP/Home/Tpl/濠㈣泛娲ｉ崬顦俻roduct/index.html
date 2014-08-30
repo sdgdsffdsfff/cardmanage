@@ -1,0 +1,198 @@
+<html>
+	<head>
+		<title>管理平台</title>
+		<meta name="Author" content="赵兴壮" />
+		<link rel="stylesheet" type="text/css" href="/MyCMS/Admin/Tpl/resource/css/style.css" >
+		<script src="/MyCMS/Admin/Tpl/resource/js/common.js"></script>	
+		<script charset="utf-8" src="/MyCMS/Public/editor/kindeditor.js"></script>
+		<script charset="utf-8" src="/MyCMS/Public/editor/lang/zh_CN.js"></script>
+		<script>
+					var editor;
+					KindEditor.ready(function(K) {
+							editor = K.create('#editor_id');
+					});
+		</script>
+	</head>
+	
+	<body>
+		<div id="main">
+		   <div class='head-dark-box'>
+					<div class='tit'>内容管理>信息管理>管理信息</div>
+				</div>	
+						<div class='tip-msg'>
+								  提示:请选择图片编号开始操作 
+						</div>
+			<div class="msg-box">
+				<ul class="viewmess">
+					   
+
+					
+
+
+					<!--<form name="Form" method="post"  target="main">	-->
+
+					<form enctype="multipart/form-data" action='__APP__/Product/replace' name="Form" method='post' target="main">
+					 <?php
+						       if(empty($productinfodata))
+						       {
+						       	echo '<li class="dark-row"><span class="col_width">此图片信息还未添加请添加信息&nbsp;</span></li>';
+						       }
+						       else
+						       {
+						       	
+					       ?>
+					<li class="light-row">
+								
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请选择需要编辑信图片编号
+					<span class="red_font">*</span>	
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;				
+				                                                				
+					<select class="text-box" name="id" id="id" onchange="window.location='__APP__/Product/index/id/'+document.Form.id.options[selectedIndex].value"> 
+
+					        <?php	
+					     //print_r($productinfodata[0]['id'])	;
+					     switch ($productinfodata[0]['id']) {
+					     	case 1:
+					     		echo '<option selected value=1>图片1</option>
+					     		        <option value=2>图片2</option>
+										<option value=3>图片3</option>
+										<option value=4>图片4</option>
+										<option value=5>图片5</option>
+										<option value=6>图片6</option>
+										<option value=7>图片7</option>
+					     		';
+					     		break;
+					     	
+					     	case 2:
+					     		echo '
+					     		        <option value=1>图片1</option>
+					     		        <option selected value=2>图片2</option>
+										<option value=3>图片3</option>
+										<option value=4>图片4</option>
+										<option value=5>图片5</option>
+										<option value=6>图片6</option>
+										<option value=7>图片7</option>';
+					     		break;
+		     			   case 3:
+					     		echo '
+					         	        <option value=1>图片1</option>
+					     		        <option value=2>图片2</option>
+										<option selected value=3>图片3</option>
+										<option value=4>图片4</option>
+										<option value=5>图片5</option>
+										<option value=6>图片6</option>
+										<option value=7>图片7</option>';
+					     		break;
+				     		case 4:
+					     		echo '
+					     		        <option value=1>图片1</option>
+					     		        <option value=2>图片2</option>
+										<option value=3>图片3</option>
+										<option selected value=4>图片4</option>
+										<option value=5>图片5</option>
+										<option value=6>图片6</option>
+										<option value=7>图片7</option>
+					     		';
+					     		break;
+				     		case 5:
+					     		echo '  
+					     		        <option value=1>图片1</option>
+					     		        <option value=2>图片2</option>
+										<option value=3>图片3</option>
+										<option value=4>图片4</option>
+										<option selected value=5>图片5</option>
+										<option value=6>图片6</option>
+										<option value=7>图片7</option>
+					     		';
+					     		break;
+				     		case 6:
+					     		echo '  
+					     		        <option value=1>图片1</option>
+					     		        <option value=2>图片2</option>
+										<option value=3>图片3</option>
+										<option value=4>图片4</option>
+										<option value=5>图片5</option>
+										<option selected value=6>图片6</option>
+										<option value=7>图片7</option>';
+					     		break;
+				     	    default:			 
+					     		echo '	
+					     				<option value=1>图片1</option>
+					     		        <option value=2>图片2</option>
+										<option value=3>图片3</option>
+										<option value=4>图片4</option>
+										<option value=5>图片5</option>
+										<option value=6>图片6</option>
+										<option selected value=7>图片7</option>
+					     		      ';
+					     		break;
+					     		}
+					        ?> 				                 						
+					</select>			    
+				  			    					
+					</li>
+					<li class="dark-row">
+					     <span class="col_width">图片标题（主页显示）&nbsp;<span class="red_font">*</span></span>
+  						 <input type="text" class="text-box" name="title" size="30" maxlength="40" value="<?php echo $productinfodata[0]['title']?>">
+
+						<?php
+
+						//print_r($productinfodata);
+  
+						?>
+					</li>
+					<li class="light-row">
+					     <span class="col_width">添加时间&nbsp;<span class="red_font">*</span></span>
+  						 <input type="text" class="text-box" name="posttime" size="30" maxlength="40" value="<?php echo date('Y-m-d H:i:s',time())?>"><!--$productinfodata[0]['posttime']-->
+  					</li>
+
+
+  					<li class="dark-row">
+					     <span class="col_width">关键字(便于搜索优化)&nbsp;<span class="red_font">*</span></span>
+  						 <input type="text" class="text-box" name="keyword" size="30" maxlength="40" value="<?php echo $productinfodata[0]['keyword']?>">
+  						 多个用;隔开
+  					</li>
+
+
+
+  					<li class="light-row">
+					     <span class="col_width">原图片显示&nbsp;<span class="red_font">*</span></span>
+  						 <img src="/MyCMS/Home/Tpl/resource/productimage/product<?php echo $productinfodata[0]['id']?>.jpg"/>
+  					</li>
+
+  					<li class="dark-row">
+					     <span class="col_width">图片替换选择&nbsp;<span class="red_font">*</span></span>
+  						 <input type="file" class="text-box" name="picture" size="30" maxlength="40">
+  					</li>
+
+  					<li style="margin:0px; padding:0px">
+						<br>
+						{$editor}
+						
+					</li>
+
+					<li class="dark-row">
+						<span class="col_width">&nbsp;  </span>
+						<input type="submit" class="button"  value="替 换">&nbsp;&nbsp;
+						<input type="reset" class="button" value="重 置">
+					</li>
+
+
+
+								
+
+
+				</ul>
+				<?php
+			      }
+				?>
+		      </form> 	
+			</div>
+                    
+		</div>
+		
+									<div id="timer">
+	<p><span class="exetime">当前脚本执行用时</span><span class="red_font">{$timer}</span>秒&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>	
+</div>
+	</body>
+</html>

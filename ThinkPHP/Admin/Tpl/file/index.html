@@ -1,0 +1,72 @@
+
+<html>
+	<head>
+		<title>管理平台</title>
+		<meta name="Author" content="小卢" />
+		<link rel="stylesheet" type="text/css" href="/MyCMS/Admin/Tpl/resource/css/style.css" >
+		<script src="/MyCMS/Admin/Tpl/resource/js/common.js"></script>
+		
+	
+		
+	</head>
+	<body>
+		<div id="main">
+		 <div class='head-dark-box'>
+					<div class='tit'>内容管理>文件管理>管理文件</div>
+				</div>	
+						<div class='tip-msg'>
+								  提示: 文件操作 
+						</div>
+						
+						<div class="msg-box">
+								<ul class="viewmess">
+					
+				
+					
+				
+					
+					<li class="dark-row">
+						<span class="list_width width_font">文件名</span>
+						<span class="list_width width_font">描&nbsp;&nbsp;述</span>
+						<span class="list_width width_font">上传时间</span>
+						<span class="list_width width_font">操&nbsp;&nbsp;作</span>
+					</li>
+				        <?php foreach($flink as $value){ ?>
+						<li class="light-row" style="padding-top:2px; padding-bottom:2px">
+							<span class="list_width"><input type="checkbox" name="del[]" value="<?php echo $value["id"]; ?>"><a href="__APP__/File/download/id/<?php echo $value["id"]; ?>/oldName/<?php echo $value["oldName"]; ?>/newName/<?php echo $value["newName"]; ?>/end">
+							<?php echo $value["oldName"]; ?></span>
+							<span class="list_width"><?php echo $value["description"]; ?>&nbsp;</span>
+							<span class="list_width"><?php echo date("Y-m-d H:i:s",$value["createTime"]);  ?></span>
+				
+							<span class="list_width" style="width:160px;">
+				
+							<a href="<?php echo $value["id"]; ?>"><a href="__APP__/File/download/id/<?php echo $value["id"]; ?>/oldName/<?php echo $value["oldName"]; ?>/newName/<?php echo $value["newName"]; ?>/end">【下载】</a>
+		
+		        			【<a onclick="return confirm('确定要删除<?php echo $value["oldName"]; ?>文件吗？')" href="<?php echo $value["id"]; ?>"><a href="__APP__/File/delFile/id/<?php echo $value["id"]; ?>/newName/<?php echo $value["newName"];?>/oldName/<?php echo $value["oldName"]; ?>/end">删除</a>】
+							</span>
+						</li>
+					    <?php } ?>
+						 
+						<?php if(!flink){ echo '<li class="light-row">	 本页没有文件   </li>'; } ?>
+					
+				
+					<li class="dark-row">
+						<span class="col_width" style="margin-left:15px;width:240px"> 
+							<a href="javascript:select()">全选</a>/<a href="javascript:fanselect()">反选</a>/<a href="javascript:noselect()">全不选</a>&nbsp;&nbsp;选中项: 
+							<input  name="dels" type="image" title="删除" onClick="return confirm('你确定要删除选中选项吗?')"  src="/MyCMS/Admin/Tpl/resource/images/delete.gif">&nbsp;&nbsp;
+						 </span> 
+						<span class="right">
+							
+						 {$page}
+						      
+						</span>
+					</li>
+				</ul>	
+						</div>
+								<div id="timer">
+	<p><span class="exetime">当前脚本执行用时</span><span class="red_font">{$timer}</span>秒&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>	
+</div>
+						
+	</body>
+</html>
+

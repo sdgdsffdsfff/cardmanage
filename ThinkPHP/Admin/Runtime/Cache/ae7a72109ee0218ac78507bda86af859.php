@@ -1,0 +1,55 @@
+<?php if (!defined('THINK_PATH')) exit();?>﻿<html>
+	<head>
+		<title>管理平台</title>
+		<meta name="Author" content="小卢" />
+		<link rel="stylesheet" type="text/css" href="/MyCMS/Admin/Tpl/resource/css/style.css" >
+		<script src="/MyCMS/Admin/Tpl/resource/js/common.js"></script>
+	</head>
+	<body>
+		<div id="main">
+		             <div class='head-dark-box'>
+					   <div class='tit'>用户管理>帐号管理>添加用户</div>
+				     </div>	
+						<div class='tip-msg'>
+								 提示: 带<span class="red_font">*</span>的项目为必填信息.
+						</div>
+		    <form  method="post" action="__APP__/Admin/insertUser" >
+		          
+			 <div class="msg-box">
+				<ul class="viewmess">
+				
+					<li class="light-row">
+					  
+						<span class="col_width">用户名&nbsp;&nbsp;&nbsp;<span class="red_font">*</span></span>
+						<input name="name" type="text"  class="text-box">
+						可以使用中文，但禁止除[@][.]以外的特殊符号
+					</li>
+					<li class="dark-row">
+						<span class="col_width">登录密码<span class="red_font">*</span></span>
+						<input name="pwd" type="password"  size="20" class="text-box">
+					</li>
+					<li class="light-row">
+						<span class="col_width">确认密码<span class="red_font">*</span></span>
+						<input name="repwd" type="password"  size="20" class="text-box">
+					</li>
+					<li class="dark-row">
+						<span class="col_width">电子邮件<span class="red_font">*</span></span>
+						<input name="email" type="text"  class="text-box">
+						请正确添写电子邮件地址
+					</li>	
+
+					<li class="light-row">
+						<span class="col_width"> &nbsp; </span>
+						<input type="submit" class="button"  value="添加">&nbsp;&nbsp;
+						<input type="reset" class="button" value="重 置">
+					</li>
+				</ul>	
+			</div>			  
+                    </form>
+		</div>
+		
+							<div id="timer">
+	<p><span class="exetime">当前脚本执行用时</span><span class="red_font"><?php echo ($timer); ?></span>秒&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>	
+</div>
+	</body>
+</html>

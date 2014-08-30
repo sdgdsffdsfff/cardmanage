@@ -1,0 +1,134 @@
+<html>
+	<head>
+		<title>管理平台</title>
+		<meta name="Author" content="赵兴壮" />
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css" >
+		
+		<script src="__PUBLIC__/js/common.js"></script>
+		<script src="__PUBLIC__/js/jquery-1.7.2.js"></script>	
+
+
+		<script type="text/javascript">
+
+              
+					$(document).ready(function(){
+						   $('#update').click(					   	
+				   				function(){
+				   					ajaxupdate();
+				   				}
+						   	);
+
+				    function ajaxupdate(){
+
+						  $.post("__APP__/Upcardpwd/updatecard",
+						  	{cardid:$('#cardid').val(),cardpwd:$('#cardpwd').val(),bindtel:$('#bindtel').val(),money:$('#money').val(),remark:$('#remark').val()},
+						    function(data){
+						    
+						    if (data['status']=="success") {
+						    	alert(data['message']);
+						    }else if (data['status']=="failed") 
+						    {
+						    	alert(data['message']);
+						    }
+						    else
+						    {
+							    $('#msg').html(data['status']);
+							    //console.log(data);
+							    var string="";
+
+							    for (var key in data['message']) {
+									    string=string+"<tr><td>"+data['message'][key]+"</td></tr>";
+									}
+							    $('#statustable').html(string);
+						    }
+						  },
+						   "json");//这里返回的类型有：json,html,xml,text
+						}
+
+				   });
+
+    	</script>
+
+	</head>
+	
+	<body>
+		<div id="main">
+
+		    <div class='head-dark-box'>
+					<div class='tit'>内容管理>账号卡查询>账号卡信息</div>
+			</div>	
+				<?php
+					 // print_r($carddata);
+					 $carddata=$carddata[0];
+				?>
+<table style="margin-top:0px; font: 12px Verdana,Arial,Helvetica,sans-serif;" cellspacing="1" align="center" bgcolor="#cccccc" width="70%">
+                                    <tbody><tr>
+                                        <td colspan="4" style="height: 25px" align="left" bgcolor="#f4f4f4">
+                                            &nbsp;帐号卡资料修改</td>
+                                    </tr>
+                                    <tr> <input type="hidden" id="cardid" value="<?php echo $carddata['id'];?>">
+                                        <td style="height: 25px" align="center" bgcolor="#f4f4f4" width="25%">
+                                            &nbsp;帐号</td>
+                                        <td style="height: 25px" align="left" bgcolor="#ffffff" width="25%">
+                                            &nbsp;<input name="TxtAccount" value="<?php  echo $carddata['cardnum'];?>" maxlength="20" id="TxtAccount" disabled="disabled" style="width:120px;" type="text"></td>
+                                        <td style="height: 25px" align="center" bgcolor="#f4f4f4" width="25%">
+                                            &nbsp;电话号码</td>
+                                        <td style="height: 25px" align="left" bgcolor="#ffffff" width="25%">
+                                            &nbsp;<input name="bindtel" value="<?php  echo $carddata['bindtel'];?>" maxlength="15" id="bindtel" onkeypress="javascript:return event.keyCode>=48&amp;&amp;event.keyCode<=57;" style="width:120px;" type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="height: 25px" align="center" bgcolor="#f4f4f4" width="25%">
+                                            &nbsp;密码</td>
+                                        <td style="height: 25px" align="left" bgcolor="#ffffff" width="25%">
+                                            &nbsp;<input name="cardpwd" value="<?php  echo $carddata['cardpwd'];?>" maxlength="6" id="cardpwd"  style="width:120px;" type="text"></td>
+                                        <td style="height: 25px" align="center" bgcolor="#f4f4f4" width="25%">
+                                            &nbsp;余额</td>
+                                        <td style="height: 25px" align="left" bgcolor="#ffffff" width="25%">
+                                            &nbsp;<input name="money" value="<?php echo $carddata['money'];?>" maxlength="8" id="money" style="width:120px;" type="text"></td>
+                                    </tr>
+                                     <tr>
+                                        <td style="height: 25px" align="center" bgcolor="#f4f4f4" width="25%">
+                                            &nbsp;开通时间</td>
+                                        <td style="height: 25px" align="left" bgcolor="#ffffff" width="25%">
+                                            &nbsp;<?php  echo $carddata['opentime'];?></td>
+                                        <td style="height: 25px" align="center" bgcolor="#f4f4f4" width="25%">
+                                            &nbsp;锁定时间</td>
+                                        <td style="height: 25px" align="left" bgcolor="#ffffff" width="25%">
+                                            <?php echo $carddata['locktime'];?></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td style="height: 25px" align="center" bgcolor="#f4f4f4" width="25%">
+                                            充值时间</td>
+                                        <td style="height: 25px" align="left" bgcolor="#ffffff" width="25%">
+                                            &nbsp;<span id="TxtApplyDate"><?php  echo $carddata['filltime'];?></span></td>
+                                        <td style="height: 25px" align="center" bgcolor="#f4f4f4" width="25%">
+                                            状态</td>
+                                        <td style="height: 25px" align="left" bgcolor="#ffffff" width="25%">
+											&nbsp;<span id="TxtApplyDate"><?php  echo $carddata['status'];?></span>
+                                        </td>
+                                    </tr>                                 
+
+                                    <tr>
+                                      　　<td  align="center" bgcolor="#f4f4f4" width="25%" colspan="1">备注</td>
+                                          <td bgcolor="#ffffff"  colspan="3"> 
+												<textarea name="remark" id="remark" style="width:400px;height:150px"><?php echo $carddata['remark'];?></textarea>
+                                          </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4" style="height: 25px" align="center" bgcolor="#f4f4f4">
+                                            <input name="update" value="修改" id="update"  style="width:56px;" type="submit">&nbsp;<input name="Button5" value="返回" id="Button5" style="width:56px;" onclick="history.back(-1);" type="submit"></td>
+                                    </tr>
+                                </tbody></table>
+                                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+		
+	 </div>
+		
+		<br/><br/><br/><br/><br/>
+	<div id="timer">
+	<p><span class="exetime">当前脚本执行用时</span><span class="red_font">{$timer}</span>秒&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>	
+    </div>
+
+	</body>
+</html>

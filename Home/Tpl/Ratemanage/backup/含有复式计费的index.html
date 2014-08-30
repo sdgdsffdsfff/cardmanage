@@ -1,0 +1,132 @@
+<html>
+<head>
+<title>管理平台</title>
+<meta name="Author" content="赵兴壮" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css">
+<script src="__PUBLIC__/js/common.js"></script>
+<script src="__PUBLIC__/js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/tc.min.js"></script>
+<script type="text/javascript">
+	function ajaxdelete(id) {
+		//alert(id);                        
+		$.post("__APP__/Ratemanage/delete", {
+			id : id
+		}, function(data) {
+
+			if (data['status'] == "success") {
+				alert(data['message']);
+				$('#tr' + id).remove();
+
+			} else if (data['status'] == "failed") {
+				alert(data['message']);
+			}
+		}, "json");//这里返回的类型有：json,html,xml,text
+	}
+	
+	function changehref(type,id)
+	{       
+		 aid='a'+id;
+		if(type==1)
+			{
+
+			   $(aid).attr('href', "__APP__/Ratemanage/updateratedata?id="+id+"&type=1");
+			   //alert("__APP__/Ratemanage/updateratedata?id="+id+"&type=1");
+			}
+		else
+			{
+			   $(aid).attr('href', "__APP__/Ratemanage/updateratedata?id="+id+"&type=2");
+			   //alert("__APP__/Ratemanage/updateratedata?id="+id+"&type=2");
+			}
+	}
+	
+
+</script>
+</head>
+<body>
+	<div id="main">
+		<div class="head-dark-box">
+			<div class="tit">内容管理&gt;费率管理&gt;费率管理</div>
+		</div>
+		<br />
+		<br />
+		<br />
+
+		<table rules="all" id="MyGridView"
+			style="border-color: Black; border-width: 1px; border-style: solid; font-size: 10pt; height: 10px; width: 90%; border-collapse: collapse;"
+			cellpadding="3" cellspacing="0" align="Center" border="1">
+			<tbody>
+
+				<tr>
+					<td colspan="5"><a href="__APP__/Ratemanage/add">添加费率</a> <a
+						href="__APP__/Ratemanage/defaultrate">默认费率</a></td>
+				</tr>
+				<tr
+					style="background-color: #E5E5E5; font-weight: bold; height: 15px;">
+					<th scope="col">编号</th>
+					<th scope="col">开始时间</th>
+					<th scope="col">结束时间</th>
+					<th scope="col">计费方式</th>
+					<th scope="col">修改</th>
+				</tr>
+
+
+				<?php 
+
+		       //print_r($feedata);
+
+			   foreach ($feedata as $key => $pervalue) {
+			  		
+			  		if(($pervalue['starttime']=="0000")&&($pervalue['endtime']=="0000")){
+			  		    
+			  		}
+			  		else
+			  		{
+			  			echo '<tr id="tr'.$pervalue['id'].'">
+			  		    		  <td>'.$key.'</td><td>'.$pervalue['starttime'].'</td>
+			  		              <td>'.$pervalue['endtime'].'</td><td align="center">
+									<input type="radio" value="1"  name="type" onclick="changehref(1,'.$pervalue['id'].')">单式计费 
+									<input type="radio" value="2"  name="type" onclick="changehref(2,'.$pervalue['id'].')">复式计费
+								  </td>
+			  		              <td align="center">';
+							#字段判断
+							if(false)
+							{
+							   #单式计费
+							   echo '<a id="a'.$pervalue['id'].'" href="__APP__/Ratemanage/updateratedata?id='.$pervalue['id'].'&type=1">修改</a>';
+							}else
+							{
+							   #复式计费
+							   echo '<a id="a'.$pervalue['id'].'" href="__APP__/Ratemanage/updateratedata?id='.$pervalue['id'].'&type=2">修改</a>';
+							}
+			  		         echo '<a id="lock" style="cursor:pointer" onclick="ajaxdelete('.$pervalue['id'].')" >删除</a>
+			  		              </td>
+			  		              </tr>';
+			  		}
+			  	
+			   }
+		   ?>
+
+
+
+				<tr>
+					<td colspan="5" align="center" style="color: red;">如果不在以上时间段执行默认费率<?php  echo $defaultfeedata[0]['fee'];?>元
+					</td>
+				</tr>
+
+			</tbody>
+		</table>
+
+
+
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<div id="timer">
+			<p>
+				<span class="exetime">当前脚本执行用时</span><span class="red_font">{$timer}</span>秒&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</p>
+		</div>
+</body>
+</html>

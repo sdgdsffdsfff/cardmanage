@@ -1,0 +1,65 @@
+[ 2014-08-18T21:53:06+08:00 ] 127.0.0.1 /cardmanage/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.021210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021319s ]
+
+[ 2014-08-18T21:53:06+08:00 ] 127.0.0.1 /cardmanage/index.php?m=login&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /usr/local/apache243/htdocs/cardmanage/Home/Lib/Action/LoginAction.class.php:102) /usr/local/apache243/htdocs/cardmanage/Home/Lib/Action/PublicAction.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: erro /usr/local/apache243/htdocs/cardmanage/Home/Runtime/Cache/fe9703200f8417a0c6155a1fe6fdc2c0.php 第 31 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.118834s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.118924s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.013366s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.010665s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.004831s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000636s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.029707s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /usr/local/apache243/htdocs/cardmanage/Home/Lib/Action/LoginAction.class.php:102) /usr/local/apache243/htdocs/cardmanage/ThinkPHP/Lib/Core/View.class.php 第 95 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /usr/local/apache243/htdocs/cardmanage/Home/Lib/Action/LoginAction.class.php:102) /usr/local/apache243/htdocs/cardmanage/ThinkPHP/Lib/Core/View.class.php 第 96 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /usr/local/apache243/htdocs/cardmanage/Home/Lib/Action/LoginAction.class.php:102) /usr/local/apache243/htdocs/cardmanage/ThinkPHP/Lib/Core/View.class.php 第 97 行.
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002309s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002359s ]
+
+[ 2014-08-18T21:53:07+08:00 ] 127.0.0.1 /cardmanage/index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002401s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002492s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+
+[ 2014-08-18T21:53:24+08:00 ] 127.0.0.1 /cardmanage/index.php?m=login&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /usr/local/apache243/htdocs/cardmanage/Home/Lib/Action/LoginAction.class.php:102) /usr/local/apache243/htdocs/cardmanage/Home/Lib/Action/PublicAction.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: erro /usr/local/apache243/htdocs/cardmanage/Home/Runtime/Cache/fe9703200f8417a0c6155a1fe6fdc2c0.php 第 31 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005356s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005413s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000195s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000221s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000135s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000948s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /usr/local/apache243/htdocs/cardmanage/Home/Lib/Action/LoginAction.class.php:102) /usr/local/apache243/htdocs/cardmanage/ThinkPHP/Lib/Core/View.class.php 第 95 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /usr/local/apache243/htdocs/cardmanage/Home/Lib/Action/LoginAction.class.php:102) /usr/local/apache243/htdocs/cardmanage/ThinkPHP/Lib/Core/View.class.php 第 96 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /usr/local/apache243/htdocs/cardmanage/Home/Lib/Action/LoginAction.class.php:102) /usr/local/apache243/htdocs/cardmanage/ThinkPHP/Lib/Core/View.class.php 第 97 行.
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000332s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000373s ]
+
+[ 2014-08-18T21:53:24+08:00 ] 127.0.0.1 /cardmanage/index.php/Public/verify
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000445s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+
