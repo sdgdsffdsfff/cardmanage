@@ -1,179 +1,179 @@
 <html>
-<head>
+    <head>
 
-<title>MyCMS管理平台</title>
-<meta name="Author" content="" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css">
-<script type="text/javascript" src="__PUBLIC__/js/jquery-1.7.2.js"></script>
-<script src="__PUBLIC__/js/common.js" charset="utf-8"></script>
-
-
-<script type="text/javascript">
-	function switchmenu(menutitle, menulist, num) {
-		var mTitleObj = document.getElementById(menutitle);
-		var tlist = document.getElementById("menulist");
-		var mlist = tlist.getElementsByTagName("div");
-		//alert(mTitleObj.innerText);
-
-		switch (num) {
-		case 0:
-
-			mTitleObj.innerText = "修改密码";
-			$("#menu0").css("color", "red");
-			$("#menu1").css("color", "black");
-
-			break;
-
-		case 1:
-
-			mTitleObj.innerText = "内容管理";
-			$("#menu0").css("color", "black");
-			$("#menu1").css("color", "red");
-
-			break;
-
-		}
-
-		for ( var i = 0; i < mlist.length; i++) {
-			if (i == num) {
-				mlist[num].style.display = "block";
-			} else {
-				mlist[i].style.display = "none";
-			}
-		}
-		showScroll(tlist);
-	}
-</script>
-</head>
-
-<body>
-	<div id="menu">
-		<div class="option">
+        <title>MyCMS管理平台</title>
+        <meta name="Author" content="" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css">
+        <script type="text/javascript" src="__PUBLIC__/js/jquery-1.7.2.js"></script>
+        <script src="__PUBLIC__/js/common.js" charset="utf-8"></script>
 
 
-			<div class="menutitle">【管理选项】</div>
-			<div class="content">
-				<ul>
+        <script type="text/javascript">
+            function switchmenu(menutitle, menulist, num) {
+                var mTitleObj = document.getElementById(menutitle);
+                var tlist = document.getElementById("menulist");
+                var mlist = tlist.getElementsByTagName("div");
+                //alert(mTitleObj.innerText);
+
+                switch (num) {
+                    case 0:
+
+                        mTitleObj.innerText = "修改密码";
+                        $("#menu0").css("color", "red");
+                        $("#menu1").css("color", "black");
+
+                        break;
+
+                    case 1:
+
+                        mTitleObj.innerText = "内容管理";
+                        $("#menu0").css("color", "black");
+                        $("#menu1").css("color", "red");
+
+                        break;
+
+                }
+
+                for (var i = 0; i < mlist.length; i++) {
+                    if (i == num) {
+                        mlist[num].style.display = "block";
+                    } else {
+                        mlist[i].style.display = "none";
+                    }
+                }
+                showScroll(tlist);
+            }
+        </script>
+    </head>
+
+    <body>
+        <div id="menu">
+            <div class="option">
 
 
-					<li class="opt"><a
-						onclick="switchmenu('optionmenu','menulist',1)" target="main">
-							<img onmouseover="cimg(this, '__PUBLIC__/images/article_h.gif')"
-							onmouseout="cimg(this, '__PUBLIC__/images/article_d.gif')"
-							border="0" src="__PUBLIC__/images/article_d.gif"><br /> <span
-							id="menu1" style="color: red">内容管理</span>
-					</a></li>
-
-					<li class="opt"><a href="__APP__/Changepwd/index"
-						onclick="switchmenu('optionmenu','menulist',0)" target="main">
-
-							<img onmouseover="cimg(this, '__PUBLIC__/images/system_h.gif')"
-							onmouseout="cimg(this, '__PUBLIC__/images/system_d.gif')"
-							border="0" src="__PUBLIC__/images/system_d.gif"> <br /> <span
-							id="menu0">修改密码</span>
-					</a></li>
-
-				</ul>
-			</div>
-		</div>
+                <div class="menutitle">【管理选项】</div>
+                <div class="content">
+                    <ul>
 
 
-		<div class="nav"></div>
-		<div class="option">
+                        <li class="opt"><a
+                                onclick="switchmenu('optionmenu', 'menulist', 1)" target="main">
+                                <img onmouseover="cimg(this, '__PUBLIC__/images/article_h.gif')"
+                                     onmouseout="cimg(this, '__PUBLIC__/images/article_d.gif')"
+                                     border="0" src="__PUBLIC__/images/article_d.gif"><br /> <span
+                                     id="menu1" style="color: red">内容管理</span>
+                            </a></li>
 
-			<div id="optionmenu" class="menutitle">管理选项</div>
+                        <li class="opt"><a href="__APP__/Changepwd/index"
+                                           onclick="switchmenu('optionmenu', 'menulist', 0)" target="main">
 
+                                <img onmouseover="cimg(this, '__PUBLIC__/images/system_h.gif')"
+                                     onmouseout="cimg(this, '__PUBLIC__/images/system_d.gif')"
+                                     border="0" src="__PUBLIC__/images/system_d.gif"> <br /> <span
+                                     id="menu0">修改密码</span>
+                            </a></li>
 
-			<div id="menulist" class="content">
-
-				<!-------------------------第一块选项---------------------------------------->
-
-				<!-------------------------以后添加---------------------------------------------->
-
-
-				<div>
-					<h4 onclick="domenu(this, 'list1')" class="tit">--修改密码--</h4>
-					<ul id="list1">
-						<li><a class="list" href="__APP__/Changepwd/index"
-							target="main">修改密码</a></li>
-					</ul>
-				</div>
-
-
-				<!--- ------------------------第三块-------------------------------->
-
-				<div style="display: block">
-					<h4 onclick="domenu(this, 'list42')" class="tit">--管理--</h4>
-					<ul id="list42">
-						<li><a class="list" href="__APP__/Recharge/index"
-							target="main">充值卡充值</a></li>
-						<li><a class="list" href="__APP__/Makeappo/index"
-							target="main">网上电话预约</a></li>
-						<li><a class="list" href="__APP__/Reducenum/index"
-							target="main">设置缩位拨号</a></li>
-						<li><a class="list" href="__APP__/Querybillrecord/index"
-							target="main">通话清单查询</a></li>
-						<li><a class="list" href="__APP__/Querydonate/index"
-							target="main">赠送金额查询</a></li>
-						<li><a class="list" href="__APP__/Contactmanage/index"
-							target="main">常用联系人管理</a></li>
-					</ul>
-
-					<table
-						style="margin-top: 8px; margin-bottom: 8px; font: 12px Verdana, Arial, Helvetica, sans-serif;"
-						cellpadding="0" cellspacing="3" border="0" width="95%">
-						<tbody>
-							<tr>
-								<td align="center" width="55">用户帐号</td>
-								<td align="left"><span id="mobileNum"> <?php echo $userdata[0]['loginname']?>
-								</span></td>
-							</tr>
-							<tr>
-								<td align="center">余额(元)</td>
-								<td align="left"><span id="balance"> <?php echo $userdata[0]['banlance']?>
-								</span></td>
-							</tr>
-							<tr>
-								<td align="center">赠送金额</td>
-								<td align="left"><span id="balance"> <?php 
-						                         		if (empty($sumdonatemoney)) {
-						                         			echo '0';
-						                         		}
-						                         		else
-						                         		{
-						                         			 echo $sumdonatemoney;
-						                         		}
-						                         ?>
-								</span></td>
-							</tr>
-							<tr>
-								<td align="center">注册时间</td>
-								<td align="left"><span id="applyDate"> <?php echo $userdata[0]['registedate']?>
-								</span></td>
-							</tr>
-							<tr>
-								<td align="center"><font color="red">有效期限</font></td>
-								<td align="left"><font color="red"><span
-										id="endDate"> <?php echo $userdata[0]['expirydate']?>
-									</span></font></td>
-							</tr>
-							<tr>
-								<td align="center">最后使用</td>
-								<td align="left"><span id="lastUseDate"> <?php echo $userdata[0]['lastusetime']?>
-								</span></td>
-							</tr>
-						</tbody>
-					</table>
-
-				</div>
-				<script>
-					//switchmenu('optionmenu','menulist',0);
-				</script>
-			</div>
+                    </ul>
+                </div>
+            </div>
 
 
+            <div class="nav"></div>
+            <div class="option">
 
-		</div>
-</body>
+                <div id="optionmenu" class="menutitle">管理选项</div>
+
+
+                <div id="menulist" class="content">
+
+                    <!-------------------------第一块选项---------------------------------------->
+
+                    <!-------------------------以后添加---------------------------------------------->
+
+
+                    <div>
+                        <h4 onclick="domenu(this, 'list1')" class="tit">--修改密码--</h4>
+                        <ul id="list1">
+                            <li><a class="list" href="__APP__/Changepwd/index"
+                                   target="main">修改密码</a></li>
+                        </ul>
+                    </div>
+
+
+                    <!--- ------------------------第三块-------------------------------->
+
+                    <div style="display: block">
+                        <h4 onclick="domenu(this, 'list42')" class="tit">--管理--</h4>
+                        <ul id="list42">
+                            <li><a class="list" href="__APP__/Recharge/index"
+                                   target="main">充值卡充值</a></li>
+                            <li><a class="list" href="__APP__/Makeappo/index"
+                                   target="main">网上电话预约</a></li>
+                            <li><a class="list" href="__APP__/Reducenum/index"
+                                   target="main">设置缩位拨号</a></li>
+                            <li><a class="list" href="__APP__/Querybillrecord/index"
+                                   target="main">通话清单查询</a></li>
+                            <li><a class="list" href="__APP__/Querydonate/index"
+                                   target="main">赠送金额查询</a></li>
+                            <li><a class="list" href="__APP__/Contactmanage/index"
+                                   target="main">常用联系人管理</a></li>
+                        </ul>
+
+                        <table
+                            style="margin-top: 8px; margin-bottom: 8px; font: 12px Verdana, Arial, Helvetica, sans-serif;"
+                            cellpadding="0" cellspacing="3" border="0" width="95%">
+                            <tbody>
+                                <tr>
+                                    <td align="center" width="55">用户帐号</td>
+                                    <td align="left"><span id="mobileNum"> <?php echo $userdata[0]['loginname']?>
+                                        </span></td>
+                                </tr>
+                                <tr>
+                                    <td align="center">余额(元)</td>
+                                    <td align="left"><span id="balance"> <?php echo $userdata[0]['banlance']?>
+                                        </span></td>
+                                </tr>
+                                <tr>
+                                    <td align="center">赠送金额</td>
+                                    <td align="left"><span id="balance"> <?php 
+                                            if (empty($sumdonatemoney)) {
+                                            echo '0';
+                                            }
+                                            else
+                                            {
+                                            echo $sumdonatemoney;
+                                            }
+                                            ?>
+                                        </span></td>
+                                </tr>
+                                <tr>
+                                    <td align="center">注册时间</td>
+                                    <td align="left"><span id="applyDate"> <?php echo $userdata[0]['registedate']?>
+                                        </span></td>
+                                </tr>
+                                <tr>
+                                    <td align="center"><font color="red">有效期限</font></td>
+                                    <td align="left"><font color="red"><span
+                                            id="endDate"> <?php echo $userdata[0]['expirydate']?>
+                                        </span></font></td>
+                                </tr>
+                                <tr>
+                                    <td align="center">最后使用</td>
+                                    <td align="left"><span id="lastUseDate"> <?php echo $userdata[0]['lastusetime']?>
+                                        </span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <script>
+                        //switchmenu('optionmenu','menulist',0);
+                    </script>
+                </div>
+
+
+
+            </div>
+    </body>
 </html>

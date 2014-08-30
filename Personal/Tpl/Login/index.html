@@ -1,53 +1,53 @@
 
 <html>
-<head>
-<title>后台管理员登陆管理</title>
-	<meta name="Author" content="小卢">
-	<meta http-equiv="Content-Type" content="text/html;charset=utf8">
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css" >
-	<script src="__PUBLIC__/js/common.js"></script>
-</head>
+    <head>
+        <title>后台管理员登陆管理</title>
+        <meta name="Author" content="小卢">
+        <meta http-equiv="Content-Type" content="text/html;charset=utf8">
+        <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css" >
+        <script src="__PUBLIC__/js/common.js"></script>
+    </head>
 
-<body class="center">
-<div id="login-box">
-<div id="main">
-	<div class="head-dark-box">
-		&nbsp;<b>用户登录</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$erro}
-	</div>
-	<div class="not-display">
-		<span></span>	
-	</div>
-	<form action="__APP__/Login/islogin" method="post" id="login-form">
-		<ul>	
-			<li class="dark-row">
-				<span class="list_width">用户名</span>
-				<input class="text-box" size="15" name="n" type="text">
-			</li>
-			<li class="light-row">
-				<span class="list_width">密&nbsp;&nbsp;&nbsp;码</span>
-				<input class="text-box" size="15" name="p" type="password">
-			</li>
-			
-			<li class="dark-row">
-				<span class="list_width">验证码</span>
-				<input class="text-box" size="7" name="verify" type="text" >
-				<img src='__APP__/Public/verify' onclick="this.src='__APP__/Public/verify/'+Math.random()" ><br>
-				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;看不清？点击图片更换</span>
-			</li>			
- 			<li class="light-row">
-				<span class="list_width">&nbsp;</span>
-				<input class="button" value="登录系统" type="submit" name="sub">
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<a href="__APP__/Allrecharge/index" style="color:red">充值</a>
-				
-			</li>
-		</ul>
-	</form>
-	
-</div>
-</div>
+    <body class="center">
+        <div id="login-box">
+            <div id="main">
+                <div class="head-dark-box">
+                    &nbsp;<b>用户登录</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$erro}
+                </div>
+                <div class="not-display">
+                    <span></span>	
+                </div>
+                <form action="__APP__/Login/islogin" method="post" id="login-form">
+                    <ul>	
+                        <li class="dark-row">
+                            <span class="list_width">用户名</span>
+                            <input class="text-box" size="15" name="n" type="text">
+                        </li>
+                        <li class="light-row">
+                            <span class="list_width">密&nbsp;&nbsp;&nbsp;码</span>
+                            <input class="text-box" size="15" name="p" type="password">
+                        </li>
 
-</body>
+                        <li class="dark-row">
+                            <span class="list_width">验证码</span>
+                            <input class="text-box" size="7" name="verify" type="text" >
+                            <img src='__APP__/Public/verify' onclick="this.src = '__APP__/Public/verify/' + Math.random()" ><br>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;看不清？点击图片更换</span>
+                        </li>			
+                        <li class="light-row">
+                            <span class="list_width">&nbsp;</span>
+                            <input class="button" value="登录系统" type="submit" name="sub">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="__APP__/Allrecharge/index" style="color:red">充值</a>
+
+                        </li>
+                    </ul>
+                </form>
+
+            </div>
+        </div>
+
+    </body>
 </html>
 
 

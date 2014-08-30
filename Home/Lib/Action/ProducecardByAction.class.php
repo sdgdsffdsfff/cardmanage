@@ -1,94 +1,94 @@
 <?php
-/**************************************************************************************
- ***  文件：ProducecardAction.class.php
- ***  说明：生成卡
- ***  日期：2012-08-12
- *************************************************************************************/
+
+/* * ************************************************************************************
+ * **  文件：ProducecardAction.class.php
+ * **  说明：生成卡
+ * **  日期：2012-08-12
+ * *********************************************************************************** */
 
 //TransfercardAction控制类继承统一入口加载类CommonAction
-class ProducecardByAction extends  CommonAction {
+class ProducecardByAction extends CommonAction {
 
-	function index() {
-		//还需要初始化
-		$this -> assign('timer', $this -> getTime());
-		$this -> display();
-	}
+    function index() {
+        //还需要初始化
+        $this->assign('timer', $this->getTime());
+        $this->display();
+    }
 
-	//卡号下发代理商时候要验证卡的状态 是不是未激活
-	#查看卡状态是不是未激活状态  防止下发已激活已使用已锁定状态的卡片
-	#ajax 返回值 $data['status']="状态";
-	#            $data['message']="具体信息"；
+    //卡号下发代理商时候要验证卡的状态 是不是未激活
+    #查看卡状态是不是未激活状态  防止下发已激活已使用已锁定状态的卡片
+    #ajax 返回值 $data['status']="状态";
+    #            $data['message']="具体信息"；
 
-	function producecard_by() {
+    function producecard_by() {
 
-		//开始验证账号卡状态   判断是不是数字
-		$param = $_POST;
-		$startcardnum = $param['startcardnum'];
-		$stopcardnum = $param['stopcardnum'];
-		$validityday = intval(trim($param['validityday']));
-		$expirydate = $param['expirydate'];
-		$expirydate = intval(trim(strtotime($expirydate)));
+        //开始验证账号卡状态   判断是不是数字
+        $param = $_POST;
+        $startcardnum = $param['startcardnum'];
+        $stopcardnum = $param['stopcardnum'];
+        $validityday = intval(trim($param['validityday']));
+        $expirydate = $param['expirydate'];
+        $expirydate = intval(trim(strtotime($expirydate)));
 
-		//还得加判断$startcardnum 比$stopcardnum小
+        //还得加判断$startcardnum 比$stopcardnum小
 
-		$card_model = M('cards');
+        $card_model = M('cards');
 
-		$startcardnum = trim(intval($startcardnum));
-		$stopcardnum = trim(intval($stopcardnum));
-		$money = trim(intval($money));
+        $startcardnum = trim(intval($startcardnum));
+        $stopcardnum = trim(intval($stopcardnum));
+        $money = trim(intval($money));
 
-		if ($startcardnum > $stopcardnum) {
-			$data['status'] = 'failed';
-			$data['message'] = "起始号码大于结束号码";
-			$this -> ajaxReturn($data, 'json');
-		}
+        if ($startcardnum > $stopcardnum) {
+            $data['status'] = 'failed';
+            $data['message'] = "起始号码大于结束号码";
+            $this->ajaxReturn($data, 'json');
+        }
 
-		$sql = "select id,cardnum,ownid,subownid,status from cb_cards where cardnum >= trim(to_char(" . $startcardnum . ",'000000')) and cardnum <= trim(to_char(" . $stopcardnum . ", '000000')) and length(cardnum) = 6";
-		$carddata = $card_model -> query($sql);
+        $sql = "select id,cardnum,ownid,subownid,status from cb_cards where cardnum >= trim(to_char(" . $startcardnum . ",'000000')) and cardnum <= trim(to_char(" . $stopcardnum . ", '000000')) and length(cardnum) = 6";
+        $carddata = $card_model->query($sql);
 
-		if (!empty($carddata)) {
+        if (!empty($carddata)) {
 
-			//操作日志
-			$operdetail = "管理员" . $_SESSION['loginname'] . "生成卡号从" . $startcardnum . "到" . $stopcardnum . "失败，" . "原因：该卡号段内已经含有卡。";
-			$opertype = "生成卡";
-			$this -> addlog($operdetail, $opertype);
+            //操作日志
+            $operdetail = "管理员" . $_SESSION['loginname'] . "生成卡号从" . $startcardnum . "到" . $stopcardnum . "失败，" . "原因：该卡号段内已经含有卡。";
+            $opertype = "生成卡";
+            $this->addlog($operdetail, $opertype);
 
-			$data['status'] = "failed";
-			$data['message'] = "该号码段内已有卡，请查证后再试！";
-			$this -> ajaxReturn($data, 'json');
-		}
-		$this -> produce_by($startcardnum, $stopcardnum, $validityday, $expirydate);
-	}
+            $data['status'] = "failed";
+            $data['message'] = "该号码段内已有卡，请查证后再试！";
+            $this->ajaxReturn($data, 'json');
+        }
+        $this->produce_by($startcardnum, $stopcardnum, $validityday, $expirydate);
+    }
 
-	function produce_by($startcardnum, $stopcardnum, $validityday, $expirydate) {
-		$sql = 'SELECT callback_generate_card_by(' . $startcardnum . ',' . $stopcardnum . ',' . $validityday . ',' . $expirydate . ','.$_SESSION['accountid'].')';
-		//echo $sql;
-		//exit;
-		$card_model = M('cards');
-		$status = $card_model -> query($sql);
-		if ($status[0]['callback_generate_card_by'] == "SUCCESS") {
+    function produce_by($startcardnum, $stopcardnum, $validityday, $expirydate) {
+        $sql = 'SELECT callback_generate_card_by(' . $startcardnum . ',' . $stopcardnum . ',' . $validityday . ',' . $expirydate . ',' . $_SESSION['accountid'] . ')';
+        //echo $sql;
+        //exit;
+        $card_model = M('cards');
+        $status = $card_model->query($sql);
+        if ($status[0]['callback_generate_card_by'] == "SUCCESS") {
 
-			$operdetail = "管理员" . $_SESSION['loginname'] . "生成期限卡号从" . $startcardnum . "到" . $stopcardnum . "";
-			$opertype = "生成卡";
-			$this -> addlog($operdetail, $opertype);
+            $operdetail = "管理员" . $_SESSION['loginname'] . "生成期限卡号从" . $startcardnum . "到" . $stopcardnum . "";
+            $opertype = "生成卡";
+            $this->addlog($operdetail, $opertype);
 
-			$data['message'] = "生成卡号" . $startcardnum . "到" . $stopcardnum . "成功！";
-			$data['status'] = 'success';
-			$this -> ajaxReturn($data, 'json');
-		} else if ($status[0]['callback_generate_card_by'] == "FAILED") {
+            $data['message'] = "生成卡号" . $startcardnum . "到" . $stopcardnum . "成功！";
+            $data['status'] = 'success';
+            $this->ajaxReturn($data, 'json');
+        } else if ($status[0]['callback_generate_card_by'] == "FAILED") {
 
-			$operdetail = "管理员" . $_SESSION['loginname'] . "生成期限卡号从" . $startcardnum . "到" . $stopcardnum . "失败，原因未知。";
-			$opertype = "生成卡";
-			$this -> addlog($operdetail, $opertype);
-			$data['message'] = "生成卡号" . $startcardnum . "到" . $stopcardnum . "失败！";
-			$data['status'] = 'failed';
-			$this -> ajaxReturn($data, 'json');
-		} else {
-			$data['message'] = '原因未知';
-			$data['status'] = 'failed';
-			$this -> ajaxReturn($data, 'json');
-		}
+            $operdetail = "管理员" . $_SESSION['loginname'] . "生成期限卡号从" . $startcardnum . "到" . $stopcardnum . "失败，原因未知。";
+            $opertype = "生成卡";
+            $this->addlog($operdetail, $opertype);
+            $data['message'] = "生成卡号" . $startcardnum . "到" . $stopcardnum . "失败！";
+            $data['status'] = 'failed';
+            $this->ajaxReturn($data, 'json');
+        } else {
+            $data['message'] = '原因未知';
+            $data['status'] = 'failed';
+            $this->ajaxReturn($data, 'json');
+        }
+    }
 
-	}
 }
-
