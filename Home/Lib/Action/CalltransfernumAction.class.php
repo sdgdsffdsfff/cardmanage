@@ -61,7 +61,7 @@ class CalltransfernumAction extends CommonAction {
                             )) : $this->ajaxReturn(array(
                                 'status' => 'error',
                                 'info' => '删除失败！'
-                            ));
+            ));
         }
     }
 
@@ -130,7 +130,7 @@ class CalltransfernumAction extends CommonAction {
         $destination_folder = './Public/file/';
         if ($_SERVER ['REQUEST_METHOD'] == 'POST') {   // 是否是post上传的文件
             if (!is_uploaded_file($_FILES ["file"] [tmp_name])) {
-            //是否存在文件
+                //是否存在文件
                 $this->assign('msgTitle', '文件不存在');
                 $this->assign('message', '请重试');
                 $this->assign('jumpurl', '__APP__/Calltransfernum/bulkadd');
@@ -139,7 +139,7 @@ class CalltransfernumAction extends CommonAction {
             } else {
                 $file = $_FILES ["file"];
                 if (!(in_array($file ["type"], $exceluptypes) || in_array($file ['type'], $txtuptypes))) {
-                //检查文件类型
+                    //检查文件类型
                     $this->assign('msgTitle', '文件类型不符!仅可以上传EXCEL和TXT文本文档类型文件');
                     $this->assign('message', '请重试');
                     $this->assign('jumpurl', '__APP__/Calltransfernum/bulkadd');
@@ -315,7 +315,7 @@ class CalltransfernumAction extends CommonAction {
         fclose($fp);
         exit();
     }
-    
+
     function formfile($numdata, $type) {
         $destination_folder = './Public/file/';
         if ($type == 1) {
@@ -353,7 +353,7 @@ class CalltransfernumAction extends CommonAction {
             // 高置列的宽度
             $objExcel->getActiveSheet()->getColumnDimension('A')->setWidth(30);
             $objExcel->getActiveSheet()->getHeaderFooter()->setOddHeader('&L&BPersonal cash register&RPrinted on &D');
-            $objExcel->getActiveSheet()->getHeaderFooter()->setOddFooter('&L&B' . $objExcel->getProperties()->getTitle() . '&RPage &P of &N');   
+            $objExcel->getActiveSheet()->getHeaderFooter()->setOddFooter('&L&B' . $objExcel->getProperties()->getTitle() . '&RPage &P of &N');
             $objExcel->getActiveSheet()->getPageSetup()->setOrientation(PHPExcel_Worksheet_PageSetup::ORIENTATION_PORTRAIT);
             $objExcel->getActiveSheet()->getPageSetup()->setPaperSize(PHPExcel_Worksheet_PageSetup::PAPERSIZE_A4);
             $objExcel->setActiveSheetIndex(0);
@@ -410,4 +410,5 @@ class CalltransfernumAction extends CommonAction {
         $this->assign('timer', $this->getTime());
         $this->display();
     }
+
 }

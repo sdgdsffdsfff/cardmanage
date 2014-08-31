@@ -56,6 +56,10 @@ class AmountAction extends CommonAction {
         exit();
     }
 
+    /**
+     *  @access public 
+     *  @author timelesszhuang <834916321@qq.com>
+     */
     public function del() {
         $id = $this->_get('id');
         $amount = M('amount_setting');
