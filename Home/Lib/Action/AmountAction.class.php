@@ -56,6 +56,7 @@ class AmountAction extends CommonAction {
         exit();
     }
 
+    
     /**
      *  @access public 
      *  @author timelesszhuang <834916321@qq.com>
