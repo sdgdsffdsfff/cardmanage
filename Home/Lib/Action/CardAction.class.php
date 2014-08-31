@@ -76,7 +76,8 @@ class CardAction extends CommonAction {
             $this->ajaxReturn($data, 'json');
         }
     }
-
+    
+    
     public function ajaxGet() {
         if ($this->isAjax()) {
             $amount = $this->_post('amount');

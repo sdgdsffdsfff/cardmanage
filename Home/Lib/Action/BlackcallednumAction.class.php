@@ -236,11 +236,9 @@ class BlackcallednumAction extends CommonAction {
                 $data[] = $value;
             }
         }
-
         $data = $this->checkfield($data);
         $checkresult = $data[1];
         $addresult = $this->bulkadddata($data[0]);
-
         import('ORG.Util.Page');
         $model = M('test');
         $count = $model->query('select count(*) from cb_blacklist');
@@ -262,12 +260,7 @@ class BlackcallednumAction extends CommonAction {
         $this->assign('page', $show); // 赋值分页输出
         $this->assign('timer', $this->getTime());
         $this->assign('blacklistdata', $data);
-
         $this->assign('timer', $this->getTime());
-
-        /* print_r($addresult);
-          print_r($checkresult);
-          exit(); */
         $this->assign('addresult', $addresult);
         $this->assign('checkresult', $checkresult);
         $this->display();
@@ -287,7 +280,6 @@ class BlackcallednumAction extends CommonAction {
                 }
             }
         }
-
         return $addresult;
     }
 
@@ -295,23 +287,18 @@ class BlackcallednumAction extends CommonAction {
     //还需要验证是不是该批数据里面含有重复
 
     function checkfield($data) {
-
         $data1 = $this->getallnum();
         $contactdata = $data;
-
         foreach ($data1 as $key => $value) {
             $numdata[$key] = $value['areacode'];
         }
         $data1 = $numdata;
         $numarr = array();
-
         foreach ($data as $key => $value) {
-
             if (in_array($value, $data1)) {
                 $returndata[$key] = "黑名单号码" . $value . "已存在，请查证。";
                 unset($contactdata[$key]);
             }
-
             if (!in_array($value, $numarr)) {
                 $numarr[$key] = $value;
             } else {
@@ -319,11 +306,8 @@ class BlackcallednumAction extends CommonAction {
                 unset($contactdata[$key]);
             }
         }
-
         $resultdata[0] = $contactdata;
         $resultdata[1] = $returndata;
-
-        //print_r($resultdata);
         return $resultdata;
     }
 
@@ -334,7 +318,6 @@ class BlackcallednumAction extends CommonAction {
     }
 
     #获取用户
-
     function getallnum() {
         $model = M('test');
         $data = $model->query('select * from cb_blacklist');
@@ -342,11 +325,9 @@ class BlackcallednumAction extends CommonAction {
     }
 
     #下载
-
     function download() {
         $model = M('test');
         $numdata = $model->query('select * from cb_blacklist');
-
         $id = $_GET['id'];
         if ($id == 1) {
             $file_name = $this->formfile($numdata, 1);
@@ -359,7 +340,6 @@ class BlackcallednumAction extends CommonAction {
         $file_path = $file_sub_path . $file_name;
         $fp = fopen($file_path, "r");
         $file_size = filesize($file_path);
-
         //下载文件需要用到的头 
         Header("Content-type: application/octet-stream");
         Header("Accept-Ranges: bytes");
@@ -386,21 +366,16 @@ class BlackcallednumAction extends CommonAction {
             $fp_write = fopen($destination, "w");
             chmod($destination, 0777);
             foreach ($numdata as $key => $value) {
-
                 $stringdata = $value['areacode'] . "\r\n";
                 fwrite($fp_write, $stringdata);
             }
             fclose($fp_write);
-
-
             return $newfilename;
         } else {
             $date = date('YmdGHis');
             $newfilename = $date . '.txt'; // 新的文件路径
             $destination = $destination_folder . $newfilename; //新excel路径
-
             $objExcel = new PHPExcel();
-
             $objExcel->getProperties()->setCreator("广州山基公司");
             $objExcel->getProperties()->setLastModifiedBy("");
             $objExcel->getProperties()->setTitle("黑名单号码");
@@ -409,15 +384,12 @@ class BlackcallednumAction extends CommonAction {
             $objExcel->getProperties()->setKeywords("黑名单号码");
             $objExcel->getProperties()->setCategory("黑名单号码");
             $objExcel->setActiveSheetIndex(0);
-
             $i = 0;
             foreach ($numdata as $key => $value) {
                 $u1 = $i + 1;
                 $objExcel->getActiveSheet()->setCellValue('a' . $u1, ' ' . $value["areacode"] . ' ');
                 $i++;
             }
-
-
             // 高置列的宽度  
             $objExcel->getActiveSheet()->getColumnDimension('A')->setWidth(30);
             $objExcel->getActiveSheet()->getHeaderFooter()->setOddHeader('&L&BPersonal cash register&RPrinted on &D');
@@ -440,7 +412,6 @@ class BlackcallednumAction extends CommonAction {
         import('ORG.Util.Page');
         $model = M('test');
         if (empty($_POST['num'])) {
-
             $count = $model->query('select count(*) from cb_blacklist');
             $count = $count[0]['count'];
             $header = "条黑名单信息";
@@ -469,8 +440,6 @@ class BlackcallednumAction extends CommonAction {
             $show = $Page->show(); // 分页显示输出
             // 进行分页数据查询 注意limit方法的参数要使用Page类的属性  
             $sql = "select * from cb_blacklist where areacode like'%" . $num . "%'";
-            //echo $sql;
-            //exit();
             $sql = $sql . " limit " . $Page->listRows . " offset " . $Page->firstRow;
             $data = $model->query($sql);
         }

@@ -98,7 +98,6 @@ class CalltransfernumAction extends CommonAction {
         $model = M('numberpool', "cb_", 'DB_CONFIG2');
         $sqlstr = "selct count(*) from cb_numberpool where num = '" . $calltransfernum . "'";
         $status = $model->query($sqlstr);
-
         if (!empty($adddata)) {
             $data ['status'] = "failed";
             $data ['message'] = "添加失败。该常用联系人已存在！";
@@ -132,7 +131,6 @@ class CalltransfernumAction extends CommonAction {
         if ($_SERVER ['REQUEST_METHOD'] == 'POST') {   // 是否是post上传的文件
             if (!is_uploaded_file($_FILES ["file"] [tmp_name])) {
             //是否存在文件
-
                 $this->assign('msgTitle', '文件不存在');
                 $this->assign('message', '请重试');
                 $this->assign('jumpurl', '__APP__/Calltransfernum/bulkadd');
@@ -142,7 +140,6 @@ class CalltransfernumAction extends CommonAction {
                 $file = $_FILES ["file"];
                 if (!(in_array($file ["type"], $exceluptypes) || in_array($file ['type'], $txtuptypes))) {
                 //检查文件类型
-
                     $this->assign('msgTitle', '文件类型不符!仅可以上传EXCEL和TXT文本文档类型文件');
                     $this->assign('message', '请重试');
                     $this->assign('jumpurl', '__APP__/Calltransfernum/bulkadd');
@@ -171,7 +168,6 @@ class CalltransfernumAction extends CommonAction {
                     $this->display('jump');
                     exit();
                 }
-
                 if (!move_uploaded_file($filename, $destination)) {
                     $this->assign('msgTitle', '常用联系人导入出错请查看文件目录是否已满');
                     $this->assign('message', '请重试');
@@ -190,7 +186,6 @@ class CalltransfernumAction extends CommonAction {
         if ($type != 1) {
             $objPHPExcel = PHPExcel_IOFactory::load($destination_folder);
             $sheetData = $objPHPExcel->getActiveSheet()->toArray(null, true, true, true);
-
             foreach ($sheetData as $key => $value) {
                 $data [] = $value ['A'];
             }
@@ -252,7 +247,6 @@ class CalltransfernumAction extends CommonAction {
     function checkfield($data) {
         $data1 = $this->getallnum();
         $contactdata = $data;
-
         foreach ($data1 as $key => $value) {
             $numdata [$key] = $value ['num'];
         }
@@ -264,7 +258,6 @@ class CalltransfernumAction extends CommonAction {
                 unset($contactdata [$key]);
                 continue;
             }
-
             if (!in_array($value, $numarr)) {
                 $numarr [$key] = $value;
             } else {
@@ -272,11 +265,8 @@ class CalltransfernumAction extends CommonAction {
                 unset($contactdata [$key]);
             }
         }
-
         $resultdata [0] = $contactdata;
         $resultdata [1] = $returndata;
-
-        // print_r($resultdata);
         return $resultdata;
     }
 
@@ -310,7 +300,6 @@ class CalltransfernumAction extends CommonAction {
         $file_path = $file_sub_path . $file_name;
         $fp = fopen($file_path, "r");
         $file_size = filesize($file_path);
-
         // 下载文件需要用到的头
         Header("Content-type: application/octet-stream");
         Header("Accept-Ranges: bytes");
@@ -326,11 +315,10 @@ class CalltransfernumAction extends CommonAction {
         fclose($fp);
         exit();
     }
-
+    
     function formfile($numdata, $type) {
         $destination_folder = './Public/file/';
         if ($type == 1) {
-
             // txt文件
             $date = date('Y-m-d');
             $newfilename = $date . '.txt'; // 新的文件路径
@@ -338,20 +326,16 @@ class CalltransfernumAction extends CommonAction {
             $fp_write = fopen($destination, "w");
             chmod($destination, 0777);
             foreach ($numdata as $key => $value) {
-
                 $stringdata = $value ['num'] . "\r\n";
                 fwrite($fp_write, $stringdata);
             }
             fclose($fp_write);
-
             return $newfilename;
         } else {
             $date = date('YmdGHis');
             $newfilename = $date . '.txt'; // 新的文件路径
             $destination = $destination_folder . $newfilename; // 新excel路径
-
             $objExcel = new PHPExcel ();
-
             $objExcel->getProperties()->setCreator("广州山基公司");
             $objExcel->getProperties()->setLastModifiedBy("");
             $objExcel->getProperties()->setTitle("呼转号码");
@@ -360,26 +344,20 @@ class CalltransfernumAction extends CommonAction {
             $objExcel->getProperties()->setKeywords("呼转号码");
             $objExcel->getProperties()->setCategory("呼转号码");
             $objExcel->setActiveSheetIndex(0);
-
             $i = 0;
             foreach ($numdata as $key => $value) {
                 $u1 = $i + 1;
                 $objExcel->getActiveSheet()->setCellValue('a' . $u1, "{$value["num"]}");
                 $i ++;
             }
-
             // 高置列的宽度
             $objExcel->getActiveSheet()->getColumnDimension('A')->setWidth(30);
-
             $objExcel->getActiveSheet()->getHeaderFooter()->setOddHeader('&L&BPersonal cash register&RPrinted on &D');
-            $objExcel->getActiveSheet()->getHeaderFooter()->setOddFooter('&L&B' . $objExcel->getProperties()->getTitle() . '&RPage &P of &N');
-
-            // 设置页方向和规模
+            $objExcel->getActiveSheet()->getHeaderFooter()->setOddFooter('&L&B' . $objExcel->getProperties()->getTitle() . '&RPage &P of &N');   
             $objExcel->getActiveSheet()->getPageSetup()->setOrientation(PHPExcel_Worksheet_PageSetup::ORIENTATION_PORTRAIT);
             $objExcel->getActiveSheet()->getPageSetup()->setPaperSize(PHPExcel_Worksheet_PageSetup::PAPERSIZE_A4);
             $objExcel->setActiveSheetIndex(0);
             $timestamp = time();
-
             header('Content-Type: application/vnd.ms-excel');
             header('Content-Disposition: attachment;filename="呼转号码' . date('Y-m-d') . '.xls"');
             header('Cache-Control: max-age=0');
@@ -393,7 +371,6 @@ class CalltransfernumAction extends CommonAction {
         import('ORG.Util.Page');
         $model = M('test', "cb_", 'DB_CONFIG2');
         if (empty($_POST ['num'])) {
-
             $count = $model->query('select count(*) from cb_numberpool');
             $count = $count [0] ['count'];
             $header = "条呼转信息";
@@ -433,5 +410,4 @@ class CalltransfernumAction extends CommonAction {
         $this->assign('timer', $this->getTime());
         $this->display();
     }
-
 }
